@@ -1,0 +1,588 @@
+2025-04-23 17:42:28,196 - INFO - 日志记录已启动: log/analysis_log/全数据集和专用模型对比/2025_4_23/model_comparison_1P\comparison_20250423_174228.log
+2025-04-23 17:42:28,199 - INFO - 成功从CSV文件加载专用模型的结果
+2025-04-23 17:42:28,265 - INFO - 预测指标为['metal1_Peak']
+2025-04-23 17:42:28,274 - INFO - 数据集大小: 全数据集(16829), MOS1(8436), MOS2(8393)
+2025-04-23 17:42:28,274 - INFO - 开始训练模型...
+2025-04-23 17:42:28,274 - INFO - 训练MOS1模型
+2025-04-23 17:42:28,289 - INFO - 训练MOS2模型
+2025-04-23 17:42:28,304 - INFO - 训练全数据集模型
+2025-04-23 17:42:48,996 - INFO - Epoch 1/400: Train Loss = 0.250555, MOS1 Loss = 0.642493, MOS1 Inv Loss = 0.094842, MOS2 Loss = 0.590092, MOS2 Inv Loss = 0.099008
+2025-04-23 17:42:48,996 - INFO - [新最佳-MOS1] Epoch 1: Scaled Loss = 0.642493, Unscaled Loss = 0.094842
+2025-04-23 17:42:48,996 - INFO - [新最佳-MOS2] Epoch 1: Scaled Loss = 0.590092, Unscaled Loss = 0.099008
+2025-04-23 17:43:00,559 - INFO - Epoch 2/400: Train Loss = 0.105110, MOS1 Loss = 0.599251, MOS1 Inv Loss = 0.060190, MOS2 Loss = 0.552449, MOS2 Inv Loss = 0.069103
+2025-04-23 17:43:00,559 - INFO - [新最佳-MOS1] Epoch 2: Scaled Loss = 0.599251, Unscaled Loss = 0.060190
+2025-04-23 17:43:00,559 - INFO - [新最佳-MOS2] Epoch 2: Scaled Loss = 0.552449, Unscaled Loss = 0.069103
+2025-04-23 17:43:12,768 - INFO - Epoch 3/400: Train Loss = 0.076087, MOS1 Loss = 0.572127, MOS1 Inv Loss = 0.046696, MOS2 Loss = 0.542475, MOS2 Inv Loss = 0.065401
+2025-04-23 17:43:12,768 - INFO - [新最佳-MOS1] Epoch 3: Scaled Loss = 0.572127, Unscaled Loss = 0.046696
+2025-04-23 17:43:12,768 - INFO - [新最佳-MOS2] Epoch 3: Scaled Loss = 0.542475, Unscaled Loss = 0.065401
+2025-04-23 17:43:24,952 - INFO - Epoch 4/400: Train Loss = 0.064410, MOS1 Loss = 0.521394, MOS1 Inv Loss = 0.027965, MOS2 Loss = 0.529872, MOS2 Inv Loss = 0.064067
+2025-04-23 17:43:24,953 - INFO - [新最佳-MOS1] Epoch 4: Scaled Loss = 0.521394, Unscaled Loss = 0.027965
+2025-04-23 17:43:24,953 - INFO - [新最佳-MOS2] Epoch 4: Scaled Loss = 0.529872, Unscaled Loss = 0.064067
+2025-04-23 17:43:37,155 - INFO - Epoch 5/400: Train Loss = 0.056272, MOS1 Loss = 0.515587, MOS1 Inv Loss = 0.017300, MOS2 Loss = 0.554805, MOS2 Inv Loss = 0.063856
+2025-04-23 17:43:37,156 - INFO - [新最佳-MOS1] Epoch 5: Scaled Loss = 0.515587, Unscaled Loss = 0.017300
+2025-04-23 17:43:37,156 - INFO - [新最佳-MOS2] Epoch 5: Scaled Loss = 0.554805, Unscaled Loss = 0.063856
+2025-04-23 17:43:49,361 - INFO - Epoch 6/400: Train Loss = 0.049743, MOS1 Loss = 0.499579, MOS1 Inv Loss = 0.011946, MOS2 Loss = 0.535789, MOS2 Inv Loss = 0.061143
+2025-04-23 17:43:49,361 - INFO - [新最佳-MOS1] Epoch 6: Scaled Loss = 0.499579, Unscaled Loss = 0.011946
+2025-04-23 17:43:49,362 - INFO - [新最佳-MOS2] Epoch 6: Scaled Loss = 0.535789, Unscaled Loss = 0.061143
+2025-04-23 17:44:01,571 - INFO - Epoch 7/400: Train Loss = 0.045208, MOS1 Loss = 0.473186, MOS1 Inv Loss = 0.007572, MOS2 Loss = 0.547096, MOS2 Inv Loss = 0.058469
+2025-04-23 17:44:01,571 - INFO - [新最佳-MOS1] Epoch 7: Scaled Loss = 0.473186, Unscaled Loss = 0.007572
+2025-04-23 17:44:01,572 - INFO - [新最佳-MOS2] Epoch 7: Scaled Loss = 0.547096, Unscaled Loss = 0.058469
+2025-04-23 17:44:13,681 - INFO - Epoch 8/400: Train Loss = 0.041928, MOS1 Loss = 0.476604, MOS1 Inv Loss = 0.007430, MOS2 Loss = 0.521604, MOS2 Inv Loss = 0.051312
+2025-04-23 17:44:13,681 - INFO - [新最佳-MOS1] Epoch 8: Scaled Loss = 0.476604, Unscaled Loss = 0.007430
+2025-04-23 17:44:13,681 - INFO - [新最佳-MOS2] Epoch 8: Scaled Loss = 0.521604, Unscaled Loss = 0.051312
+2025-04-23 17:44:26,018 - INFO - Epoch 9/400: Train Loss = 0.036775, MOS1 Loss = 0.469691, MOS1 Inv Loss = 0.006357, MOS2 Loss = 0.534193, MOS2 Inv Loss = 0.036365
+2025-04-23 17:44:26,019 - INFO - [新最佳-MOS1] Epoch 9: Scaled Loss = 0.469691, Unscaled Loss = 0.006357
+2025-04-23 17:44:26,019 - INFO - [新最佳-MOS2] Epoch 9: Scaled Loss = 0.534193, Unscaled Loss = 0.036365
+2025-04-23 17:44:38,283 - INFO - Epoch 10/400: Train Loss = 0.024267, MOS1 Loss = 0.489993, MOS1 Inv Loss = 0.007421, MOS2 Loss = 0.438039, MOS2 Inv Loss = 0.006848
+2025-04-23 17:44:38,294 - INFO - [新最佳-MOS2] Epoch 10: Scaled Loss = 0.438039, Unscaled Loss = 0.006848
+2025-04-23 17:44:50,436 - INFO - Epoch 11/400: Train Loss = 0.015795, MOS1 Loss = 0.452449, MOS1 Inv Loss = 0.005059, MOS2 Loss = 0.428068, MOS2 Inv Loss = 0.005175
+2025-04-23 17:44:50,436 - INFO - [新最佳-MOS1] Epoch 11: Scaled Loss = 0.452449, Unscaled Loss = 0.005059
+2025-04-23 17:44:50,436 - INFO - [新最佳-MOS2] Epoch 11: Scaled Loss = 0.428068, Unscaled Loss = 0.005175
+2025-04-23 17:45:02,699 - INFO - Epoch 12/400: Train Loss = 0.013206, MOS1 Loss = 0.467630, MOS1 Inv Loss = 0.005656, MOS2 Loss = 0.415349, MOS2 Inv Loss = 0.005162
+2025-04-23 17:45:02,700 - INFO - [新最佳-MOS2] Epoch 12: Scaled Loss = 0.415349, Unscaled Loss = 0.005162
+2025-04-23 17:45:14,831 - INFO - Epoch 13/400: Train Loss = 0.012208, MOS1 Loss = 0.445307, MOS1 Inv Loss = 0.004938, MOS2 Loss = 0.415203, MOS2 Inv Loss = 0.004901
+2025-04-23 17:45:14,832 - INFO - [新最佳-MOS1] Epoch 13: Scaled Loss = 0.445307, Unscaled Loss = 0.004938
+2025-04-23 17:45:14,832 - INFO - [新最佳-MOS2] Epoch 13: Scaled Loss = 0.415203, Unscaled Loss = 0.004901
+2025-04-23 17:45:27,064 - INFO - Epoch 14/400: Train Loss = 0.010907, MOS1 Loss = 0.454850, MOS1 Inv Loss = 0.004747, MOS2 Loss = 0.402467, MOS2 Inv Loss = 0.004972
+2025-04-23 17:45:27,065 - INFO - [新最佳-MOS1] Epoch 14: Scaled Loss = 0.454850, Unscaled Loss = 0.004747
+2025-04-23 17:45:39,294 - INFO - Epoch 15/400: Train Loss = 0.010277, MOS1 Loss = 0.456648, MOS1 Inv Loss = 0.004805, MOS2 Loss = 0.418547, MOS2 Inv Loss = 0.004987
+2025-04-23 17:45:51,383 - INFO - Epoch 16/400: Train Loss = 0.009661, MOS1 Loss = 0.450041, MOS1 Inv Loss = 0.004445, MOS2 Loss = 0.416288, MOS2 Inv Loss = 0.004618
+2025-04-23 17:45:51,384 - INFO - [新最佳-MOS1] Epoch 16: Scaled Loss = 0.450041, Unscaled Loss = 0.004445
+2025-04-23 17:45:51,384 - INFO - [新最佳-MOS2] Epoch 16: Scaled Loss = 0.416288, Unscaled Loss = 0.004618
+2025-04-23 17:46:03,703 - INFO - Epoch 17/400: Train Loss = 0.009741, MOS1 Loss = 0.444947, MOS1 Inv Loss = 0.004341, MOS2 Loss = 0.417849, MOS2 Inv Loss = 0.004505
+2025-04-23 17:46:03,704 - INFO - [新最佳-MOS1] Epoch 17: Scaled Loss = 0.444947, Unscaled Loss = 0.004341
+2025-04-23 17:46:03,704 - INFO - [新最佳-MOS2] Epoch 17: Scaled Loss = 0.417849, Unscaled Loss = 0.004505
+2025-04-23 17:46:15,887 - INFO - Epoch 18/400: Train Loss = 0.009363, MOS1 Loss = 0.455621, MOS1 Inv Loss = 0.004585, MOS2 Loss = 0.416674, MOS2 Inv Loss = 0.004405
+2025-04-23 17:46:15,888 - INFO - [新最佳-MOS2] Epoch 18: Scaled Loss = 0.416674, Unscaled Loss = 0.004405
+2025-04-23 17:46:28,160 - INFO - Epoch 19/400: Train Loss = 0.009349, MOS1 Loss = 0.448493, MOS1 Inv Loss = 0.004285, MOS2 Loss = 0.419487, MOS2 Inv Loss = 0.004401
+2025-04-23 17:46:28,160 - INFO - [新最佳-MOS1] Epoch 19: Scaled Loss = 0.448493, Unscaled Loss = 0.004285
+2025-04-23 17:46:28,160 - INFO - [新最佳-MOS2] Epoch 19: Scaled Loss = 0.419487, Unscaled Loss = 0.004401
+2025-04-23 17:46:40,678 - INFO - Epoch 20/400: Train Loss = 0.009040, MOS1 Loss = 0.442181, MOS1 Inv Loss = 0.003942, MOS2 Loss = 0.414746, MOS2 Inv Loss = 0.004429
+2025-04-23 17:46:40,678 - INFO - [新最佳-MOS1] Epoch 20: Scaled Loss = 0.442181, Unscaled Loss = 0.003942
+2025-04-23 17:46:52,910 - INFO - Epoch 21/400: Train Loss = 0.008562, MOS1 Loss = 0.434345, MOS1 Inv Loss = 0.003760, MOS2 Loss = 0.406384, MOS2 Inv Loss = 0.004335
+2025-04-23 17:46:52,911 - INFO - [新最佳-MOS1] Epoch 21: Scaled Loss = 0.434345, Unscaled Loss = 0.003760
+2025-04-23 17:46:52,911 - INFO - [新最佳-MOS2] Epoch 21: Scaled Loss = 0.406384, Unscaled Loss = 0.004335
+2025-04-23 17:47:05,074 - INFO - Epoch 22/400: Train Loss = 0.008545, MOS1 Loss = 0.444225, MOS1 Inv Loss = 0.003941, MOS2 Loss = 0.416073, MOS2 Inv Loss = 0.004183
+2025-04-23 17:47:05,074 - INFO - [新最佳-MOS2] Epoch 22: Scaled Loss = 0.416073, Unscaled Loss = 0.004183
+2025-04-23 17:47:17,316 - INFO - Epoch 23/400: Train Loss = 0.008391, MOS1 Loss = 0.439030, MOS1 Inv Loss = 0.003743, MOS2 Loss = 0.398201, MOS2 Inv Loss = 0.004442
+2025-04-23 17:47:17,316 - INFO - [新最佳-MOS1] Epoch 23: Scaled Loss = 0.439030, Unscaled Loss = 0.003743
+2025-04-23 17:47:29,587 - INFO - Epoch 24/400: Train Loss = 0.008248, MOS1 Loss = 0.446781, MOS1 Inv Loss = 0.003829, MOS2 Loss = 0.409772, MOS2 Inv Loss = 0.004161
+2025-04-23 17:47:29,587 - INFO - [新最佳-MOS2] Epoch 24: Scaled Loss = 0.409772, Unscaled Loss = 0.004161
+2025-04-23 17:47:41,831 - INFO - Epoch 25/400: Train Loss = 0.008173, MOS1 Loss = 0.435327, MOS1 Inv Loss = 0.003576, MOS2 Loss = 0.408325, MOS2 Inv Loss = 0.004102
+2025-04-23 17:47:41,831 - INFO - [新最佳-MOS1] Epoch 25: Scaled Loss = 0.435327, Unscaled Loss = 0.003576
+2025-04-23 17:47:41,831 - INFO - [新最佳-MOS2] Epoch 25: Scaled Loss = 0.408325, Unscaled Loss = 0.004102
+2025-04-23 17:47:54,063 - INFO - Epoch 26/400: Train Loss = 0.008010, MOS1 Loss = 0.434644, MOS1 Inv Loss = 0.003481, MOS2 Loss = 0.409019, MOS2 Inv Loss = 0.004093
+2025-04-23 17:47:54,063 - INFO - [新最佳-MOS1] Epoch 26: Scaled Loss = 0.434644, Unscaled Loss = 0.003481
+2025-04-23 17:47:54,063 - INFO - [新最佳-MOS2] Epoch 26: Scaled Loss = 0.409019, Unscaled Loss = 0.004093
+2025-04-23 17:48:06,355 - INFO - Epoch 27/400: Train Loss = 0.007696, MOS1 Loss = 0.442276, MOS1 Inv Loss = 0.003819, MOS2 Loss = 0.424100, MOS2 Inv Loss = 0.003979
+2025-04-23 17:48:06,355 - INFO - [新最佳-MOS2] Epoch 27: Scaled Loss = 0.424100, Unscaled Loss = 0.003979
+2025-04-23 17:48:18,616 - INFO - Epoch 28/400: Train Loss = 0.007958, MOS1 Loss = 0.440612, MOS1 Inv Loss = 0.003419, MOS2 Loss = 0.411176, MOS2 Inv Loss = 0.004083
+2025-04-23 17:48:18,616 - INFO - [新最佳-MOS1] Epoch 28: Scaled Loss = 0.440612, Unscaled Loss = 0.003419
+2025-04-23 17:48:30,784 - INFO - Epoch 29/400: Train Loss = 0.007861, MOS1 Loss = 0.442608, MOS1 Inv Loss = 0.003580, MOS2 Loss = 0.398335, MOS2 Inv Loss = 0.004306
+2025-04-23 17:48:42,970 - INFO - Epoch 30/400: Train Loss = 0.007430, MOS1 Loss = 0.437248, MOS1 Inv Loss = 0.003293, MOS2 Loss = 0.393507, MOS2 Inv Loss = 0.004406
+2025-04-23 17:48:42,970 - INFO - [新最佳-MOS1] Epoch 30: Scaled Loss = 0.437248, Unscaled Loss = 0.003293
+2025-04-23 17:48:55,120 - INFO - Epoch 31/400: Train Loss = 0.007380, MOS1 Loss = 0.443482, MOS1 Inv Loss = 0.003543, MOS2 Loss = 0.410115, MOS2 Inv Loss = 0.004011
+2025-04-23 17:49:07,279 - INFO - Epoch 32/400: Train Loss = 0.007481, MOS1 Loss = 0.455018, MOS1 Inv Loss = 0.003844, MOS2 Loss = 0.410291, MOS2 Inv Loss = 0.003994
+2025-04-23 17:49:19,426 - INFO - Epoch 33/400: Train Loss = 0.007523, MOS1 Loss = 0.444315, MOS1 Inv Loss = 0.003430, MOS2 Loss = 0.409323, MOS2 Inv Loss = 0.003961
+2025-04-23 17:49:19,426 - INFO - [新最佳-MOS2] Epoch 33: Scaled Loss = 0.409323, Unscaled Loss = 0.003961
+2025-04-23 17:49:31,700 - INFO - Epoch 34/400: Train Loss = 0.007261, MOS1 Loss = 0.428393, MOS1 Inv Loss = 0.003019, MOS2 Loss = 0.415926, MOS2 Inv Loss = 0.003792
+2025-04-23 17:49:31,700 - INFO - [新最佳-MOS1] Epoch 34: Scaled Loss = 0.428393, Unscaled Loss = 0.003019
+2025-04-23 17:49:31,700 - INFO - [新最佳-MOS2] Epoch 34: Scaled Loss = 0.415926, Unscaled Loss = 0.003792
+2025-04-23 17:49:43,984 - INFO - Epoch 35/400: Train Loss = 0.007145, MOS1 Loss = 0.435184, MOS1 Inv Loss = 0.003134, MOS2 Loss = 0.410661, MOS2 Inv Loss = 0.003888
+2025-04-23 17:49:56,245 - INFO - Epoch 36/400: Train Loss = 0.007038, MOS1 Loss = 0.429617, MOS1 Inv Loss = 0.003068, MOS2 Loss = 0.415491, MOS2 Inv Loss = 0.003762
+2025-04-23 17:49:56,245 - INFO - [新最佳-MOS2] Epoch 36: Scaled Loss = 0.415491, Unscaled Loss = 0.003762
+2025-04-23 17:50:08,520 - INFO - Epoch 37/400: Train Loss = 0.007248, MOS1 Loss = 0.437446, MOS1 Inv Loss = 0.003149, MOS2 Loss = 0.408775, MOS2 Inv Loss = 0.003877
+2025-04-23 17:50:20,813 - INFO - Epoch 38/400: Train Loss = 0.007458, MOS1 Loss = 0.420307, MOS1 Inv Loss = 0.002897, MOS2 Loss = 0.430358, MOS2 Inv Loss = 0.003922
+2025-04-23 17:50:20,813 - INFO - [新最佳-MOS1] Epoch 38: Scaled Loss = 0.420307, Unscaled Loss = 0.002897
+2025-04-23 17:50:33,069 - INFO - Epoch 39/400: Train Loss = 0.006896, MOS1 Loss = 0.431828, MOS1 Inv Loss = 0.002988, MOS2 Loss = 0.413273, MOS2 Inv Loss = 0.003763
+2025-04-23 17:50:45,248 - INFO - Epoch 40/400: Train Loss = 0.006868, MOS1 Loss = 0.423506, MOS1 Inv Loss = 0.002822, MOS2 Loss = 0.407484, MOS2 Inv Loss = 0.003825
+2025-04-23 17:50:45,248 - INFO - [新最佳-MOS1] Epoch 40: Scaled Loss = 0.423506, Unscaled Loss = 0.002822
+2025-04-23 17:50:57,525 - INFO - Epoch 41/400: Train Loss = 0.006743, MOS1 Loss = 0.420311, MOS1 Inv Loss = 0.002834, MOS2 Loss = 0.416180, MOS2 Inv Loss = 0.003670
+2025-04-23 17:50:57,526 - INFO - [新最佳-MOS2] Epoch 41: Scaled Loss = 0.416180, Unscaled Loss = 0.003670
+2025-04-23 17:51:09,772 - INFO - Epoch 42/400: Train Loss = 0.006803, MOS1 Loss = 0.433603, MOS1 Inv Loss = 0.002961, MOS2 Loss = 0.407019, MOS2 Inv Loss = 0.003789
+2025-04-23 17:51:22,045 - INFO - Epoch 43/400: Train Loss = 0.006678, MOS1 Loss = 0.436610, MOS1 Inv Loss = 0.003007, MOS2 Loss = 0.404778, MOS2 Inv Loss = 0.003823
+2025-04-23 17:51:34,277 - INFO - Epoch 44/400: Train Loss = 0.006653, MOS1 Loss = 0.420811, MOS1 Inv Loss = 0.002798, MOS2 Loss = 0.415761, MOS2 Inv Loss = 0.003655
+2025-04-23 17:51:34,278 - INFO - [新最佳-MOS1] Epoch 44: Scaled Loss = 0.420811, Unscaled Loss = 0.002798
+2025-04-23 17:51:34,278 - INFO - [新最佳-MOS2] Epoch 44: Scaled Loss = 0.415761, Unscaled Loss = 0.003655
+2025-04-23 17:51:46,537 - INFO - Epoch 45/400: Train Loss = 0.007059, MOS1 Loss = 0.421727, MOS1 Inv Loss = 0.002789, MOS2 Loss = 0.405081, MOS2 Inv Loss = 0.003828
+2025-04-23 17:51:46,537 - INFO - [新最佳-MOS1] Epoch 45: Scaled Loss = 0.421727, Unscaled Loss = 0.002789
+2025-04-23 17:51:58,794 - INFO - Epoch 46/400: Train Loss = 0.006831, MOS1 Loss = 0.432411, MOS1 Inv Loss = 0.002949, MOS2 Loss = 0.418034, MOS2 Inv Loss = 0.003642
+2025-04-23 17:51:58,795 - INFO - [新最佳-MOS2] Epoch 46: Scaled Loss = 0.418034, Unscaled Loss = 0.003642
+2025-04-23 17:52:11,032 - INFO - Epoch 47/400: Train Loss = 0.006676, MOS1 Loss = 0.432306, MOS1 Inv Loss = 0.002895, MOS2 Loss = 0.406169, MOS2 Inv Loss = 0.003776
+2025-04-23 17:52:23,268 - INFO - Epoch 48/400: Train Loss = 0.006546, MOS1 Loss = 0.428434, MOS1 Inv Loss = 0.002840, MOS2 Loss = 0.414859, MOS2 Inv Loss = 0.003620
+2025-04-23 17:52:23,268 - INFO - [新最佳-MOS2] Epoch 48: Scaled Loss = 0.414859, Unscaled Loss = 0.003620
+2025-04-23 17:52:35,522 - INFO - Epoch 49/400: Train Loss = 0.006507, MOS1 Loss = 0.434377, MOS1 Inv Loss = 0.002974, MOS2 Loss = 0.408994, MOS2 Inv Loss = 0.003695
+2025-04-23 17:52:47,858 - INFO - Epoch 50/400: Train Loss = 0.006516, MOS1 Loss = 0.425028, MOS1 Inv Loss = 0.002758, MOS2 Loss = 0.418727, MOS2 Inv Loss = 0.003594
+2025-04-23 17:52:47,858 - INFO - [新最佳-MOS1] Epoch 50: Scaled Loss = 0.425028, Unscaled Loss = 0.002758
+2025-04-23 17:52:47,859 - INFO - [新最佳-MOS2] Epoch 50: Scaled Loss = 0.418727, Unscaled Loss = 0.003594
+2025-04-23 17:53:00,144 - INFO - Epoch 51/400: Train Loss = 0.006453, MOS1 Loss = 0.434154, MOS1 Inv Loss = 0.002888, MOS2 Loss = 0.422139, MOS2 Inv Loss = 0.003559
+2025-04-23 17:53:00,144 - INFO - [新最佳-MOS2] Epoch 51: Scaled Loss = 0.422139, Unscaled Loss = 0.003559
+2025-04-23 17:53:12,448 - INFO - Epoch 52/400: Train Loss = 0.006606, MOS1 Loss = 0.431395, MOS1 Inv Loss = 0.002846, MOS2 Loss = 0.416531, MOS2 Inv Loss = 0.003638
+2025-04-23 17:53:24,717 - INFO - Epoch 53/400: Train Loss = 0.006422, MOS1 Loss = 0.426954, MOS1 Inv Loss = 0.002741, MOS2 Loss = 0.425634, MOS2 Inv Loss = 0.003550
+2025-04-23 17:53:24,717 - INFO - [新最佳-MOS1] Epoch 53: Scaled Loss = 0.426954, Unscaled Loss = 0.002741
+2025-04-23 17:53:24,717 - INFO - [新最佳-MOS2] Epoch 53: Scaled Loss = 0.425634, Unscaled Loss = 0.003550
+2025-04-23 17:53:36,854 - INFO - Epoch 54/400: Train Loss = 0.006662, MOS1 Loss = 0.421450, MOS1 Inv Loss = 0.002673, MOS2 Loss = 0.412280, MOS2 Inv Loss = 0.003626
+2025-04-23 17:53:36,854 - INFO - [新最佳-MOS1] Epoch 54: Scaled Loss = 0.421450, Unscaled Loss = 0.002673
+2025-04-23 17:53:49,095 - INFO - Epoch 55/400: Train Loss = 0.006446, MOS1 Loss = 0.419871, MOS1 Inv Loss = 0.002662, MOS2 Loss = 0.409305, MOS2 Inv Loss = 0.003711
+2025-04-23 17:53:49,095 - INFO - [新最佳-MOS1] Epoch 55: Scaled Loss = 0.419871, Unscaled Loss = 0.002662
+2025-04-23 17:54:01,354 - INFO - Epoch 56/400: Train Loss = 0.006421, MOS1 Loss = 0.430990, MOS1 Inv Loss = 0.002797, MOS2 Loss = 0.414354, MOS2 Inv Loss = 0.003607
+2025-04-23 17:54:13,625 - INFO - Epoch 57/400: Train Loss = 0.006391, MOS1 Loss = 0.420047, MOS1 Inv Loss = 0.002628, MOS2 Loss = 0.419561, MOS2 Inv Loss = 0.003522
+2025-04-23 17:54:13,626 - INFO - [新最佳-MOS1] Epoch 57: Scaled Loss = 0.420047, Unscaled Loss = 0.002628
+2025-04-23 17:54:13,626 - INFO - [新最佳-MOS2] Epoch 57: Scaled Loss = 0.419561, Unscaled Loss = 0.003522
+2025-04-23 17:54:25,866 - INFO - Epoch 58/400: Train Loss = 0.006305, MOS1 Loss = 0.424847, MOS1 Inv Loss = 0.002671, MOS2 Loss = 0.419395, MOS2 Inv Loss = 0.003529
+2025-04-23 17:54:38,096 - INFO - Epoch 59/400: Train Loss = 0.006281, MOS1 Loss = 0.431890, MOS1 Inv Loss = 0.002793, MOS2 Loss = 0.414622, MOS2 Inv Loss = 0.003566
+2025-04-23 17:54:50,417 - INFO - Epoch 60/400: Train Loss = 0.006247, MOS1 Loss = 0.425474, MOS1 Inv Loss = 0.002654, MOS2 Loss = 0.420761, MOS2 Inv Loss = 0.003500
+2025-04-23 17:54:50,418 - INFO - [新最佳-MOS2] Epoch 60: Scaled Loss = 0.420761, Unscaled Loss = 0.003500
+2025-04-23 17:55:02,686 - INFO - Epoch 61/400: Train Loss = 0.006223, MOS1 Loss = 0.418115, MOS1 Inv Loss = 0.002595, MOS2 Loss = 0.409071, MOS2 Inv Loss = 0.003620
+2025-04-23 17:55:02,687 - INFO - [新最佳-MOS1] Epoch 61: Scaled Loss = 0.418115, Unscaled Loss = 0.002595
+2025-04-23 17:55:14,937 - INFO - Epoch 62/400: Train Loss = 0.006185, MOS1 Loss = 0.420319, MOS1 Inv Loss = 0.002545, MOS2 Loss = 0.404461, MOS2 Inv Loss = 0.003663
+2025-04-23 17:55:14,938 - INFO - [新最佳-MOS1] Epoch 62: Scaled Loss = 0.420319, Unscaled Loss = 0.002545
+2025-04-23 17:55:27,235 - INFO - Epoch 63/400: Train Loss = 0.006185, MOS1 Loss = 0.420704, MOS1 Inv Loss = 0.002564, MOS2 Loss = 0.423645, MOS2 Inv Loss = 0.003475
+2025-04-23 17:55:27,235 - INFO - [新最佳-MOS2] Epoch 63: Scaled Loss = 0.423645, Unscaled Loss = 0.003475
+2025-04-23 17:55:39,597 - INFO - Epoch 64/400: Train Loss = 0.006252, MOS1 Loss = 0.422662, MOS1 Inv Loss = 0.002564, MOS2 Loss = 0.417312, MOS2 Inv Loss = 0.003493
+2025-04-23 17:55:51,878 - INFO - Epoch 65/400: Train Loss = 0.006361, MOS1 Loss = 0.408503, MOS1 Inv Loss = 0.002559, MOS2 Loss = 0.407414, MOS2 Inv Loss = 0.003622
+2025-04-23 17:56:04,132 - INFO - Epoch 66/400: Train Loss = 0.006362, MOS1 Loss = 0.410496, MOS1 Inv Loss = 0.002643, MOS2 Loss = 0.403164, MOS2 Inv Loss = 0.003696
+2025-04-23 17:56:16,365 - INFO - Epoch 67/400: Train Loss = 0.006121, MOS1 Loss = 0.414033, MOS1 Inv Loss = 0.002503, MOS2 Loss = 0.412640, MOS2 Inv Loss = 0.003505
+2025-04-23 17:56:16,366 - INFO - [新最佳-MOS1] Epoch 67: Scaled Loss = 0.414033, Unscaled Loss = 0.002503
+2025-04-23 17:56:28,623 - INFO - Epoch 68/400: Train Loss = 0.006121, MOS1 Loss = 0.414967, MOS1 Inv Loss = 0.002487, MOS2 Loss = 0.419455, MOS2 Inv Loss = 0.003447
+2025-04-23 17:56:28,623 - INFO - [新最佳-MOS1] Epoch 68: Scaled Loss = 0.414967, Unscaled Loss = 0.002487
+2025-04-23 17:56:28,623 - INFO - [新最佳-MOS2] Epoch 68: Scaled Loss = 0.419455, Unscaled Loss = 0.003447
+2025-04-23 17:56:40,918 - INFO - Epoch 69/400: Train Loss = 0.006092, MOS1 Loss = 0.422265, MOS1 Inv Loss = 0.002515, MOS2 Loss = 0.425361, MOS2 Inv Loss = 0.003445
+2025-04-23 17:56:40,919 - INFO - [新最佳-MOS2] Epoch 69: Scaled Loss = 0.425361, Unscaled Loss = 0.003445
+2025-04-23 17:56:53,309 - INFO - Epoch 70/400: Train Loss = 0.006161, MOS1 Loss = 0.420569, MOS1 Inv Loss = 0.002562, MOS2 Loss = 0.411036, MOS2 Inv Loss = 0.003570
+2025-04-23 17:57:05,512 - INFO - Epoch 71/400: Train Loss = 0.006054, MOS1 Loss = 0.418526, MOS1 Inv Loss = 0.002483, MOS2 Loss = 0.407165, MOS2 Inv Loss = 0.003577
+2025-04-23 17:57:05,512 - INFO - [新最佳-MOS1] Epoch 71: Scaled Loss = 0.418526, Unscaled Loss = 0.002483
+2025-04-23 17:57:17,797 - INFO - Epoch 72/400: Train Loss = 0.006019, MOS1 Loss = 0.416754, MOS1 Inv Loss = 0.002486, MOS2 Loss = 0.407979, MOS2 Inv Loss = 0.003554
+2025-04-23 17:57:30,135 - INFO - Epoch 73/400: Train Loss = 0.006009, MOS1 Loss = 0.417940, MOS1 Inv Loss = 0.002482, MOS2 Loss = 0.412403, MOS2 Inv Loss = 0.003468
+2025-04-23 17:57:30,135 - INFO - [新最佳-MOS1] Epoch 73: Scaled Loss = 0.417940, Unscaled Loss = 0.002482
+2025-04-23 17:57:42,409 - INFO - Epoch 74/400: Train Loss = 0.006018, MOS1 Loss = 0.406395, MOS1 Inv Loss = 0.002557, MOS2 Loss = 0.410437, MOS2 Inv Loss = 0.003490
+2025-04-23 17:57:54,730 - INFO - Epoch 75/400: Train Loss = 0.006052, MOS1 Loss = 0.419207, MOS1 Inv Loss = 0.002473, MOS2 Loss = 0.403946, MOS2 Inv Loss = 0.003595
+2025-04-23 17:57:54,730 - INFO - [新最佳-MOS1] Epoch 75: Scaled Loss = 0.419207, Unscaled Loss = 0.002473
+2025-04-23 17:58:06,917 - INFO - Epoch 76/400: Train Loss = 0.006239, MOS1 Loss = 0.405907, MOS1 Inv Loss = 0.002514, MOS2 Loss = 0.415462, MOS2 Inv Loss = 0.003430
+2025-04-23 17:58:06,918 - INFO - [新最佳-MOS2] Epoch 76: Scaled Loss = 0.415462, Unscaled Loss = 0.003430
+2025-04-23 17:58:19,109 - INFO - Epoch 77/400: Train Loss = 0.006009, MOS1 Loss = 0.404920, MOS1 Inv Loss = 0.002491, MOS2 Loss = 0.418956, MOS2 Inv Loss = 0.003416
+2025-04-23 17:58:19,110 - INFO - [新最佳-MOS2] Epoch 77: Scaled Loss = 0.418956, Unscaled Loss = 0.003416
+2025-04-23 17:58:31,317 - INFO - Epoch 78/400: Train Loss = 0.006147, MOS1 Loss = 0.406311, MOS1 Inv Loss = 0.002439, MOS2 Loss = 0.414383, MOS2 Inv Loss = 0.003449
+2025-04-23 17:58:31,318 - INFO - [新最佳-MOS1] Epoch 78: Scaled Loss = 0.406311, Unscaled Loss = 0.002439
+2025-04-23 17:58:43,610 - INFO - Epoch 79/400: Train Loss = 0.005979, MOS1 Loss = 0.415197, MOS1 Inv Loss = 0.002415, MOS2 Loss = 0.417127, MOS2 Inv Loss = 0.003409
+2025-04-23 17:58:43,610 - INFO - [新最佳-MOS1] Epoch 79: Scaled Loss = 0.415197, Unscaled Loss = 0.002415
+2025-04-23 17:58:43,610 - INFO - [新最佳-MOS2] Epoch 79: Scaled Loss = 0.417127, Unscaled Loss = 0.003409
+2025-04-23 17:58:55,852 - INFO - Epoch 80/400: Train Loss = 0.005921, MOS1 Loss = 0.408345, MOS1 Inv Loss = 0.002448, MOS2 Loss = 0.434751, MOS2 Inv Loss = 0.003461
+2025-04-23 17:59:08,127 - INFO - Epoch 81/400: Train Loss = 0.005922, MOS1 Loss = 0.413310, MOS1 Inv Loss = 0.002420, MOS2 Loss = 0.407489, MOS2 Inv Loss = 0.003531
+2025-04-23 17:59:20,547 - INFO - Epoch 82/400: Train Loss = 0.005963, MOS1 Loss = 0.403444, MOS1 Inv Loss = 0.002472, MOS2 Loss = 0.419453, MOS2 Inv Loss = 0.003383
+2025-04-23 17:59:20,547 - INFO - [新最佳-MOS2] Epoch 82: Scaled Loss = 0.419453, Unscaled Loss = 0.003383
+2025-04-23 17:59:32,836 - INFO - Epoch 83/400: Train Loss = 0.005955, MOS1 Loss = 0.414895, MOS1 Inv Loss = 0.002395, MOS2 Loss = 0.421829, MOS2 Inv Loss = 0.003371
+2025-04-23 17:59:32,836 - INFO - [新最佳-MOS1] Epoch 83: Scaled Loss = 0.414895, Unscaled Loss = 0.002395
+2025-04-23 17:59:32,836 - INFO - [新最佳-MOS2] Epoch 83: Scaled Loss = 0.421829, Unscaled Loss = 0.003371
+2025-04-23 17:59:45,048 - INFO - Epoch 84/400: Train Loss = 0.006006, MOS1 Loss = 0.413063, MOS1 Inv Loss = 0.002394, MOS2 Loss = 0.422303, MOS2 Inv Loss = 0.003368
+2025-04-23 17:59:45,049 - INFO - [新最佳-MOS1] Epoch 84: Scaled Loss = 0.413063, Unscaled Loss = 0.002394
+2025-04-23 17:59:45,049 - INFO - [新最佳-MOS2] Epoch 84: Scaled Loss = 0.422303, Unscaled Loss = 0.003368
+2025-04-23 17:59:57,371 - INFO - Epoch 85/400: Train Loss = 0.005961, MOS1 Loss = 0.416693, MOS1 Inv Loss = 0.002410, MOS2 Loss = 0.414532, MOS2 Inv Loss = 0.003433
+2025-04-23 18:00:09,660 - INFO - Epoch 86/400: Train Loss = 0.005862, MOS1 Loss = 0.404543, MOS1 Inv Loss = 0.002409, MOS2 Loss = 0.418838, MOS2 Inv Loss = 0.003381
+2025-04-23 18:00:21,988 - INFO - Epoch 87/400: Train Loss = 0.005845, MOS1 Loss = 0.412842, MOS1 Inv Loss = 0.002383, MOS2 Loss = 0.425993, MOS2 Inv Loss = 0.003353
+2025-04-23 18:00:21,988 - INFO - [新最佳-MOS1] Epoch 87: Scaled Loss = 0.412842, Unscaled Loss = 0.002383
+2025-04-23 18:00:21,988 - INFO - [新最佳-MOS2] Epoch 87: Scaled Loss = 0.425993, Unscaled Loss = 0.003353
+2025-04-23 18:00:34,292 - INFO - Epoch 88/400: Train Loss = 0.005866, MOS1 Loss = 0.416886, MOS1 Inv Loss = 0.002371, MOS2 Loss = 0.423290, MOS2 Inv Loss = 0.003351
+2025-04-23 18:00:34,293 - INFO - [新最佳-MOS1] Epoch 88: Scaled Loss = 0.416886, Unscaled Loss = 0.002371
+2025-04-23 18:00:34,293 - INFO - [新最佳-MOS2] Epoch 88: Scaled Loss = 0.423290, Unscaled Loss = 0.003351
+2025-04-23 18:00:46,619 - INFO - Epoch 89/400: Train Loss = 0.005856, MOS1 Loss = 0.417441, MOS1 Inv Loss = 0.002380, MOS2 Loss = 0.415911, MOS2 Inv Loss = 0.003370
+2025-04-23 18:00:58,952 - INFO - Epoch 90/400: Train Loss = 0.005800, MOS1 Loss = 0.408633, MOS1 Inv Loss = 0.002399, MOS2 Loss = 0.409879, MOS2 Inv Loss = 0.003447
+2025-04-23 18:01:11,353 - INFO - Epoch 91/400: Train Loss = 0.005829, MOS1 Loss = 0.406660, MOS1 Inv Loss = 0.002395, MOS2 Loss = 0.418094, MOS2 Inv Loss = 0.003393
+2025-04-23 18:01:23,777 - INFO - Epoch 92/400: Train Loss = 0.005855, MOS1 Loss = 0.408858, MOS1 Inv Loss = 0.002374, MOS2 Loss = 0.425456, MOS2 Inv Loss = 0.003348
+2025-04-23 18:01:23,778 - INFO - [新最佳-MOS2] Epoch 92: Scaled Loss = 0.425456, Unscaled Loss = 0.003348
+2025-04-23 18:01:36,020 - INFO - Epoch 93/400: Train Loss = 0.005856, MOS1 Loss = 0.407576, MOS1 Inv Loss = 0.002370, MOS2 Loss = 0.409774, MOS2 Inv Loss = 0.003435
+2025-04-23 18:01:36,020 - INFO - [新最佳-MOS1] Epoch 93: Scaled Loss = 0.407576, Unscaled Loss = 0.002370
+2025-04-23 18:01:48,325 - INFO - Epoch 94/400: Train Loss = 0.005808, MOS1 Loss = 0.415272, MOS1 Inv Loss = 0.002359, MOS2 Loss = 0.414745, MOS2 Inv Loss = 0.003358
+2025-04-23 18:01:48,325 - INFO - [新最佳-MOS1] Epoch 94: Scaled Loss = 0.415272, Unscaled Loss = 0.002359
+2025-04-23 18:02:00,579 - INFO - Epoch 95/400: Train Loss = 0.005798, MOS1 Loss = 0.411070, MOS1 Inv Loss = 0.002344, MOS2 Loss = 0.425023, MOS2 Inv Loss = 0.003308
+2025-04-23 18:02:00,579 - INFO - [新最佳-MOS1] Epoch 95: Scaled Loss = 0.411070, Unscaled Loss = 0.002344
+2025-04-23 18:02:00,580 - INFO - [新最佳-MOS2] Epoch 95: Scaled Loss = 0.425023, Unscaled Loss = 0.003308
+2025-04-23 18:02:12,862 - INFO - Epoch 96/400: Train Loss = 0.005774, MOS1 Loss = 0.413861, MOS1 Inv Loss = 0.002341, MOS2 Loss = 0.421372, MOS2 Inv Loss = 0.003312
+2025-04-23 18:02:12,863 - INFO - [新最佳-MOS1] Epoch 96: Scaled Loss = 0.413861, Unscaled Loss = 0.002341
+2025-04-23 18:02:25,190 - INFO - Epoch 97/400: Train Loss = 0.005906, MOS1 Loss = 0.417269, MOS1 Inv Loss = 0.002374, MOS2 Loss = 0.411074, MOS2 Inv Loss = 0.003421
+2025-04-23 18:02:37,428 - INFO - Epoch 98/400: Train Loss = 0.005777, MOS1 Loss = 0.416820, MOS1 Inv Loss = 0.002334, MOS2 Loss = 0.422741, MOS2 Inv Loss = 0.003361
+2025-04-23 18:02:37,429 - INFO - [新最佳-MOS1] Epoch 98: Scaled Loss = 0.416820, Unscaled Loss = 0.002334
+2025-04-23 18:02:49,786 - INFO - Epoch 99/400: Train Loss = 0.005819, MOS1 Loss = 0.408939, MOS1 Inv Loss = 0.002331, MOS2 Loss = 0.421796, MOS2 Inv Loss = 0.003314
+2025-04-23 18:02:49,786 - INFO - [新最佳-MOS1] Epoch 99: Scaled Loss = 0.408939, Unscaled Loss = 0.002331
+2025-04-23 18:03:02,081 - INFO - Epoch 100/400: Train Loss = 0.005795, MOS1 Loss = 0.408008, MOS1 Inv Loss = 0.002339, MOS2 Loss = 0.413573, MOS2 Inv Loss = 0.003347
+2025-04-23 18:03:14,327 - INFO - Epoch 101/400: Train Loss = 0.005756, MOS1 Loss = 0.418285, MOS1 Inv Loss = 0.002321, MOS2 Loss = 0.416230, MOS2 Inv Loss = 0.003346
+2025-04-23 18:03:14,327 - INFO - [新最佳-MOS1] Epoch 101: Scaled Loss = 0.418285, Unscaled Loss = 0.002321
+2025-04-23 18:03:26,662 - INFO - Epoch 102/400: Train Loss = 0.005724, MOS1 Loss = 0.419057, MOS1 Inv Loss = 0.002319, MOS2 Loss = 0.416700, MOS2 Inv Loss = 0.003311
+2025-04-23 18:03:26,663 - INFO - [新最佳-MOS1] Epoch 102: Scaled Loss = 0.419057, Unscaled Loss = 0.002319
+2025-04-23 18:03:38,877 - INFO - Epoch 103/400: Train Loss = 0.005768, MOS1 Loss = 0.416479, MOS1 Inv Loss = 0.002353, MOS2 Loss = 0.419854, MOS2 Inv Loss = 0.003310
+2025-04-23 18:03:50,967 - INFO - Epoch 104/400: Train Loss = 0.005707, MOS1 Loss = 0.419586, MOS1 Inv Loss = 0.002312, MOS2 Loss = 0.426451, MOS2 Inv Loss = 0.003305
+2025-04-23 18:03:50,967 - INFO - [新最佳-MOS1] Epoch 104: Scaled Loss = 0.419586, Unscaled Loss = 0.002312
+2025-04-23 18:03:50,967 - INFO - [新最佳-MOS2] Epoch 104: Scaled Loss = 0.426451, Unscaled Loss = 0.003305
+2025-04-23 18:04:03,303 - INFO - Epoch 105/400: Train Loss = 0.005704, MOS1 Loss = 0.406165, MOS1 Inv Loss = 0.002317, MOS2 Loss = 0.417289, MOS2 Inv Loss = 0.003361
+2025-04-23 18:04:15,692 - INFO - Epoch 106/400: Train Loss = 0.005718, MOS1 Loss = 0.412290, MOS1 Inv Loss = 0.002286, MOS2 Loss = 0.411661, MOS2 Inv Loss = 0.003432
+2025-04-23 18:04:15,692 - INFO - [新最佳-MOS1] Epoch 106: Scaled Loss = 0.412290, Unscaled Loss = 0.002286
+2025-04-23 18:04:27,982 - INFO - Epoch 107/400: Train Loss = 0.005706, MOS1 Loss = 0.412159, MOS1 Inv Loss = 0.002284, MOS2 Loss = 0.415262, MOS2 Inv Loss = 0.003313
+2025-04-23 18:04:27,982 - INFO - [新最佳-MOS1] Epoch 107: Scaled Loss = 0.412159, Unscaled Loss = 0.002284
+2025-04-23 18:04:40,348 - INFO - Epoch 108/400: Train Loss = 0.005673, MOS1 Loss = 0.408571, MOS1 Inv Loss = 0.002289, MOS2 Loss = 0.419414, MOS2 Inv Loss = 0.003287
+2025-04-23 18:04:40,348 - INFO - [新最佳-MOS2] Epoch 108: Scaled Loss = 0.419414, Unscaled Loss = 0.003287
+2025-04-23 18:04:52,614 - INFO - Epoch 109/400: Train Loss = 0.005748, MOS1 Loss = 0.419128, MOS1 Inv Loss = 0.002314, MOS2 Loss = 0.431372, MOS2 Inv Loss = 0.003318
+2025-04-23 18:05:04,945 - INFO - Epoch 110/400: Train Loss = 0.005675, MOS1 Loss = 0.406365, MOS1 Inv Loss = 0.002302, MOS2 Loss = 0.412008, MOS2 Inv Loss = 0.003361
+2025-04-23 18:05:17,218 - INFO - Epoch 111/400: Train Loss = 0.005667, MOS1 Loss = 0.404839, MOS1 Inv Loss = 0.002292, MOS2 Loss = 0.422161, MOS2 Inv Loss = 0.003268
+2025-04-23 18:05:17,218 - INFO - [新最佳-MOS2] Epoch 111: Scaled Loss = 0.422161, Unscaled Loss = 0.003268
+2025-04-23 18:05:29,404 - INFO - Epoch 112/400: Train Loss = 0.005662, MOS1 Loss = 0.418766, MOS1 Inv Loss = 0.002269, MOS2 Loss = 0.417322, MOS2 Inv Loss = 0.003292
+2025-04-23 18:05:29,404 - INFO - [新最佳-MOS1] Epoch 112: Scaled Loss = 0.418766, Unscaled Loss = 0.002269
+2025-04-23 18:05:41,594 - INFO - Epoch 113/400: Train Loss = 0.005651, MOS1 Loss = 0.420330, MOS1 Inv Loss = 0.002304, MOS2 Loss = 0.417175, MOS2 Inv Loss = 0.003304
+2025-04-23 18:05:53,963 - INFO - Epoch 114/400: Train Loss = 0.005641, MOS1 Loss = 0.418867, MOS1 Inv Loss = 0.002292, MOS2 Loss = 0.408687, MOS2 Inv Loss = 0.003360
+2025-04-23 18:06:06,228 - INFO - Epoch 115/400: Train Loss = 0.005672, MOS1 Loss = 0.413086, MOS1 Inv Loss = 0.002256, MOS2 Loss = 0.420104, MOS2 Inv Loss = 0.003274
+2025-04-23 18:06:06,228 - INFO - [新最佳-MOS1] Epoch 115: Scaled Loss = 0.413086, Unscaled Loss = 0.002256
+2025-04-23 18:06:18,458 - INFO - Epoch 116/400: Train Loss = 0.005709, MOS1 Loss = 0.415781, MOS1 Inv Loss = 0.002248, MOS2 Loss = 0.431792, MOS2 Inv Loss = 0.003298
+2025-04-23 18:06:18,458 - INFO - [新最佳-MOS1] Epoch 116: Scaled Loss = 0.415781, Unscaled Loss = 0.002248
+2025-04-23 18:06:30,689 - INFO - Epoch 117/400: Train Loss = 0.006126, MOS1 Loss = 0.413470, MOS1 Inv Loss = 0.002273, MOS2 Loss = 0.424961, MOS2 Inv Loss = 0.003247
+2025-04-23 18:06:30,690 - INFO - [新最佳-MOS2] Epoch 117: Scaled Loss = 0.424961, Unscaled Loss = 0.003247
+2025-04-23 18:06:43,075 - INFO - Epoch 118/400: Train Loss = 0.005668, MOS1 Loss = 0.413305, MOS1 Inv Loss = 0.002280, MOS2 Loss = 0.410085, MOS2 Inv Loss = 0.003367
+2025-04-23 18:06:55,378 - INFO - Epoch 119/400: Train Loss = 0.005664, MOS1 Loss = 0.408530, MOS1 Inv Loss = 0.002264, MOS2 Loss = 0.413467, MOS2 Inv Loss = 0.003333
+2025-04-23 18:07:07,634 - INFO - Epoch 120/400: Train Loss = 0.005650, MOS1 Loss = 0.416940, MOS1 Inv Loss = 0.002268, MOS2 Loss = 0.415656, MOS2 Inv Loss = 0.003305
+2025-04-23 18:07:19,969 - INFO - Epoch 121/400: Train Loss = 0.005628, MOS1 Loss = 0.411422, MOS1 Inv Loss = 0.002240, MOS2 Loss = 0.417706, MOS2 Inv Loss = 0.003273
+2025-04-23 18:07:19,985 - INFO - [新最佳-MOS1] Epoch 121: Scaled Loss = 0.411422, Unscaled Loss = 0.002240
+2025-04-23 18:07:32,253 - INFO - Epoch 122/400: Train Loss = 0.005682, MOS1 Loss = 0.416149, MOS1 Inv Loss = 0.002245, MOS2 Loss = 0.415185, MOS2 Inv Loss = 0.003297
+2025-04-23 18:07:44,591 - INFO - Epoch 123/400: Train Loss = 0.005604, MOS1 Loss = 0.415763, MOS1 Inv Loss = 0.002256, MOS2 Loss = 0.411190, MOS2 Inv Loss = 0.003328
+2025-04-23 18:07:56,854 - INFO - Epoch 124/400: Train Loss = 0.005593, MOS1 Loss = 0.411368, MOS1 Inv Loss = 0.002230, MOS2 Loss = 0.440110, MOS2 Inv Loss = 0.003407
+2025-04-23 18:07:56,854 - INFO - [新最佳-MOS1] Epoch 124: Scaled Loss = 0.411368, Unscaled Loss = 0.002230
+2025-04-23 18:08:09,165 - INFO - Epoch 125/400: Train Loss = 0.005621, MOS1 Loss = 0.412172, MOS1 Inv Loss = 0.002252, MOS2 Loss = 0.420433, MOS2 Inv Loss = 0.003251
+2025-04-23 18:08:21,431 - INFO - Epoch 126/400: Train Loss = 0.005618, MOS1 Loss = 0.419876, MOS1 Inv Loss = 0.002259, MOS2 Loss = 0.411346, MOS2 Inv Loss = 0.003364
+2025-04-23 18:08:33,765 - INFO - Epoch 127/400: Train Loss = 0.005615, MOS1 Loss = 0.424472, MOS1 Inv Loss = 0.002305, MOS2 Loss = 0.417438, MOS2 Inv Loss = 0.003276
+2025-04-23 18:08:46,043 - INFO - Epoch 128/400: Train Loss = 0.005606, MOS1 Loss = 0.414302, MOS1 Inv Loss = 0.002252, MOS2 Loss = 0.417106, MOS2 Inv Loss = 0.003300
+2025-04-23 18:08:58,298 - INFO - Epoch 129/400: Train Loss = 0.005575, MOS1 Loss = 0.411128, MOS1 Inv Loss = 0.002221, MOS2 Loss = 0.421078, MOS2 Inv Loss = 0.003242
+2025-04-23 18:08:58,298 - INFO - [新最佳-MOS1] Epoch 129: Scaled Loss = 0.411128, Unscaled Loss = 0.002221
+2025-04-23 18:08:58,298 - INFO - [新最佳-MOS2] Epoch 129: Scaled Loss = 0.421078, Unscaled Loss = 0.003242
+2025-04-23 18:09:10,669 - INFO - Epoch 130/400: Train Loss = 0.005566, MOS1 Loss = 0.412169, MOS1 Inv Loss = 0.002237, MOS2 Loss = 0.417184, MOS2 Inv Loss = 0.003259
+2025-04-23 18:09:22,965 - INFO - Epoch 131/400: Train Loss = 0.005571, MOS1 Loss = 0.409695, MOS1 Inv Loss = 0.002224, MOS2 Loss = 0.401499, MOS2 Inv Loss = 0.003491
+2025-04-23 18:09:35,277 - INFO - Epoch 132/400: Train Loss = 0.005592, MOS1 Loss = 0.418625, MOS1 Inv Loss = 0.002260, MOS2 Loss = 0.423427, MOS2 Inv Loss = 0.003229
+2025-04-23 18:09:35,277 - INFO - [新最佳-MOS2] Epoch 132: Scaled Loss = 0.423427, Unscaled Loss = 0.003229
+2025-04-23 18:09:47,505 - INFO - Epoch 133/400: Train Loss = 0.005592, MOS1 Loss = 0.407386, MOS1 Inv Loss = 0.002257, MOS2 Loss = 0.435569, MOS2 Inv Loss = 0.003345
+2025-04-23 18:09:59,785 - INFO - Epoch 134/400: Train Loss = 0.005569, MOS1 Loss = 0.408294, MOS1 Inv Loss = 0.002246, MOS2 Loss = 0.428589, MOS2 Inv Loss = 0.003271
+2025-04-23 18:10:12,112 - INFO - Epoch 135/400: Train Loss = 0.005539, MOS1 Loss = 0.405177, MOS1 Inv Loss = 0.002252, MOS2 Loss = 0.421446, MOS2 Inv Loss = 0.003232
+2025-04-23 18:10:24,395 - INFO - Epoch 136/400: Train Loss = 0.005550, MOS1 Loss = 0.404598, MOS1 Inv Loss = 0.002251, MOS2 Loss = 0.438392, MOS2 Inv Loss = 0.003368
+2025-04-23 18:10:36,692 - INFO - Epoch 137/400: Train Loss = 0.005551, MOS1 Loss = 0.404760, MOS1 Inv Loss = 0.002240, MOS2 Loss = 0.419770, MOS2 Inv Loss = 0.003232
+2025-04-23 18:10:48,927 - INFO - Epoch 138/400: Train Loss = 0.005541, MOS1 Loss = 0.408931, MOS1 Inv Loss = 0.002224, MOS2 Loss = 0.417952, MOS2 Inv Loss = 0.003248
+2025-04-23 18:11:01,187 - INFO - Epoch 139/400: Train Loss = 0.005586, MOS1 Loss = 0.408031, MOS1 Inv Loss = 0.002304, MOS2 Loss = 0.416431, MOS2 Inv Loss = 0.003271
+2025-04-23 18:11:13,460 - INFO - Epoch 140/400: Train Loss = 0.005748, MOS1 Loss = 0.438638, MOS1 Inv Loss = 0.002616, MOS2 Loss = 0.416790, MOS2 Inv Loss = 0.003294
+2025-04-23 18:11:25,730 - INFO - Epoch 141/400: Train Loss = 0.005599, MOS1 Loss = 0.402983, MOS1 Inv Loss = 0.002294, MOS2 Loss = 0.415647, MOS2 Inv Loss = 0.003274
+2025-04-23 18:11:38,071 - INFO - Epoch 142/400: Train Loss = 0.005534, MOS1 Loss = 0.407450, MOS1 Inv Loss = 0.002227, MOS2 Loss = 0.426313, MOS2 Inv Loss = 0.003237
+2025-04-23 18:11:50,360 - INFO - Epoch 143/400: Train Loss = 0.005515, MOS1 Loss = 0.409700, MOS1 Inv Loss = 0.002221, MOS2 Loss = 0.415371, MOS2 Inv Loss = 0.003276
+2025-04-23 18:12:02,594 - INFO - Epoch 144/400: Train Loss = 0.005530, MOS1 Loss = 0.409743, MOS1 Inv Loss = 0.002187, MOS2 Loss = 0.419980, MOS2 Inv Loss = 0.003238
+2025-04-23 18:12:02,594 - INFO - [新最佳-MOS1] Epoch 144: Scaled Loss = 0.409743, Unscaled Loss = 0.002187
+2025-04-23 18:12:14,987 - INFO - Epoch 145/400: Train Loss = 0.005571, MOS1 Loss = 0.414195, MOS1 Inv Loss = 0.002220, MOS2 Loss = 0.424552, MOS2 Inv Loss = 0.003250
+2025-04-23 18:12:27,291 - INFO - Epoch 146/400: Train Loss = 0.005531, MOS1 Loss = 0.422142, MOS1 Inv Loss = 0.002241, MOS2 Loss = 0.418190, MOS2 Inv Loss = 0.003233
+2025-04-23 18:12:39,577 - INFO - Epoch 147/400: Train Loss = 0.005500, MOS1 Loss = 0.408464, MOS1 Inv Loss = 0.002221, MOS2 Loss = 0.421479, MOS2 Inv Loss = 0.003222
+2025-04-23 18:12:39,578 - INFO - [新最佳-MOS2] Epoch 147: Scaled Loss = 0.421479, Unscaled Loss = 0.003222
+2025-04-23 18:12:51,900 - INFO - Epoch 148/400: Train Loss = 0.005553, MOS1 Loss = 0.410120, MOS1 Inv Loss = 0.002192, MOS2 Loss = 0.430679, MOS2 Inv Loss = 0.003242
+2025-04-23 18:13:04,244 - INFO - Epoch 149/400: Train Loss = 0.005511, MOS1 Loss = 0.405561, MOS1 Inv Loss = 0.002210, MOS2 Loss = 0.411637, MOS2 Inv Loss = 0.003279
+2025-04-23 18:13:16,579 - INFO - Epoch 150/400: Train Loss = 0.005454, MOS1 Loss = 0.406662, MOS1 Inv Loss = 0.002212, MOS2 Loss = 0.426178, MOS2 Inv Loss = 0.003224
+2025-04-23 18:13:28,872 - INFO - Epoch 151/400: Train Loss = 0.005462, MOS1 Loss = 0.407013, MOS1 Inv Loss = 0.002255, MOS2 Loss = 0.418608, MOS2 Inv Loss = 0.003232
+2025-04-23 18:13:40,962 - INFO - Epoch 152/400: Train Loss = 0.005455, MOS1 Loss = 0.416323, MOS1 Inv Loss = 0.002215, MOS2 Loss = 0.418332, MOS2 Inv Loss = 0.003224
+2025-04-23 18:13:53,248 - INFO - Epoch 153/400: Train Loss = 0.005507, MOS1 Loss = 0.420237, MOS1 Inv Loss = 0.002218, MOS2 Loss = 0.423680, MOS2 Inv Loss = 0.003224
+2025-04-23 18:14:05,506 - INFO - Epoch 154/400: Train Loss = 0.005494, MOS1 Loss = 0.411379, MOS1 Inv Loss = 0.002191, MOS2 Loss = 0.428104, MOS2 Inv Loss = 0.003234
+2025-04-23 18:14:17,737 - INFO - Epoch 155/400: Train Loss = 0.005491, MOS1 Loss = 0.414698, MOS1 Inv Loss = 0.002190, MOS2 Loss = 0.405722, MOS2 Inv Loss = 0.003365
+2025-04-23 18:14:29,898 - INFO - Epoch 156/400: Train Loss = 0.005531, MOS1 Loss = 0.411094, MOS1 Inv Loss = 0.002190, MOS2 Loss = 0.420966, MOS2 Inv Loss = 0.003208
+2025-04-23 18:14:29,899 - INFO - [新最佳-MOS2] Epoch 156: Scaled Loss = 0.420966, Unscaled Loss = 0.003208
+2025-04-23 18:14:42,235 - INFO - Epoch 157/400: Train Loss = 0.005533, MOS1 Loss = 0.419153, MOS1 Inv Loss = 0.002212, MOS2 Loss = 0.415604, MOS2 Inv Loss = 0.003229
+2025-04-23 18:14:54,626 - INFO - Epoch 158/400: Train Loss = 0.005490, MOS1 Loss = 0.410434, MOS1 Inv Loss = 0.002184, MOS2 Loss = 0.415546, MOS2 Inv Loss = 0.003225
+2025-04-23 18:14:54,626 - INFO - [新最佳-MOS1] Epoch 158: Scaled Loss = 0.410434, Unscaled Loss = 0.002184
+2025-04-23 18:15:06,886 - INFO - Epoch 159/400: Train Loss = 0.005517, MOS1 Loss = 0.406673, MOS1 Inv Loss = 0.002206, MOS2 Loss = 0.414698, MOS2 Inv Loss = 0.003235
+2025-04-23 18:15:19,169 - INFO - Epoch 160/400: Train Loss = 0.005455, MOS1 Loss = 0.418103, MOS1 Inv Loss = 0.002190, MOS2 Loss = 0.420282, MOS2 Inv Loss = 0.003209
+2025-04-23 18:15:31,272 - INFO - Epoch 161/400: Train Loss = 0.005469, MOS1 Loss = 0.411594, MOS1 Inv Loss = 0.002189, MOS2 Loss = 0.420246, MOS2 Inv Loss = 0.003197
+2025-04-23 18:15:31,272 - INFO - [新最佳-MOS2] Epoch 161: Scaled Loss = 0.420246, Unscaled Loss = 0.003197
+2025-04-23 18:15:43,556 - INFO - Epoch 162/400: Train Loss = 0.005456, MOS1 Loss = 0.410917, MOS1 Inv Loss = 0.002177, MOS2 Loss = 0.420307, MOS2 Inv Loss = 0.003197
+2025-04-23 18:15:43,556 - INFO - [新最佳-MOS1] Epoch 162: Scaled Loss = 0.410917, Unscaled Loss = 0.002177
+2025-04-23 18:15:55,892 - INFO - Epoch 163/400: Train Loss = 0.005500, MOS1 Loss = 0.417140, MOS1 Inv Loss = 0.002178, MOS2 Loss = 0.429294, MOS2 Inv Loss = 0.003211
+2025-04-23 18:16:08,165 - INFO - Epoch 164/400: Train Loss = 0.005459, MOS1 Loss = 0.411828, MOS1 Inv Loss = 0.002176, MOS2 Loss = 0.420620, MOS2 Inv Loss = 0.003194
+2025-04-23 18:16:08,165 - INFO - [新最佳-MOS1] Epoch 164: Scaled Loss = 0.411828, Unscaled Loss = 0.002176
+2025-04-23 18:16:08,166 - INFO - [新最佳-MOS2] Epoch 164: Scaled Loss = 0.420620, Unscaled Loss = 0.003194
+2025-04-23 18:16:20,440 - INFO - Epoch 165/400: Train Loss = 0.005423, MOS1 Loss = 0.405862, MOS1 Inv Loss = 0.002198, MOS2 Loss = 0.423881, MOS2 Inv Loss = 0.003205
+2025-04-23 18:16:32,645 - INFO - Epoch 166/400: Train Loss = 0.005462, MOS1 Loss = 0.415078, MOS1 Inv Loss = 0.002156, MOS2 Loss = 0.419367, MOS2 Inv Loss = 0.003184
+2025-04-23 18:16:32,646 - INFO - [新最佳-MOS1] Epoch 166: Scaled Loss = 0.415078, Unscaled Loss = 0.002156
+2025-04-23 18:16:32,646 - INFO - [新最佳-MOS2] Epoch 166: Scaled Loss = 0.419367, Unscaled Loss = 0.003184
+2025-04-23 18:16:45,045 - INFO - Epoch 167/400: Train Loss = 0.005445, MOS1 Loss = 0.410432, MOS1 Inv Loss = 0.002186, MOS2 Loss = 0.402640, MOS2 Inv Loss = 0.003427
+2025-04-23 18:16:57,176 - INFO - Epoch 168/400: Train Loss = 0.005441, MOS1 Loss = 0.415013, MOS1 Inv Loss = 0.002173, MOS2 Loss = 0.422398, MOS2 Inv Loss = 0.003188
+2025-04-23 18:17:09,340 - INFO - Epoch 169/400: Train Loss = 0.005481, MOS1 Loss = 0.406055, MOS1 Inv Loss = 0.002178, MOS2 Loss = 0.425704, MOS2 Inv Loss = 0.003171
+2025-04-23 18:17:09,340 - INFO - [新最佳-MOS2] Epoch 169: Scaled Loss = 0.425704, Unscaled Loss = 0.003171
+2025-04-23 18:17:21,493 - INFO - Epoch 170/400: Train Loss = 0.005495, MOS1 Loss = 0.417356, MOS1 Inv Loss = 0.002221, MOS2 Loss = 0.418361, MOS2 Inv Loss = 0.003213
+2025-04-23 18:17:33,782 - INFO - Epoch 171/400: Train Loss = 0.005438, MOS1 Loss = 0.403523, MOS1 Inv Loss = 0.002207, MOS2 Loss = 0.413025, MOS2 Inv Loss = 0.003236
+2025-04-23 18:17:46,186 - INFO - Epoch 172/400: Train Loss = 0.005499, MOS1 Loss = 0.408844, MOS1 Inv Loss = 0.002168, MOS2 Loss = 0.426245, MOS2 Inv Loss = 0.003195
+2025-04-23 18:17:58,391 - INFO - Epoch 173/400: Train Loss = 0.005410, MOS1 Loss = 0.406068, MOS1 Inv Loss = 0.002203, MOS2 Loss = 0.442834, MOS2 Inv Loss = 0.003440
+2025-04-23 18:18:10,719 - INFO - Epoch 174/400: Train Loss = 0.005424, MOS1 Loss = 0.403477, MOS1 Inv Loss = 0.002202, MOS2 Loss = 0.422748, MOS2 Inv Loss = 0.003212
+2025-04-23 18:18:23,046 - INFO - Epoch 175/400: Train Loss = 0.005411, MOS1 Loss = 0.405549, MOS1 Inv Loss = 0.002222, MOS2 Loss = 0.416531, MOS2 Inv Loss = 0.003207
+2025-04-23 18:18:35,305 - INFO - Epoch 176/400: Train Loss = 0.005416, MOS1 Loss = 0.409860, MOS1 Inv Loss = 0.002166, MOS2 Loss = 0.419361, MOS2 Inv Loss = 0.003185
+2025-04-23 18:18:47,599 - INFO - Epoch 177/400: Train Loss = 0.005405, MOS1 Loss = 0.425577, MOS1 Inv Loss = 0.002275, MOS2 Loss = 0.422271, MOS2 Inv Loss = 0.003170
+2025-04-23 18:18:47,599 - INFO - [新最佳-MOS2] Epoch 177: Scaled Loss = 0.422271, Unscaled Loss = 0.003170
+2025-04-23 18:18:59,886 - INFO - Epoch 178/400: Train Loss = 0.005467, MOS1 Loss = 0.414177, MOS1 Inv Loss = 0.002160, MOS2 Loss = 0.431331, MOS2 Inv Loss = 0.003223
+2025-04-23 18:19:12,067 - INFO - Epoch 179/400: Train Loss = 0.005406, MOS1 Loss = 0.413288, MOS1 Inv Loss = 0.002152, MOS2 Loss = 0.431013, MOS2 Inv Loss = 0.003210
+2025-04-23 18:19:12,067 - INFO - [新最佳-MOS1] Epoch 179: Scaled Loss = 0.413288, Unscaled Loss = 0.002152
+2025-04-23 18:19:24,369 - INFO - Epoch 180/400: Train Loss = 0.005425, MOS1 Loss = 0.401603, MOS1 Inv Loss = 0.002238, MOS2 Loss = 0.439864, MOS2 Inv Loss = 0.003328
+2025-04-23 18:19:36,598 - INFO - Epoch 181/400: Train Loss = 0.005389, MOS1 Loss = 0.415404, MOS1 Inv Loss = 0.002141, MOS2 Loss = 0.419543, MOS2 Inv Loss = 0.003176
+2025-04-23 18:19:36,598 - INFO - [新最佳-MOS1] Epoch 181: Scaled Loss = 0.415404, Unscaled Loss = 0.002141
+2025-04-23 18:19:48,832 - INFO - Epoch 182/400: Train Loss = 0.005404, MOS1 Loss = 0.407977, MOS1 Inv Loss = 0.002165, MOS2 Loss = 0.431666, MOS2 Inv Loss = 0.003212
+2025-04-23 18:20:01,046 - INFO - Epoch 183/400: Train Loss = 0.005392, MOS1 Loss = 0.410897, MOS1 Inv Loss = 0.002141, MOS2 Loss = 0.423324, MOS2 Inv Loss = 0.003166
+2025-04-23 18:20:01,046 - INFO - [新最佳-MOS2] Epoch 183: Scaled Loss = 0.423324, Unscaled Loss = 0.003166
+2025-04-23 18:20:13,307 - INFO - Epoch 184/400: Train Loss = 0.005366, MOS1 Loss = 0.410555, MOS1 Inv Loss = 0.002139, MOS2 Loss = 0.416073, MOS2 Inv Loss = 0.003176
+2025-04-23 18:20:13,308 - INFO - [新最佳-MOS1] Epoch 184: Scaled Loss = 0.410555, Unscaled Loss = 0.002139
+2025-04-23 18:20:25,648 - INFO - Epoch 185/400: Train Loss = 0.005382, MOS1 Loss = 0.416828, MOS1 Inv Loss = 0.002149, MOS2 Loss = 0.413004, MOS2 Inv Loss = 0.003204
+2025-04-23 18:20:37,880 - INFO - Epoch 186/400: Train Loss = 0.005388, MOS1 Loss = 0.411169, MOS1 Inv Loss = 0.002169, MOS2 Loss = 0.423165, MOS2 Inv Loss = 0.003165
+2025-04-23 18:20:37,881 - INFO - [新最佳-MOS2] Epoch 186: Scaled Loss = 0.423165, Unscaled Loss = 0.003165
+2025-04-23 18:20:50,129 - INFO - Epoch 187/400: Train Loss = 0.005369, MOS1 Loss = 0.412951, MOS1 Inv Loss = 0.002121, MOS2 Loss = 0.410123, MOS2 Inv Loss = 0.003243
+2025-04-23 18:20:50,129 - INFO - [新最佳-MOS1] Epoch 187: Scaled Loss = 0.412951, Unscaled Loss = 0.002121
+2025-04-23 18:21:02,426 - INFO - Epoch 188/400: Train Loss = 0.005391, MOS1 Loss = 0.413637, MOS1 Inv Loss = 0.002155, MOS2 Loss = 0.412658, MOS2 Inv Loss = 0.003224
+2025-04-23 18:21:14,699 - INFO - Epoch 189/400: Train Loss = 0.005413, MOS1 Loss = 0.404282, MOS1 Inv Loss = 0.002208, MOS2 Loss = 0.428930, MOS2 Inv Loss = 0.003191
+2025-04-23 18:21:26,973 - INFO - Epoch 190/400: Train Loss = 0.005338, MOS1 Loss = 0.423160, MOS1 Inv Loss = 0.002233, MOS2 Loss = 0.414338, MOS2 Inv Loss = 0.003174
+2025-04-23 18:21:39,207 - INFO - Epoch 191/400: Train Loss = 0.005371, MOS1 Loss = 0.409747, MOS1 Inv Loss = 0.002145, MOS2 Loss = 0.425730, MOS2 Inv Loss = 0.003143
+2025-04-23 18:21:39,207 - INFO - [新最佳-MOS2] Epoch 191: Scaled Loss = 0.425730, Unscaled Loss = 0.003143
+2025-04-23 18:21:51,529 - INFO - Epoch 192/400: Train Loss = 0.005412, MOS1 Loss = 0.413984, MOS1 Inv Loss = 0.002135, MOS2 Loss = 0.427086, MOS2 Inv Loss = 0.003157
+2025-04-23 18:22:03,852 - INFO - Epoch 193/400: Train Loss = 0.005371, MOS1 Loss = 0.409595, MOS1 Inv Loss = 0.002145, MOS2 Loss = 0.423285, MOS2 Inv Loss = 0.003152
+2025-04-23 18:22:16,067 - INFO - Epoch 194/400: Train Loss = 0.005393, MOS1 Loss = 0.410143, MOS1 Inv Loss = 0.002154, MOS2 Loss = 0.425663, MOS2 Inv Loss = 0.003144
+2025-04-23 18:22:28,452 - INFO - Epoch 195/400: Train Loss = 0.005426, MOS1 Loss = 0.418629, MOS1 Inv Loss = 0.002151, MOS2 Loss = 0.425083, MOS2 Inv Loss = 0.003153
+2025-04-23 18:22:40,812 - INFO - Epoch 196/400: Train Loss = 0.005363, MOS1 Loss = 0.407003, MOS1 Inv Loss = 0.002215, MOS2 Loss = 0.425656, MOS2 Inv Loss = 0.003157
+2025-04-23 18:22:52,961 - INFO - Epoch 197/400: Train Loss = 0.005368, MOS1 Loss = 0.401602, MOS1 Inv Loss = 0.002199, MOS2 Loss = 0.412872, MOS2 Inv Loss = 0.003224
+2025-04-23 18:23:05,347 - INFO - Epoch 198/400: Train Loss = 0.005356, MOS1 Loss = 0.407191, MOS1 Inv Loss = 0.002167, MOS2 Loss = 0.431586, MOS2 Inv Loss = 0.003199
+2025-04-23 18:23:17,634 - INFO - Epoch 199/400: Train Loss = 0.005374, MOS1 Loss = 0.417412, MOS1 Inv Loss = 0.002160, MOS2 Loss = 0.419981, MOS2 Inv Loss = 0.003175
+2025-04-23 18:23:29,895 - INFO - Epoch 200/400: Train Loss = 0.005350, MOS1 Loss = 0.414180, MOS1 Inv Loss = 0.002116, MOS2 Loss = 0.429061, MOS2 Inv Loss = 0.003173
+2025-04-23 18:23:29,896 - INFO - [新最佳-MOS1] Epoch 200: Scaled Loss = 0.414180, Unscaled Loss = 0.002116
+2025-04-23 18:23:42,228 - INFO - Epoch 201/400: Train Loss = 0.005341, MOS1 Loss = 0.404973, MOS1 Inv Loss = 0.002175, MOS2 Loss = 0.413499, MOS2 Inv Loss = 0.003193
+2025-04-23 18:23:54,590 - INFO - Epoch 202/400: Train Loss = 0.005318, MOS1 Loss = 0.413736, MOS1 Inv Loss = 0.002129, MOS2 Loss = 0.416740, MOS2 Inv Loss = 0.003170
+2025-04-23 18:24:06,788 - INFO - Epoch 203/400: Train Loss = 0.005346, MOS1 Loss = 0.402958, MOS1 Inv Loss = 0.002202, MOS2 Loss = 0.418304, MOS2 Inv Loss = 0.003162
+2025-04-23 18:24:19,105 - INFO - Epoch 204/400: Train Loss = 0.005394, MOS1 Loss = 0.415668, MOS1 Inv Loss = 0.002122, MOS2 Loss = 0.423891, MOS2 Inv Loss = 0.003143
+2025-04-23 18:24:19,105 - INFO - [新最佳-MOS2] Epoch 204: Scaled Loss = 0.423891, Unscaled Loss = 0.003143
+2025-04-23 18:24:31,372 - INFO - Epoch 205/400: Train Loss = 0.005355, MOS1 Loss = 0.407291, MOS1 Inv Loss = 0.002139, MOS2 Loss = 0.416593, MOS2 Inv Loss = 0.003162
+2025-04-23 18:24:43,656 - INFO - Epoch 206/400: Train Loss = 0.005337, MOS1 Loss = 0.408284, MOS1 Inv Loss = 0.002156, MOS2 Loss = 0.409143, MOS2 Inv Loss = 0.003246
+2025-04-23 18:24:55,845 - INFO - Epoch 207/400: Train Loss = 0.005361, MOS1 Loss = 0.412223, MOS1 Inv Loss = 0.002122, MOS2 Loss = 0.423202, MOS2 Inv Loss = 0.003135
+2025-04-23 18:24:55,845 - INFO - [新最佳-MOS2] Epoch 207: Scaled Loss = 0.423202, Unscaled Loss = 0.003135
+2025-04-23 18:25:08,034 - INFO - Epoch 208/400: Train Loss = 0.005335, MOS1 Loss = 0.406600, MOS1 Inv Loss = 0.002153, MOS2 Loss = 0.420649, MOS2 Inv Loss = 0.003164
+2025-04-23 18:25:20,163 - INFO - Epoch 209/400: Train Loss = 0.005350, MOS1 Loss = 0.409379, MOS1 Inv Loss = 0.002145, MOS2 Loss = 0.408222, MOS2 Inv Loss = 0.003280
+2025-04-23 18:25:32,345 - INFO - Epoch 210/400: Train Loss = 0.005326, MOS1 Loss = 0.417679, MOS1 Inv Loss = 0.002141, MOS2 Loss = 0.411313, MOS2 Inv Loss = 0.003237
+2025-04-23 18:25:44,525 - INFO - Epoch 211/400: Train Loss = 0.005339, MOS1 Loss = 0.414666, MOS1 Inv Loss = 0.002119, MOS2 Loss = 0.407813, MOS2 Inv Loss = 0.003269
+2025-04-23 18:25:56,746 - INFO - Epoch 212/400: Train Loss = 0.005320, MOS1 Loss = 0.404356, MOS1 Inv Loss = 0.002158, MOS2 Loss = 0.425398, MOS2 Inv Loss = 0.003156
+2025-04-23 18:26:09,042 - INFO - Epoch 213/400: Train Loss = 0.005284, MOS1 Loss = 0.408540, MOS1 Inv Loss = 0.002114, MOS2 Loss = 0.418354, MOS2 Inv Loss = 0.003161
+2025-04-23 18:26:09,043 - INFO - [新最佳-MOS1] Epoch 213: Scaled Loss = 0.408540, Unscaled Loss = 0.002114
+2025-04-23 18:26:21,286 - INFO - Epoch 214/400: Train Loss = 0.005333, MOS1 Loss = 0.401091, MOS1 Inv Loss = 0.002211, MOS2 Loss = 0.429555, MOS2 Inv Loss = 0.003182
+2025-04-23 18:26:33,538 - INFO - Epoch 215/400: Train Loss = 0.005381, MOS1 Loss = 0.404617, MOS1 Inv Loss = 0.002176, MOS2 Loss = 0.418244, MOS2 Inv Loss = 0.003153
+2025-04-23 18:26:45,900 - INFO - Epoch 216/400: Train Loss = 0.005331, MOS1 Loss = 0.400018, MOS1 Inv Loss = 0.002249, MOS2 Loss = 0.425107, MOS2 Inv Loss = 0.003137
+2025-04-23 18:26:58,213 - INFO - Epoch 217/400: Train Loss = 0.005314, MOS1 Loss = 0.401459, MOS1 Inv Loss = 0.002265, MOS2 Loss = 0.421467, MOS2 Inv Loss = 0.003151
+2025-04-23 18:27:10,452 - INFO - Epoch 218/400: Train Loss = 0.005362, MOS1 Loss = 0.416270, MOS1 Inv Loss = 0.002107, MOS2 Loss = 0.429068, MOS2 Inv Loss = 0.003154
+2025-04-23 18:27:10,452 - INFO - [新最佳-MOS1] Epoch 218: Scaled Loss = 0.416270, Unscaled Loss = 0.002107
+2025-04-23 18:27:22,797 - INFO - Epoch 219/400: Train Loss = 0.005506, MOS1 Loss = 0.418874, MOS1 Inv Loss = 0.002125, MOS2 Loss = 0.407444, MOS2 Inv Loss = 0.003282
+2025-04-23 18:27:35,067 - INFO - Epoch 220/400: Train Loss = 0.005324, MOS1 Loss = 0.408107, MOS1 Inv Loss = 0.002127, MOS2 Loss = 0.420194, MOS2 Inv Loss = 0.003145
+2025-04-23 18:27:47,275 - INFO - Epoch 221/400: Train Loss = 0.005274, MOS1 Loss = 0.408764, MOS1 Inv Loss = 0.002163, MOS2 Loss = 0.410372, MOS2 Inv Loss = 0.003234
+2025-04-23 18:27:59,591 - INFO - Epoch 222/400: Train Loss = 0.005305, MOS1 Loss = 0.406573, MOS1 Inv Loss = 0.002172, MOS2 Loss = 0.423500, MOS2 Inv Loss = 0.003145
+2025-04-23 18:28:11,789 - INFO - Epoch 223/400: Train Loss = 0.005293, MOS1 Loss = 0.414511, MOS1 Inv Loss = 0.002102, MOS2 Loss = 0.428566, MOS2 Inv Loss = 0.003164
+2025-04-23 18:28:11,790 - INFO - [新最佳-MOS1] Epoch 223: Scaled Loss = 0.414511, Unscaled Loss = 0.002102
+2025-04-23 18:28:24,131 - INFO - Epoch 224/400: Train Loss = 0.005353, MOS1 Loss = 0.407478, MOS1 Inv Loss = 0.002111, MOS2 Loss = 0.420761, MOS2 Inv Loss = 0.003139
+2025-04-23 18:28:36,364 - INFO - Epoch 225/400: Train Loss = 0.005346, MOS1 Loss = 0.402182, MOS1 Inv Loss = 0.002201, MOS2 Loss = 0.422709, MOS2 Inv Loss = 0.003133
+2025-04-23 18:28:36,364 - INFO - [新最佳-MOS2] Epoch 225: Scaled Loss = 0.422709, Unscaled Loss = 0.003133
+2025-04-23 18:28:48,679 - INFO - Epoch 226/400: Train Loss = 0.005291, MOS1 Loss = 0.404259, MOS1 Inv Loss = 0.002149, MOS2 Loss = 0.417821, MOS2 Inv Loss = 0.003146
+2025-04-23 18:29:00,997 - INFO - Epoch 227/400: Train Loss = 0.005371, MOS1 Loss = 0.409804, MOS1 Inv Loss = 0.002123, MOS2 Loss = 0.422887, MOS2 Inv Loss = 0.003141
+2025-04-23 18:29:13,104 - INFO - Epoch 228/400: Train Loss = 0.005274, MOS1 Loss = 0.400455, MOS1 Inv Loss = 0.002181, MOS2 Loss = 0.418912, MOS2 Inv Loss = 0.003159
+2025-04-23 18:29:25,442 - INFO - Epoch 229/400: Train Loss = 0.005258, MOS1 Loss = 0.408970, MOS1 Inv Loss = 0.002147, MOS2 Loss = 0.412871, MOS2 Inv Loss = 0.003189
+2025-04-23 18:29:37,732 - INFO - Epoch 230/400: Train Loss = 0.005265, MOS1 Loss = 0.410200, MOS1 Inv Loss = 0.002140, MOS2 Loss = 0.411206, MOS2 Inv Loss = 0.003229
+2025-04-23 18:29:50,122 - INFO - Epoch 231/400: Train Loss = 0.005254, MOS1 Loss = 0.415137, MOS1 Inv Loss = 0.002104, MOS2 Loss = 0.432810, MOS2 Inv Loss = 0.003200
+2025-04-23 18:30:02,478 - INFO - Epoch 232/400: Train Loss = 0.005305, MOS1 Loss = 0.407804, MOS1 Inv Loss = 0.002114, MOS2 Loss = 0.416004, MOS2 Inv Loss = 0.003165
+2025-04-23 18:30:14,783 - INFO - Epoch 233/400: Train Loss = 0.005280, MOS1 Loss = 0.403225, MOS1 Inv Loss = 0.002181, MOS2 Loss = 0.424495, MOS2 Inv Loss = 0.003160
+2025-04-23 18:30:27,077 - INFO - Epoch 234/400: Train Loss = 0.005262, MOS1 Loss = 0.413330, MOS1 Inv Loss = 0.002110, MOS2 Loss = 0.424643, MOS2 Inv Loss = 0.003140
+2025-04-23 18:30:39,366 - INFO - Epoch 235/400: Train Loss = 0.005332, MOS1 Loss = 0.415010, MOS1 Inv Loss = 0.002116, MOS2 Loss = 0.417143, MOS2 Inv Loss = 0.003150
+2025-04-23 18:30:51,740 - INFO - Epoch 236/400: Train Loss = 0.005282, MOS1 Loss = 0.415510, MOS1 Inv Loss = 0.002108, MOS2 Loss = 0.434698, MOS2 Inv Loss = 0.003247
+2025-04-23 18:31:03,985 - INFO - Epoch 237/400: Train Loss = 0.005267, MOS1 Loss = 0.412869, MOS1 Inv Loss = 0.002099, MOS2 Loss = 0.420028, MOS2 Inv Loss = 0.003149
+2025-04-23 18:31:03,986 - INFO - [新最佳-MOS1] Epoch 237: Scaled Loss = 0.412869, Unscaled Loss = 0.002099
+2025-04-23 18:31:16,285 - INFO - Epoch 238/400: Train Loss = 0.005274, MOS1 Loss = 0.413950, MOS1 Inv Loss = 0.002096, MOS2 Loss = 0.423575, MOS2 Inv Loss = 0.003163
+2025-04-23 18:31:16,286 - INFO - [新最佳-MOS1] Epoch 238: Scaled Loss = 0.413950, Unscaled Loss = 0.002096
+2025-04-23 18:31:28,609 - INFO - Epoch 239/400: Train Loss = 0.005254, MOS1 Loss = 0.409142, MOS1 Inv Loss = 0.002120, MOS2 Loss = 0.420614, MOS2 Inv Loss = 0.003135
+2025-04-23 18:31:40,860 - INFO - Epoch 240/400: Train Loss = 0.005246, MOS1 Loss = 0.405587, MOS1 Inv Loss = 0.002128, MOS2 Loss = 0.421000, MOS2 Inv Loss = 0.003133
+2025-04-23 18:31:53,178 - INFO - Epoch 241/400: Train Loss = 0.005438, MOS1 Loss = 0.408261, MOS1 Inv Loss = 0.002169, MOS2 Loss = 0.415376, MOS2 Inv Loss = 0.003169
+2025-04-23 18:32:05,400 - INFO - Epoch 242/400: Train Loss = 0.005246, MOS1 Loss = 0.410529, MOS1 Inv Loss = 0.002103, MOS2 Loss = 0.417938, MOS2 Inv Loss = 0.003141
+2025-04-23 18:32:17,606 - INFO - Epoch 243/400: Train Loss = 0.005243, MOS1 Loss = 0.408062, MOS1 Inv Loss = 0.002109, MOS2 Loss = 0.432349, MOS2 Inv Loss = 0.003184
+2025-04-23 18:32:29,856 - INFO - Epoch 244/400: Train Loss = 0.005446, MOS1 Loss = 0.410357, MOS1 Inv Loss = 0.002110, MOS2 Loss = 0.421503, MOS2 Inv Loss = 0.003139
+2025-04-23 18:32:42,147 - INFO - Epoch 245/400: Train Loss = 0.005246, MOS1 Loss = 0.410563, MOS1 Inv Loss = 0.002101, MOS2 Loss = 0.422169, MOS2 Inv Loss = 0.003143
+2025-04-23 18:32:54,514 - INFO - Epoch 246/400: Train Loss = 0.005301, MOS1 Loss = 0.402739, MOS1 Inv Loss = 0.002154, MOS2 Loss = 0.414024, MOS2 Inv Loss = 0.003163
+2025-04-23 18:33:06,767 - INFO - Epoch 247/400: Train Loss = 0.005244, MOS1 Loss = 0.410932, MOS1 Inv Loss = 0.002099, MOS2 Loss = 0.424096, MOS2 Inv Loss = 0.003132
+2025-04-23 18:33:06,768 - INFO - [新最佳-MOS2] Epoch 247: Scaled Loss = 0.424096, Unscaled Loss = 0.003132
+2025-04-23 18:33:19,059 - INFO - Epoch 248/400: Train Loss = 0.005300, MOS1 Loss = 0.411528, MOS1 Inv Loss = 0.002085, MOS2 Loss = 0.422625, MOS2 Inv Loss = 0.003141
+2025-04-23 18:33:19,060 - INFO - [新最佳-MOS1] Epoch 248: Scaled Loss = 0.411528, Unscaled Loss = 0.002085
+2025-04-23 18:33:31,303 - INFO - Epoch 249/400: Train Loss = 0.005221, MOS1 Loss = 0.411756, MOS1 Inv Loss = 0.002086, MOS2 Loss = 0.418947, MOS2 Inv Loss = 0.003153
+2025-04-23 18:33:43,564 - INFO - Epoch 250/400: Train Loss = 0.005225, MOS1 Loss = 0.419762, MOS1 Inv Loss = 0.002134, MOS2 Loss = 0.400999, MOS2 Inv Loss = 0.003379
+2025-04-23 18:33:55,806 - INFO - Epoch 251/400: Train Loss = 0.005278, MOS1 Loss = 0.406662, MOS1 Inv Loss = 0.002145, MOS2 Loss = 0.417765, MOS2 Inv Loss = 0.003150
+2025-04-23 18:34:08,095 - INFO - Epoch 252/400: Train Loss = 0.005250, MOS1 Loss = 0.407141, MOS1 Inv Loss = 0.002122, MOS2 Loss = 0.424782, MOS2 Inv Loss = 0.003133
+2025-04-23 18:34:20,409 - INFO - Epoch 253/400: Train Loss = 0.005244, MOS1 Loss = 0.414873, MOS1 Inv Loss = 0.002084, MOS2 Loss = 0.423085, MOS2 Inv Loss = 0.003126
+2025-04-23 18:34:20,409 - INFO - [新最佳-MOS1] Epoch 253: Scaled Loss = 0.414873, Unscaled Loss = 0.002084
+2025-04-23 18:34:20,410 - INFO - [新最佳-MOS2] Epoch 253: Scaled Loss = 0.423085, Unscaled Loss = 0.003126
+2025-04-23 18:34:32,547 - INFO - Epoch 254/400: Train Loss = 0.005289, MOS1 Loss = 0.405514, MOS1 Inv Loss = 0.002162, MOS2 Loss = 0.431432, MOS2 Inv Loss = 0.003211
+2025-04-23 18:34:44,745 - INFO - Epoch 255/400: Train Loss = 0.005267, MOS1 Loss = 0.408004, MOS1 Inv Loss = 0.002103, MOS2 Loss = 0.424166, MOS2 Inv Loss = 0.003126
+2025-04-23 18:34:44,745 - INFO - [新最佳-MOS2] Epoch 255: Scaled Loss = 0.424166, Unscaled Loss = 0.003126
+2025-04-23 18:34:57,109 - INFO - Epoch 256/400: Train Loss = 0.005239, MOS1 Loss = 0.411965, MOS1 Inv Loss = 0.002081, MOS2 Loss = 0.429112, MOS2 Inv Loss = 0.003167
+2025-04-23 18:34:57,109 - INFO - [新最佳-MOS1] Epoch 256: Scaled Loss = 0.411965, Unscaled Loss = 0.002081
+2025-04-23 18:35:09,266 - INFO - Epoch 257/400: Train Loss = 0.005258, MOS1 Loss = 0.410342, MOS1 Inv Loss = 0.002080, MOS2 Loss = 0.415193, MOS2 Inv Loss = 0.003187
+2025-04-23 18:35:09,266 - INFO - [新最佳-MOS1] Epoch 257: Scaled Loss = 0.410342, Unscaled Loss = 0.002080
+2025-04-23 18:35:21,579 - INFO - Epoch 258/400: Train Loss = 0.005441, MOS1 Loss = 0.411299, MOS1 Inv Loss = 0.002110, MOS2 Loss = 0.420065, MOS2 Inv Loss = 0.003169
+2025-04-23 18:35:33,780 - INFO - Epoch 259/400: Train Loss = 0.005262, MOS1 Loss = 0.412379, MOS1 Inv Loss = 0.002076, MOS2 Loss = 0.421790, MOS2 Inv Loss = 0.003143
+2025-04-23 18:35:33,781 - INFO - [新最佳-MOS1] Epoch 259: Scaled Loss = 0.412379, Unscaled Loss = 0.002076
+2025-04-23 18:35:46,083 - INFO - Epoch 260/400: Train Loss = 0.005248, MOS1 Loss = 0.409298, MOS1 Inv Loss = 0.002102, MOS2 Loss = 0.423901, MOS2 Inv Loss = 0.003137
+2025-04-23 18:35:58,361 - INFO - Epoch 261/400: Train Loss = 0.005212, MOS1 Loss = 0.405627, MOS1 Inv Loss = 0.002140, MOS2 Loss = 0.412627, MOS2 Inv Loss = 0.003208
+2025-04-23 18:36:10,646 - INFO - Epoch 262/400: Train Loss = 0.005215, MOS1 Loss = 0.422679, MOS1 Inv Loss = 0.002149, MOS2 Loss = 0.423552, MOS2 Inv Loss = 0.003147
+2025-04-23 18:36:22,750 - INFO - Epoch 263/400: Train Loss = 0.005210, MOS1 Loss = 0.408070, MOS1 Inv Loss = 0.002100, MOS2 Loss = 0.414504, MOS2 Inv Loss = 0.003174
+2025-04-23 18:36:35,054 - INFO - Epoch 264/400: Train Loss = 0.005247, MOS1 Loss = 0.412184, MOS1 Inv Loss = 0.002078, MOS2 Loss = 0.431360, MOS2 Inv Loss = 0.003178
+2025-04-23 18:36:47,392 - INFO - Epoch 265/400: Train Loss = 0.005255, MOS1 Loss = 0.405387, MOS1 Inv Loss = 0.002118, MOS2 Loss = 0.441060, MOS2 Inv Loss = 0.003331
+2025-04-23 18:36:59,723 - INFO - Epoch 266/400: Train Loss = 0.005198, MOS1 Loss = 0.409960, MOS1 Inv Loss = 0.002102, MOS2 Loss = 0.418046, MOS2 Inv Loss = 0.003142
+2025-04-23 18:37:12,039 - INFO - Epoch 267/400: Train Loss = 0.005194, MOS1 Loss = 0.405365, MOS1 Inv Loss = 0.002124, MOS2 Loss = 0.429212, MOS2 Inv Loss = 0.003155
+2025-04-23 18:37:24,369 - INFO - Epoch 268/400: Train Loss = 0.005277, MOS1 Loss = 0.416521, MOS1 Inv Loss = 0.002086, MOS2 Loss = 0.423408, MOS2 Inv Loss = 0.003130
+2025-04-23 18:37:36,656 - INFO - Epoch 269/400: Train Loss = 0.005243, MOS1 Loss = 0.411989, MOS1 Inv Loss = 0.002084, MOS2 Loss = 0.423461, MOS2 Inv Loss = 0.003141
+2025-04-23 18:37:48,850 - INFO - Epoch 270/400: Train Loss = 0.005215, MOS1 Loss = 0.416065, MOS1 Inv Loss = 0.002073, MOS2 Loss = 0.424392, MOS2 Inv Loss = 0.003146
+2025-04-23 18:37:48,851 - INFO - [新最佳-MOS1] Epoch 270: Scaled Loss = 0.416065, Unscaled Loss = 0.002073
+2025-04-23 18:38:01,097 - INFO - Epoch 271/400: Train Loss = 0.005222, MOS1 Loss = 0.417236, MOS1 Inv Loss = 0.002084, MOS2 Loss = 0.428112, MOS2 Inv Loss = 0.003146
+2025-04-23 18:38:13,293 - INFO - Epoch 272/400: Train Loss = 0.005196, MOS1 Loss = 0.406373, MOS1 Inv Loss = 0.002105, MOS2 Loss = 0.414295, MOS2 Inv Loss = 0.003182
+2025-04-23 18:38:25,453 - INFO - Epoch 273/400: Train Loss = 0.005178, MOS1 Loss = 0.412768, MOS1 Inv Loss = 0.002094, MOS2 Loss = 0.418449, MOS2 Inv Loss = 0.003135
+2025-04-23 18:38:37,756 - INFO - Epoch 274/400: Train Loss = 0.005247, MOS1 Loss = 0.419907, MOS1 Inv Loss = 0.002101, MOS2 Loss = 0.420479, MOS2 Inv Loss = 0.003133
+2025-04-23 18:38:50,080 - INFO - Epoch 275/400: Train Loss = 0.005296, MOS1 Loss = 0.407827, MOS1 Inv Loss = 0.002104, MOS2 Loss = 0.420035, MOS2 Inv Loss = 0.003140
+2025-04-23 18:39:02,262 - INFO - Epoch 276/400: Train Loss = 0.005269, MOS1 Loss = 0.404531, MOS1 Inv Loss = 0.002118, MOS2 Loss = 0.428155, MOS2 Inv Loss = 0.003143
+2025-04-23 18:39:14,478 - INFO - Epoch 277/400: Train Loss = 0.005236, MOS1 Loss = 0.414344, MOS1 Inv Loss = 0.002075, MOS2 Loss = 0.429051, MOS2 Inv Loss = 0.003154
+2025-04-23 18:39:26,796 - INFO - Epoch 278/400: Train Loss = 0.005205, MOS1 Loss = 0.415399, MOS1 Inv Loss = 0.002064, MOS2 Loss = 0.423624, MOS2 Inv Loss = 0.003148
+2025-04-23 18:39:26,796 - INFO - [新最佳-MOS1] Epoch 278: Scaled Loss = 0.415399, Unscaled Loss = 0.002064
+2025-04-23 18:39:39,085 - INFO - Epoch 279/400: Train Loss = 0.005301, MOS1 Loss = 0.411090, MOS1 Inv Loss = 0.002083, MOS2 Loss = 0.421836, MOS2 Inv Loss = 0.003131
+2025-04-23 18:39:51,337 - INFO - Epoch 280/400: Train Loss = 0.005265, MOS1 Loss = 0.408080, MOS1 Inv Loss = 0.002082, MOS2 Loss = 0.424818, MOS2 Inv Loss = 0.003150
+2025-04-23 18:40:03,632 - INFO - Epoch 281/400: Train Loss = 0.005238, MOS1 Loss = 0.404413, MOS1 Inv Loss = 0.002115, MOS2 Loss = 0.430027, MOS2 Inv Loss = 0.003172
+2025-04-23 18:40:15,995 - INFO - Epoch 282/400: Train Loss = 0.005223, MOS1 Loss = 0.413208, MOS1 Inv Loss = 0.002071, MOS2 Loss = 0.446313, MOS2 Inv Loss = 0.003462
+2025-04-23 18:40:28,252 - INFO - Epoch 283/400: Train Loss = 0.005205, MOS1 Loss = 0.406573, MOS1 Inv Loss = 0.002079, MOS2 Loss = 0.423129, MOS2 Inv Loss = 0.003164
+2025-04-23 18:40:40,563 - INFO - Epoch 284/400: Train Loss = 0.005228, MOS1 Loss = 0.408746, MOS1 Inv Loss = 0.002089, MOS2 Loss = 0.427317, MOS2 Inv Loss = 0.003152
+2025-04-23 18:40:52,765 - INFO - Epoch 285/400: Train Loss = 0.005212, MOS1 Loss = 0.401184, MOS1 Inv Loss = 0.002159, MOS2 Loss = 0.420426, MOS2 Inv Loss = 0.003150
+2025-04-23 18:41:04,994 - INFO - Epoch 286/400: Train Loss = 0.005203, MOS1 Loss = 0.412733, MOS1 Inv Loss = 0.002086, MOS2 Loss = 0.418431, MOS2 Inv Loss = 0.003147
+2025-04-23 18:41:17,196 - INFO - Epoch 287/400: Train Loss = 0.005239, MOS1 Loss = 0.415133, MOS1 Inv Loss = 0.002076, MOS2 Loss = 0.422897, MOS2 Inv Loss = 0.003154
+2025-04-23 18:41:29,326 - INFO - Epoch 288/400: Train Loss = 0.005178, MOS1 Loss = 0.406543, MOS1 Inv Loss = 0.002097, MOS2 Loss = 0.417425, MOS2 Inv Loss = 0.003149
+2025-04-23 18:41:41,549 - INFO - Epoch 289/400: Train Loss = 0.005195, MOS1 Loss = 0.418257, MOS1 Inv Loss = 0.002078, MOS2 Loss = 0.425716, MOS2 Inv Loss = 0.003145
+2025-04-23 18:41:53,789 - INFO - Epoch 290/400: Train Loss = 0.005206, MOS1 Loss = 0.419003, MOS1 Inv Loss = 0.002091, MOS2 Loss = 0.427085, MOS2 Inv Loss = 0.003153
+2025-04-23 18:42:05,988 - INFO - Epoch 291/400: Train Loss = 0.005207, MOS1 Loss = 0.410936, MOS1 Inv Loss = 0.002092, MOS2 Loss = 0.426374, MOS2 Inv Loss = 0.003133
+2025-04-23 18:42:18,305 - INFO - Epoch 292/400: Train Loss = 0.005181, MOS1 Loss = 0.406372, MOS1 Inv Loss = 0.002086, MOS2 Loss = 0.415721, MOS2 Inv Loss = 0.003167
+2025-04-23 18:42:30,467 - INFO - Epoch 293/400: Train Loss = 0.005176, MOS1 Loss = 0.413009, MOS1 Inv Loss = 0.002102, MOS2 Loss = 0.429463, MOS2 Inv Loss = 0.003149
+2025-04-23 18:42:42,635 - INFO - Epoch 294/400: Train Loss = 0.005175, MOS1 Loss = 0.407857, MOS1 Inv Loss = 0.002080, MOS2 Loss = 0.412076, MOS2 Inv Loss = 0.003226
+2025-04-23 18:42:54,884 - INFO - Epoch 295/400: Train Loss = 0.005187, MOS1 Loss = 0.403033, MOS1 Inv Loss = 0.002127, MOS2 Loss = 0.413201, MOS2 Inv Loss = 0.003183
+2025-04-23 18:43:07,100 - INFO - Epoch 296/400: Train Loss = 0.005228, MOS1 Loss = 0.410231, MOS1 Inv Loss = 0.002063, MOS2 Loss = 0.424648, MOS2 Inv Loss = 0.003159
+2025-04-23 18:43:07,101 - INFO - [新最佳-MOS1] Epoch 296: Scaled Loss = 0.410231, Unscaled Loss = 0.002063
+2025-04-23 18:43:19,206 - INFO - Epoch 297/400: Train Loss = 0.005189, MOS1 Loss = 0.409417, MOS1 Inv Loss = 0.002077, MOS2 Loss = 0.425160, MOS2 Inv Loss = 0.003132
+2025-04-23 18:43:31,490 - INFO - Epoch 298/400: Train Loss = 0.005190, MOS1 Loss = 0.416338, MOS1 Inv Loss = 0.002100, MOS2 Loss = 0.426381, MOS2 Inv Loss = 0.003156
+2025-04-23 18:43:43,819 - INFO - Epoch 299/400: Train Loss = 0.005186, MOS1 Loss = 0.404909, MOS1 Inv Loss = 0.002106, MOS2 Loss = 0.415493, MOS2 Inv Loss = 0.003164
+2025-04-23 18:43:56,126 - INFO - Epoch 300/400: Train Loss = 0.005193, MOS1 Loss = 0.408308, MOS1 Inv Loss = 0.002099, MOS2 Loss = 0.420625, MOS2 Inv Loss = 0.003144
+2025-04-23 18:44:08,453 - INFO - Epoch 301/400: Train Loss = 0.005177, MOS1 Loss = 0.421060, MOS1 Inv Loss = 0.002111, MOS2 Loss = 0.433116, MOS2 Inv Loss = 0.003193
+2025-04-23 18:44:20,730 - INFO - Epoch 302/400: Train Loss = 0.005181, MOS1 Loss = 0.410154, MOS1 Inv Loss = 0.002063, MOS2 Loss = 0.419631, MOS2 Inv Loss = 0.003137
+2025-04-23 18:44:32,959 - INFO - Epoch 303/400: Train Loss = 0.005165, MOS1 Loss = 0.405906, MOS1 Inv Loss = 0.002110, MOS2 Loss = 0.422101, MOS2 Inv Loss = 0.003150
+2025-04-23 18:44:45,241 - INFO - Epoch 304/400: Train Loss = 0.005154, MOS1 Loss = 0.411874, MOS1 Inv Loss = 0.002072, MOS2 Loss = 0.411083, MOS2 Inv Loss = 0.003237
+2025-04-23 18:44:57,444 - INFO - Epoch 305/400: Train Loss = 0.005201, MOS1 Loss = 0.411811, MOS1 Inv Loss = 0.002067, MOS2 Loss = 0.421334, MOS2 Inv Loss = 0.003158
+2025-04-23 18:45:09,722 - INFO - Epoch 306/400: Train Loss = 0.005186, MOS1 Loss = 0.410372, MOS1 Inv Loss = 0.002079, MOS2 Loss = 0.439843, MOS2 Inv Loss = 0.003325
+2025-04-23 18:45:22,017 - INFO - Epoch 307/400: Train Loss = 0.005179, MOS1 Loss = 0.415203, MOS1 Inv Loss = 0.002065, MOS2 Loss = 0.428392, MOS2 Inv Loss = 0.003172
+2025-04-23 18:45:34,249 - INFO - Epoch 308/400: Train Loss = 0.005200, MOS1 Loss = 0.408774, MOS1 Inv Loss = 0.002085, MOS2 Loss = 0.440484, MOS2 Inv Loss = 0.003360
+2025-04-23 18:45:46,458 - INFO - Epoch 309/400: Train Loss = 0.005188, MOS1 Loss = 0.407629, MOS1 Inv Loss = 0.002094, MOS2 Loss = 0.428477, MOS2 Inv Loss = 0.003167
+2025-04-23 18:45:58,773 - INFO - Epoch 310/400: Train Loss = 0.005183, MOS1 Loss = 0.409115, MOS1 Inv Loss = 0.002066, MOS2 Loss = 0.421982, MOS2 Inv Loss = 0.003140
+2025-04-23 18:46:10,870 - INFO - Epoch 311/400: Train Loss = 0.005139, MOS1 Loss = 0.409513, MOS1 Inv Loss = 0.002073, MOS2 Loss = 0.423322, MOS2 Inv Loss = 0.003138
+2025-04-23 18:46:23,163 - INFO - Epoch 312/400: Train Loss = 0.005148, MOS1 Loss = 0.400192, MOS1 Inv Loss = 0.002171, MOS2 Loss = 0.421810, MOS2 Inv Loss = 0.003174
+2025-04-23 18:46:35,356 - INFO - Epoch 313/400: Train Loss = 0.005158, MOS1 Loss = 0.408927, MOS1 Inv Loss = 0.002065, MOS2 Loss = 0.419065, MOS2 Inv Loss = 0.003162
+2025-04-23 18:46:47,622 - INFO - Epoch 314/400: Train Loss = 0.005129, MOS1 Loss = 0.401491, MOS1 Inv Loss = 0.002157, MOS2 Loss = 0.431255, MOS2 Inv Loss = 0.003206
+2025-04-23 18:46:59,882 - INFO - Epoch 315/400: Train Loss = 0.005193, MOS1 Loss = 0.414645, MOS1 Inv Loss = 0.002064, MOS2 Loss = 0.424376, MOS2 Inv Loss = 0.003157
+2025-04-23 18:47:12,187 - INFO - Epoch 316/400: Train Loss = 0.005142, MOS1 Loss = 0.404999, MOS1 Inv Loss = 0.002097, MOS2 Loss = 0.425317, MOS2 Inv Loss = 0.003150
+2025-04-23 18:47:24,341 - INFO - Epoch 317/400: Train Loss = 0.005134, MOS1 Loss = 0.415456, MOS1 Inv Loss = 0.002077, MOS2 Loss = 0.417260, MOS2 Inv Loss = 0.003183
+2025-04-23 18:47:36,705 - INFO - Epoch 318/400: Train Loss = 0.005126, MOS1 Loss = 0.412261, MOS1 Inv Loss = 0.002073, MOS2 Loss = 0.420286, MOS2 Inv Loss = 0.003163
+2025-04-23 18:47:48,884 - INFO - Epoch 319/400: Train Loss = 0.005147, MOS1 Loss = 0.409351, MOS1 Inv Loss = 0.002057, MOS2 Loss = 0.435962, MOS2 Inv Loss = 0.003236
+2025-04-23 18:47:48,884 - INFO - [新最佳-MOS1] Epoch 319: Scaled Loss = 0.409351, Unscaled Loss = 0.002057
+2025-04-23 18:48:01,356 - INFO - Epoch 320/400: Train Loss = 0.005177, MOS1 Loss = 0.408127, MOS1 Inv Loss = 0.002073, MOS2 Loss = 0.429982, MOS2 Inv Loss = 0.003244
+2025-04-23 18:48:13,585 - INFO - Epoch 321/400: Train Loss = 0.005213, MOS1 Loss = 0.410197, MOS1 Inv Loss = 0.002061, MOS2 Loss = 0.418614, MOS2 Inv Loss = 0.003188
+2025-04-23 18:48:25,906 - INFO - Epoch 322/400: Train Loss = 0.005164, MOS1 Loss = 0.413764, MOS1 Inv Loss = 0.002061, MOS2 Loss = 0.422998, MOS2 Inv Loss = 0.003157
+2025-04-23 18:48:38,698 - INFO - Epoch 323/400: Train Loss = 0.005145, MOS1 Loss = 0.409656, MOS1 Inv Loss = 0.002121, MOS2 Loss = 0.416766, MOS2 Inv Loss = 0.003182
+2025-04-23 18:48:51,367 - INFO - Epoch 324/400: Train Loss = 0.005180, MOS1 Loss = 0.397196, MOS1 Inv Loss = 0.002196, MOS2 Loss = 0.429119, MOS2 Inv Loss = 0.003196
+2025-04-23 18:49:04,152 - INFO - Epoch 325/400: Train Loss = 0.005141, MOS1 Loss = 0.407244, MOS1 Inv Loss = 0.002075, MOS2 Loss = 0.424678, MOS2 Inv Loss = 0.003153
+2025-04-23 18:49:17,162 - INFO - Epoch 326/400: Train Loss = 0.005113, MOS1 Loss = 0.400925, MOS1 Inv Loss = 0.002136, MOS2 Loss = 0.443297, MOS2 Inv Loss = 0.003401
+2025-04-23 18:49:29,391 - INFO - Epoch 327/400: Train Loss = 0.005177, MOS1 Loss = 0.413579, MOS1 Inv Loss = 0.002065, MOS2 Loss = 0.426100, MOS2 Inv Loss = 0.003180
+2025-04-23 18:49:41,646 - INFO - Epoch 328/400: Train Loss = 0.005148, MOS1 Loss = 0.416975, MOS1 Inv Loss = 0.002065, MOS2 Loss = 0.414438, MOS2 Inv Loss = 0.003182
+2025-04-23 18:49:54,646 - INFO - Epoch 329/400: Train Loss = 0.005145, MOS1 Loss = 0.411320, MOS1 Inv Loss = 0.002060, MOS2 Loss = 0.433981, MOS2 Inv Loss = 0.003231
+2025-04-23 18:50:07,141 - INFO - Epoch 330/400: Train Loss = 0.005109, MOS1 Loss = 0.408089, MOS1 Inv Loss = 0.002087, MOS2 Loss = 0.427347, MOS2 Inv Loss = 0.003188
+2025-04-23 18:50:19,543 - INFO - Epoch 331/400: Train Loss = 0.005116, MOS1 Loss = 0.411377, MOS1 Inv Loss = 0.002065, MOS2 Loss = 0.418946, MOS2 Inv Loss = 0.003168
+2025-04-23 18:50:32,059 - INFO - Epoch 332/400: Train Loss = 0.005107, MOS1 Loss = 0.417922, MOS1 Inv Loss = 0.002083, MOS2 Loss = 0.418155, MOS2 Inv Loss = 0.003155
+2025-04-23 18:50:44,429 - INFO - Epoch 333/400: Train Loss = 0.005138, MOS1 Loss = 0.405250, MOS1 Inv Loss = 0.002107, MOS2 Loss = 0.421658, MOS2 Inv Loss = 0.003155
+2025-04-23 18:50:56,913 - INFO - Epoch 334/400: Train Loss = 0.005125, MOS1 Loss = 0.415862, MOS1 Inv Loss = 0.002074, MOS2 Loss = 0.416830, MOS2 Inv Loss = 0.003170
+2025-04-23 18:51:10,312 - INFO - Epoch 335/400: Train Loss = 0.005122, MOS1 Loss = 0.403091, MOS1 Inv Loss = 0.002138, MOS2 Loss = 0.422226, MOS2 Inv Loss = 0.003163
+2025-04-23 18:51:23,197 - INFO - Epoch 336/400: Train Loss = 0.005112, MOS1 Loss = 0.405084, MOS1 Inv Loss = 0.002096, MOS2 Loss = 0.423392, MOS2 Inv Loss = 0.003167
+2025-04-23 18:51:35,529 - INFO - Epoch 337/400: Train Loss = 0.005103, MOS1 Loss = 0.409990, MOS1 Inv Loss = 0.002069, MOS2 Loss = 0.419865, MOS2 Inv Loss = 0.003167
+2025-04-23 18:51:47,753 - INFO - Epoch 338/400: Train Loss = 0.005120, MOS1 Loss = 0.406080, MOS1 Inv Loss = 0.002114, MOS2 Loss = 0.417749, MOS2 Inv Loss = 0.003222
+2025-04-23 18:52:00,372 - INFO - Epoch 339/400: Train Loss = 0.005138, MOS1 Loss = 0.403588, MOS1 Inv Loss = 0.002121, MOS2 Loss = 0.421388, MOS2 Inv Loss = 0.003181
+2025-04-23 18:52:12,928 - INFO - Epoch 340/400: Train Loss = 0.005145, MOS1 Loss = 0.400498, MOS1 Inv Loss = 0.002181, MOS2 Loss = 0.415581, MOS2 Inv Loss = 0.003172
+2025-04-23 18:52:25,097 - INFO - Epoch 341/400: Train Loss = 0.005098, MOS1 Loss = 0.413101, MOS1 Inv Loss = 0.002076, MOS2 Loss = 0.420400, MOS2 Inv Loss = 0.003171
+2025-04-23 18:52:37,147 - INFO - Epoch 342/400: Train Loss = 0.005107, MOS1 Loss = 0.407079, MOS1 Inv Loss = 0.002068, MOS2 Loss = 0.420375, MOS2 Inv Loss = 0.003162
+2025-04-23 18:52:49,567 - INFO - Epoch 343/400: Train Loss = 0.005091, MOS1 Loss = 0.410875, MOS1 Inv Loss = 0.002061, MOS2 Loss = 0.427451, MOS2 Inv Loss = 0.003176
+2025-04-23 18:53:01,961 - INFO - Epoch 344/400: Train Loss = 0.005136, MOS1 Loss = 0.401109, MOS1 Inv Loss = 0.002148, MOS2 Loss = 0.430349, MOS2 Inv Loss = 0.003226
+2025-04-23 18:53:14,303 - INFO - Epoch 345/400: Train Loss = 0.005103, MOS1 Loss = 0.406984, MOS1 Inv Loss = 0.002074, MOS2 Loss = 0.422754, MOS2 Inv Loss = 0.003201
+2025-04-23 18:53:26,880 - INFO - Epoch 346/400: Train Loss = 0.005127, MOS1 Loss = 0.404617, MOS1 Inv Loss = 0.002118, MOS2 Loss = 0.417135, MOS2 Inv Loss = 0.003191
+2025-04-23 18:53:39,548 - INFO - Epoch 347/400: Train Loss = 0.005153, MOS1 Loss = 0.416999, MOS1 Inv Loss = 0.002058, MOS2 Loss = 0.430235, MOS2 Inv Loss = 0.003224
+2025-04-23 18:53:52,875 - INFO - Epoch 348/400: Train Loss = 0.005116, MOS1 Loss = 0.401612, MOS1 Inv Loss = 0.002181, MOS2 Loss = 0.414300, MOS2 Inv Loss = 0.003209
+2025-04-23 18:54:06,350 - INFO - Epoch 349/400: Train Loss = 0.005146, MOS1 Loss = 0.408197, MOS1 Inv Loss = 0.002059, MOS2 Loss = 0.421716, MOS2 Inv Loss = 0.003162
+2025-04-23 18:54:19,466 - INFO - Epoch 350/400: Train Loss = 0.005124, MOS1 Loss = 0.408224, MOS1 Inv Loss = 0.002056, MOS2 Loss = 0.421854, MOS2 Inv Loss = 0.003159
+2025-04-23 18:54:19,467 - INFO - [新最佳-MOS1] Epoch 350: Scaled Loss = 0.408224, Unscaled Loss = 0.002056
+2025-04-23 18:54:32,561 - INFO - Epoch 351/400: Train Loss = 0.005106, MOS1 Loss = 0.403085, MOS1 Inv Loss = 0.002169, MOS2 Loss = 0.428876, MOS2 Inv Loss = 0.003210
+2025-04-23 18:54:45,559 - INFO - Epoch 352/400: Train Loss = 0.005110, MOS1 Loss = 0.409665, MOS1 Inv Loss = 0.002074, MOS2 Loss = 0.415415, MOS2 Inv Loss = 0.003189
+2025-04-23 18:54:54,436 - INFO - Epoch 353/400: Train Loss = 0.005103, MOS1 Loss = 0.415775, MOS1 Inv Loss = 0.002081, MOS2 Loss = 0.419962, MOS2 Inv Loss = 0.003167
+2025-04-23 18:55:02,923 - INFO - Epoch 354/400: Train Loss = 0.005139, MOS1 Loss = 0.412487, MOS1 Inv Loss = 0.002047, MOS2 Loss = 0.428839, MOS2 Inv Loss = 0.003209
+2025-04-23 18:55:02,923 - INFO - [新最佳-MOS1] Epoch 354: Scaled Loss = 0.412487, Unscaled Loss = 0.002047
+2025-04-23 18:55:11,546 - INFO - Epoch 355/400: Train Loss = 0.005084, MOS1 Loss = 0.406500, MOS1 Inv Loss = 0.002097, MOS2 Loss = 0.434239, MOS2 Inv Loss = 0.003245
+2025-04-23 18:55:19,865 - INFO - Epoch 356/400: Train Loss = 0.005090, MOS1 Loss = 0.400903, MOS1 Inv Loss = 0.002154, MOS2 Loss = 0.424249, MOS2 Inv Loss = 0.003189
+2025-04-23 18:55:28,498 - INFO - Epoch 357/400: Train Loss = 0.005136, MOS1 Loss = 0.405211, MOS1 Inv Loss = 0.002080, MOS2 Loss = 0.434518, MOS2 Inv Loss = 0.003272
+2025-04-23 18:55:36,825 - INFO - Epoch 358/400: Train Loss = 0.005088, MOS1 Loss = 0.403168, MOS1 Inv Loss = 0.002088, MOS2 Loss = 0.419427, MOS2 Inv Loss = 0.003167
+2025-04-23 18:55:45,047 - INFO - Epoch 359/400: Train Loss = 0.005119, MOS1 Loss = 0.418256, MOS1 Inv Loss = 0.002051, MOS2 Loss = 0.432331, MOS2 Inv Loss = 0.003250
+2025-04-23 18:55:53,190 - INFO - Epoch 360/400: Train Loss = 0.005109, MOS1 Loss = 0.409841, MOS1 Inv Loss = 0.002046, MOS2 Loss = 0.421242, MOS2 Inv Loss = 0.003185
+2025-04-23 18:55:53,190 - INFO - [新最佳-MOS1] Epoch 360: Scaled Loss = 0.409841, Unscaled Loss = 0.002046
+2025-04-23 18:56:01,352 - INFO - Epoch 361/400: Train Loss = 0.005076, MOS1 Loss = 0.408307, MOS1 Inv Loss = 0.002043, MOS2 Loss = 0.433816, MOS2 Inv Loss = 0.003245
+2025-04-23 18:56:01,353 - INFO - [新最佳-MOS1] Epoch 361: Scaled Loss = 0.408307, Unscaled Loss = 0.002043
+2025-04-23 18:56:09,439 - INFO - Epoch 362/400: Train Loss = 0.005081, MOS1 Loss = 0.400098, MOS1 Inv Loss = 0.002155, MOS2 Loss = 0.437903, MOS2 Inv Loss = 0.003304
+2025-04-23 18:56:17,563 - INFO - Epoch 363/400: Train Loss = 0.005166, MOS1 Loss = 0.405895, MOS1 Inv Loss = 0.002079, MOS2 Loss = 0.430495, MOS2 Inv Loss = 0.003220
+2025-04-23 18:56:25,859 - INFO - Epoch 364/400: Train Loss = 0.005111, MOS1 Loss = 0.400487, MOS1 Inv Loss = 0.002180, MOS2 Loss = 0.430099, MOS2 Inv Loss = 0.003212
+2025-04-23 18:56:34,086 - INFO - Epoch 365/400: Train Loss = 0.005128, MOS1 Loss = 0.406952, MOS1 Inv Loss = 0.002084, MOS2 Loss = 0.427634, MOS2 Inv Loss = 0.003215
+2025-04-23 18:56:42,300 - INFO - Epoch 366/400: Train Loss = 0.005152, MOS1 Loss = 0.411733, MOS1 Inv Loss = 0.002035, MOS2 Loss = 0.418062, MOS2 Inv Loss = 0.003193
+2025-04-23 18:56:42,300 - INFO - [新最佳-MOS1] Epoch 366: Scaled Loss = 0.411733, Unscaled Loss = 0.002035
+2025-04-23 18:56:50,641 - INFO - Epoch 367/400: Train Loss = 0.005127, MOS1 Loss = 0.416786, MOS1 Inv Loss = 0.002061, MOS2 Loss = 0.436454, MOS2 Inv Loss = 0.003292
+2025-04-23 18:56:58,931 - INFO - Epoch 368/400: Train Loss = 0.005064, MOS1 Loss = 0.409554, MOS1 Inv Loss = 0.002064, MOS2 Loss = 0.424442, MOS2 Inv Loss = 0.003216
+2025-04-23 18:57:07,481 - INFO - Epoch 369/400: Train Loss = 0.005104, MOS1 Loss = 0.403052, MOS1 Inv Loss = 0.002113, MOS2 Loss = 0.440681, MOS2 Inv Loss = 0.003417
+2025-04-23 18:57:15,939 - INFO - Epoch 370/400: Train Loss = 0.005094, MOS1 Loss = 0.411965, MOS1 Inv Loss = 0.002040, MOS2 Loss = 0.408936, MOS2 Inv Loss = 0.003286
+2025-04-23 18:57:24,224 - INFO - Epoch 371/400: Train Loss = 0.005080, MOS1 Loss = 0.401514, MOS1 Inv Loss = 0.002127, MOS2 Loss = 0.424193, MOS2 Inv Loss = 0.003219
+2025-04-23 18:57:32,580 - INFO - Epoch 372/400: Train Loss = 0.005074, MOS1 Loss = 0.409305, MOS1 Inv Loss = 0.002077, MOS2 Loss = 0.415535, MOS2 Inv Loss = 0.003225
+2025-04-23 18:57:40,949 - INFO - Epoch 373/400: Train Loss = 0.005079, MOS1 Loss = 0.417191, MOS1 Inv Loss = 0.002076, MOS2 Loss = 0.417621, MOS2 Inv Loss = 0.003171
+2025-04-23 18:57:48,988 - INFO - Epoch 374/400: Train Loss = 0.005059, MOS1 Loss = 0.403755, MOS1 Inv Loss = 0.002104, MOS2 Loss = 0.412901, MOS2 Inv Loss = 0.003262
+2025-04-23 18:57:56,983 - INFO - Epoch 375/400: Train Loss = 0.005062, MOS1 Loss = 0.407232, MOS1 Inv Loss = 0.002052, MOS2 Loss = 0.426664, MOS2 Inv Loss = 0.003184
+2025-04-23 18:58:04,938 - INFO - Epoch 376/400: Train Loss = 0.005070, MOS1 Loss = 0.402174, MOS1 Inv Loss = 0.002154, MOS2 Loss = 0.428240, MOS2 Inv Loss = 0.003203
+2025-04-23 18:58:12,649 - INFO - Epoch 377/400: Train Loss = 0.005147, MOS1 Loss = 0.408898, MOS1 Inv Loss = 0.002055, MOS2 Loss = 0.414373, MOS2 Inv Loss = 0.003213
+2025-04-23 18:58:17,207 - INFO - Epoch 378/400: Train Loss = 0.005109, MOS1 Loss = 0.410155, MOS1 Inv Loss = 0.002065, MOS2 Loss = 0.436935, MOS2 Inv Loss = 0.003322
+2025-04-23 18:58:21,394 - INFO - Epoch 379/400: Train Loss = 0.005063, MOS1 Loss = 0.402308, MOS1 Inv Loss = 0.002099, MOS2 Loss = 0.424841, MOS2 Inv Loss = 0.003215
+2025-04-23 18:58:25,556 - INFO - Epoch 380/400: Train Loss = 0.005078, MOS1 Loss = 0.414252, MOS1 Inv Loss = 0.002045, MOS2 Loss = 0.418384, MOS2 Inv Loss = 0.003208
+2025-04-23 18:58:29,686 - INFO - Epoch 381/400: Train Loss = 0.005112, MOS1 Loss = 0.394570, MOS1 Inv Loss = 0.002232, MOS2 Loss = 0.428956, MOS2 Inv Loss = 0.003211
+2025-04-23 18:58:33,891 - INFO - Epoch 382/400: Train Loss = 0.005027, MOS1 Loss = 0.406808, MOS1 Inv Loss = 0.002055, MOS2 Loss = 0.421651, MOS2 Inv Loss = 0.003181
+2025-04-23 18:58:38,059 - INFO - Epoch 383/400: Train Loss = 0.005070, MOS1 Loss = 0.405043, MOS1 Inv Loss = 0.002075, MOS2 Loss = 0.425653, MOS2 Inv Loss = 0.003187
+2025-04-23 18:58:42,186 - INFO - Epoch 384/400: Train Loss = 0.005059, MOS1 Loss = 0.402316, MOS1 Inv Loss = 0.002103, MOS2 Loss = 0.426125, MOS2 Inv Loss = 0.003202
+2025-04-23 18:58:46,342 - INFO - Epoch 385/400: Train Loss = 0.005042, MOS1 Loss = 0.411861, MOS1 Inv Loss = 0.002044, MOS2 Loss = 0.424130, MOS2 Inv Loss = 0.003215
+2025-04-23 18:58:50,466 - INFO - Epoch 386/400: Train Loss = 0.005083, MOS1 Loss = 0.412042, MOS1 Inv Loss = 0.002055, MOS2 Loss = 0.423702, MOS2 Inv Loss = 0.003218
+2025-04-23 18:58:54,570 - INFO - Epoch 387/400: Train Loss = 0.005044, MOS1 Loss = 0.410221, MOS1 Inv Loss = 0.002070, MOS2 Loss = 0.426782, MOS2 Inv Loss = 0.003228
+2025-04-23 18:58:58,739 - INFO - Epoch 388/400: Train Loss = 0.005030, MOS1 Loss = 0.408328, MOS1 Inv Loss = 0.002039, MOS2 Loss = 0.444437, MOS2 Inv Loss = 0.003540
+2025-04-23 18:59:02,850 - INFO - Epoch 389/400: Train Loss = 0.005107, MOS1 Loss = 0.413605, MOS1 Inv Loss = 0.002031, MOS2 Loss = 0.434234, MOS2 Inv Loss = 0.003324
+2025-04-23 18:59:02,850 - INFO - [新最佳-MOS1] Epoch 389: Scaled Loss = 0.413605, Unscaled Loss = 0.002031
+2025-04-23 18:59:07,003 - INFO - Epoch 390/400: Train Loss = 0.005028, MOS1 Loss = 0.400812, MOS1 Inv Loss = 0.002136, MOS2 Loss = 0.419160, MOS2 Inv Loss = 0.003230
+2025-04-23 18:59:11,095 - INFO - Epoch 391/400: Train Loss = 0.005053, MOS1 Loss = 0.415809, MOS1 Inv Loss = 0.002053, MOS2 Loss = 0.423262, MOS2 Inv Loss = 0.003201
+2025-04-23 18:59:15,176 - INFO - Epoch 392/400: Train Loss = 0.005033, MOS1 Loss = 0.403942, MOS1 Inv Loss = 0.002081, MOS2 Loss = 0.428175, MOS2 Inv Loss = 0.003244
+2025-04-23 18:59:19,310 - INFO - Epoch 393/400: Train Loss = 0.005045, MOS1 Loss = 0.420797, MOS1 Inv Loss = 0.002087, MOS2 Loss = 0.412603, MOS2 Inv Loss = 0.003268
+2025-04-23 18:59:23,472 - INFO - Epoch 394/400: Train Loss = 0.005062, MOS1 Loss = 0.406636, MOS1 Inv Loss = 0.002055, MOS2 Loss = 0.432601, MOS2 Inv Loss = 0.003289
+2025-04-23 18:59:27,828 - INFO - Epoch 395/400: Train Loss = 0.005078, MOS1 Loss = 0.411688, MOS1 Inv Loss = 0.002041, MOS2 Loss = 0.415049, MOS2 Inv Loss = 0.003239
+2025-04-23 18:59:32,173 - INFO - Epoch 396/400: Train Loss = 0.005030, MOS1 Loss = 0.407274, MOS1 Inv Loss = 0.002082, MOS2 Loss = 0.423304, MOS2 Inv Loss = 0.003202
+2025-04-23 18:59:36,648 - INFO - Epoch 397/400: Train Loss = 0.005042, MOS1 Loss = 0.405775, MOS1 Inv Loss = 0.002050, MOS2 Loss = 0.433119, MOS2 Inv Loss = 0.003277
+2025-04-23 18:59:41,062 - INFO - Epoch 398/400: Train Loss = 0.005026, MOS1 Loss = 0.419030, MOS1 Inv Loss = 0.002067, MOS2 Loss = 0.416752, MOS2 Inv Loss = 0.003250
+2025-04-23 18:59:45,162 - INFO - Epoch 399/400: Train Loss = 0.005073, MOS1 Loss = 0.406566, MOS1 Inv Loss = 0.002098, MOS2 Loss = 0.425332, MOS2 Inv Loss = 0.003216
+2025-04-23 18:59:49,318 - INFO - Epoch 400/400: Train Loss = 0.005056, MOS1 Loss = 0.416973, MOS1 Inv Loss = 0.002067, MOS2 Loss = 0.422907, MOS2 Inv Loss = 0.003241
+2025-04-23 18:59:49,319 - INFO - 训练完成! 各测试集上的最佳性能:
+2025-04-23 18:59:49,319 - INFO - MOS1: 最佳Epoch 389, Scaled Loss = 0.413605, Unscaled Loss = 0.002031
+2025-04-23 18:59:49,319 - INFO - MOS2: 最佳Epoch 255, Scaled Loss = 0.424166, Unscaled Loss = 0.003126
+2025-04-23 18:59:49,320 - INFO - 比较不同模型的表现...
+2025-04-23 18:59:49,348 - INFO - 比较结果已保存到: log/analysis_log/全数据集和专用模型对比/2025_4_23/model_comparison_1P\model_comparison.csv
+2025-04-23 18:59:49,359 - INFO - 
+  Test Set  Full Model Scaled Loss  Specialized Model Scaled Loss  Scaled Improvement (%)  Full Model Unscaled Loss  Specialized Model Unscaled Loss  Unscaled Improvement (%)
+0     MOS1                0.413605                       0.009756              -97.641230                  0.002031                         0.002005                 -1.271298
+1     MOS2                0.424166                       0.015718              -96.294417                  0.003126                         0.003098                 -0.883881
+2025-04-23 18:59:49,359 - INFO - 
+分析结论:
+2025-04-23 18:59:49,360 - INFO - MOS1 专用模型相比全数据集模型在逆放缩后有 1.27% 的提升
+2025-04-23 18:59:49,360 - INFO - MOS2 专用模型相比全数据集模型在逆放缩后有 0.88% 的提升
+2025-04-23 18:59:49,361 - INFO - 
+最终建模建议:
+2025-04-23 18:59:49,361 - INFO - 建议为MOS1和MOS2分别使用专用模型
+2025-04-23 18:59:49,361 - INFO - ==================================================
+2025-04-23 18:59:49,361 - INFO - 分析完成! 时间: 2025-04-23 18:59:49

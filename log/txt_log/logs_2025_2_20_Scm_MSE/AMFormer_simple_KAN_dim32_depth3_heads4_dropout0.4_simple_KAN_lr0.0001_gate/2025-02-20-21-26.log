@@ -1,0 +1,15 @@
+2025-02-20 21:26:49,575 INFO: Model:namespace(attn_dropout=0.4, categories=[], cluster=3, depth=3, dim=32, ff_dropout=0.4, groups=[54, 54, 54], heads=4, name='AMFormer_simple_KAN_dim32_depth3_heads4_dropout0.4_simple_KAN', num_cate=0, num_cont=61, num_special_tokens=1, out=1, out_dim=1, predictor='simple_KAN', prod_num_per_group=[6, 6, 6], qk_relu=False, sum_num_per_group=[32, 16, 8], target_mode='regression', token_descent=False, use_cls_token=True, use_prod=True, use_row_col_attention=True, use_sigmoid=True) 
+2025-02-20 21:26:49,575 INFO: lr:0.0001, loss:MSE 
+2025-02-20 21:26:49,575 INFO: Dataset:Scm, Target:['LBL'] 
+2025-02-20 21:26:49,575 INFO: ------Begin Training Model------ 
+2025-02-20 21:26:55,496 INFO: Epoch 1, Train Loss: 0.7354320175292199, Test Loss: 0.45277124345302583, Inverse Test Loss: 22263.117903645834 
+2025-02-20 21:26:57,826 INFO: Epoch 2, Train Loss: 0.4320432847006279, Test Loss: 0.3417785550157229, Inverse Test Loss: 16805.520133463542 
+2025-02-20 21:27:00,118 INFO: Epoch 3, Train Loss: 0.37458133409943495, Test Loss: 0.32103117406368253, Inverse Test Loss: 15785.355485026043 
+2025-02-20 21:27:02,322 INFO: Epoch 4, Train Loss: 0.34934561320564206, Test Loss: 0.30158116308351357, Inverse Test Loss: 14828.982666015625 
+2025-02-20 21:27:04,581 INFO: Epoch 5, Train Loss: 0.3382563967453806, Test Loss: 0.2901403807103634, Inverse Test Loss: 14266.429964192708 
+2025-02-20 21:27:07,026 INFO: Epoch 6, Train Loss: 0.32422050336996716, Test Loss: 0.28574224735299747, Inverse Test Loss: 14050.170841471354 
+2025-02-20 21:27:09,479 INFO: Epoch 7, Train Loss: 0.3144673337800461, Test Loss: 0.28072430392106373, Inverse Test Loss: 13803.434537760417 
+2025-02-20 21:27:12,178 INFO: Epoch 8, Train Loss: 0.31334350297325536, Test Loss: 0.27480355799198153, Inverse Test Loss: 13512.307275390625 
+2025-02-20 21:27:14,992 INFO: Epoch 9, Train Loss: 0.30166120722628476, Test Loss: 0.26908290535211565, Inverse Test Loss: 13231.0181640625 
+2025-02-20 21:27:17,238 INFO: Epoch 10, Train Loss: 0.2941190796463113, Test Loss: 0.2724703421195348, Inverse Test Loss: 13397.581184895833 
+2025-02-20 21:27:19,454 INFO: Epoch 11, Train Loss: 0.28635684100159425, Test Loss: 0.26448503583669664, Inverse Test Loss: 13004.93681640625 

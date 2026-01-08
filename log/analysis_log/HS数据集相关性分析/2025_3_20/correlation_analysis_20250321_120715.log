@@ -1,0 +1,576 @@
+2025-03-21 12:07:15,374 - INFO - 日志记录已启动，日志文件: ./output_2025_3_20\correlation_analysis_20250321_120715.log
+2025-03-21 12:07:15,374 - INFO - ==================================================
+2025-03-21 12:07:15,374 - INFO - 开始相关性分析，时间: 2025-03-21 12:07:15
+2025-03-21 12:07:15,374 - INFO - 数据文件: D:\DeepLearning\Datasets\Merak\HS_unit_dataset_1216.csv
+2025-03-21 12:07:15,374 - INFO - 输出目录: ./output_2025_3_20
+2025-03-21 12:07:15,374 - INFO - ==================================================
+2025-03-21 12:07:15,435 - INFO - 数据集加载成功，形状: (21037, 34)
+2025-03-21 12:07:15,435 - INFO - 
+使用的特征列 (20): unit_height, unit_width, fp_row, fp_col, main_width, main_output_height, adv1_width, adv1_output_height, adv2_width, adv2_output_height, output_pad_num, Iload, vnet_pad_to_gap, output_pad_to_gap, pad_to_split_up, pad_to_split_down, last_adv_width, next_main_width, next_main_height, next_adv_width
+2025-03-21 12:07:15,435 - INFO - 使用的目标列 (12): metal1_Area, metal1_Peak, metal2_Area, metal2_Peak, metal3_Area, metal3_Peak, metal4_Area, metal4_Peak, metal5_Area, metal5_Peak, metal6_Area, metal6_Peak
+2025-03-21 12:07:15,435 - INFO - 
+===== 对全部数据进行相关性分析 =====
+2025-03-21 12:07:15,668 - INFO - 
+检查并移除常量特征:
+2025-03-21 12:07:15,673 - INFO - 有效特征数量: 20
+2025-03-21 12:07:15,677 - INFO - 有效目标列数量: 12
+2025-03-21 12:07:15,677 - INFO - 
+=== 计算全部数据特征之间的相关性 ===
+2025-03-21 12:07:15,693 - INFO - 特征之间相关性最高的一对是: adv1_width 和 last_adv_width, 相关系数: 1.0000
+2025-03-21 12:07:15,696 - INFO - 
+相关性最高的10对特征:
+2025-03-21 12:07:15,696 - INFO - adv1_width 和 last_adv_width: 1.0000
+2025-03-21 12:07:15,696 - INFO - adv2_width 和 next_adv_width: 1.0000
+2025-03-21 12:07:15,696 - INFO - unit_height 和 Iload: 0.9124
+2025-03-21 12:07:15,696 - INFO - fp_row 和 fp_col: 0.8905
+2025-03-21 12:07:15,696 - INFO - vnet_pad_to_gap 和 output_pad_to_gap: 0.8806
+2025-03-21 12:07:15,696 - INFO - fp_col 和 Iload: 0.8448
+2025-03-21 12:07:15,696 - INFO - unit_height 和 fp_col: 0.8082
+2025-03-21 12:07:15,696 - INFO - unit_width 和 main_width: 0.7906
+2025-03-21 12:07:15,696 - INFO - fp_row 和 Iload: 0.7585
+2025-03-21 12:07:15,696 - INFO - next_main_width 和 next_adv_width: 0.7255
+2025-03-21 12:07:15,697 - INFO - 
+=== 计算全部数据特征与目标变量之间的相关性 ===
+2025-03-21 12:07:15,895 - INFO - 
+每个目标变量最相关的特征:
+2025-03-21 12:07:15,895 - INFO - metal1_Area: fp_col (相关系数: 0.8780)
+2025-03-21 12:07:15,895 - INFO - metal1_Peak: fp_col (相关系数: 0.8335)
+2025-03-21 12:07:15,895 - INFO - metal2_Area: fp_col (相关系数: 0.8836)
+2025-03-21 12:07:15,895 - INFO - metal2_Peak: fp_col (相关系数: 0.8227)
+2025-03-21 12:07:15,895 - INFO - metal3_Area: fp_col (相关系数: 0.4353)
+2025-03-21 12:07:15,895 - INFO - metal3_Peak: fp_col (相关系数: 0.6079)
+2025-03-21 12:07:15,895 - INFO - metal4_Area: fp_col (相关系数: 0.8699)
+2025-03-21 12:07:15,895 - INFO - metal4_Peak: fp_col (相关系数: 0.8240)
+2025-03-21 12:07:15,895 - INFO - metal5_Area: fp_col (相关系数: 0.5925)
+2025-03-21 12:07:15,895 - INFO - metal5_Peak: fp_col (相关系数: 0.7070)
+2025-03-21 12:07:15,895 - INFO - metal6_Area: adv2_output_height (相关系数: 0.1889)
+2025-03-21 12:07:15,895 - INFO - metal6_Peak: fp_col (相关系数: 0.5135)
+2025-03-21 12:07:15,897 - INFO - 
+特征按重要性排序（基于与所有目标的平均相关性）:
+2025-03-21 12:07:15,897 - INFO - 1. fp_col: 0.6791
+2025-03-21 12:07:15,897 - INFO - 2. unit_height: 0.5572
+2025-03-21 12:07:15,897 - INFO - 3. Iload: 0.5425
+2025-03-21 12:07:15,897 - INFO - 4. fp_row: 0.5198
+2025-03-21 12:07:15,897 - INFO - 5. main_output_height: 0.4181
+2025-03-21 12:07:15,897 - INFO - 6. next_main_height: 0.3721
+2025-03-21 12:07:15,897 - INFO - 7. output_pad_to_gap: 0.2092
+2025-03-21 12:07:15,897 - INFO - 8. vnet_pad_to_gap: 0.1984
+2025-03-21 12:07:15,897 - INFO - 9. adv1_output_height: 0.1385
+2025-03-21 12:07:15,897 - INFO - 10. adv2_output_height: 0.1295
+2025-03-21 12:07:15,897 - INFO - 11. unit_width: 0.1043
+2025-03-21 12:07:15,897 - INFO - 12. main_width: 0.1004
+2025-03-21 12:07:15,897 - INFO - 13. adv2_width: 0.0915
+2025-03-21 12:07:15,897 - INFO - 14. next_adv_width: 0.0915
+2025-03-21 12:07:15,897 - INFO - 15. pad_to_split_up: 0.0873
+2025-03-21 12:07:15,897 - INFO - 16. pad_to_split_down: 0.0752
+2025-03-21 12:07:15,897 - INFO - 17. adv1_width: 0.0702
+2025-03-21 12:07:15,897 - INFO - 18. last_adv_width: 0.0702
+2025-03-21 12:07:15,897 - INFO - 19. next_main_width: 0.0694
+2025-03-21 12:07:15,897 - INFO - 20. output_pad_num: 0.0527
+2025-03-21 12:07:15,897 - INFO - 
+=== 生成全部数据相关性可视化 ===
+2025-03-21 12:07:17,679 - INFO - 可视化结果已保存到 ./output_2025_3_20 目录
+2025-03-21 12:07:17,679 - INFO - 
+===== 按具体的fp_row值进行相关性分析 =====
+2025-03-21 12:07:17,680 - INFO - 数据集中fp_row的取值: [3, 4, 5, 9, 12, 15]
+2025-03-21 12:07:17,681 - INFO - 
+分析MOS2_3 (fp_row=3) 数据, 共 7254 条记录
+2025-03-21 12:07:17,693 - INFO - 
+检查并移除常量特征:
+2025-03-21 12:07:17,693 - WARNING - 警告: 列 'unit_height' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:17,693 - WARNING - 警告: 列 'fp_row' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:17,695 - WARNING - 警告: 列 'fp_col' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:17,695 - WARNING - 警告: 列 'Iload' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:17,696 - INFO - 有效特征数量: 16
+2025-03-21 12:07:17,697 - INFO - 有效目标列数量: 12
+2025-03-21 12:07:17,697 - INFO - 
+=== 计算MOS2_3特征之间的相关性 ===
+2025-03-21 12:07:17,702 - INFO - 特征之间相关性最高的一对是: vnet_pad_to_gap 和 output_pad_to_gap, 相关系数: -1.0000
+2025-03-21 12:07:17,705 - INFO - 
+相关性最高的10对特征:
+2025-03-21 12:07:17,705 - INFO - vnet_pad_to_gap 和 output_pad_to_gap: 1.0000
+2025-03-21 12:07:17,705 - INFO - adv1_width 和 last_adv_width: 1.0000
+2025-03-21 12:07:17,705 - INFO - adv2_width 和 next_adv_width: 1.0000
+2025-03-21 12:07:17,705 - INFO - main_output_height 和 output_pad_num: 0.9838
+2025-03-21 12:07:17,705 - INFO - pad_to_split_down 和 next_main_width: 0.9024
+2025-03-21 12:07:17,705 - INFO - adv1_width 和 pad_to_split_up: 0.7882
+2025-03-21 12:07:17,705 - INFO - pad_to_split_up 和 last_adv_width: 0.7882
+2025-03-21 12:07:17,705 - INFO - adv2_width 和 next_main_width: 0.7191
+2025-03-21 12:07:17,705 - INFO - next_main_width 和 next_adv_width: 0.7191
+2025-03-21 12:07:17,705 - INFO - adv2_output_height 和 next_main_width: 0.7009
+2025-03-21 12:07:17,705 - INFO - 
+=== 计算MOS2_3特征与目标变量之间的相关性 ===
+2025-03-21 12:07:17,816 - INFO - 
+每个目标变量最相关的特征:
+2025-03-21 12:07:17,816 - INFO - metal1_Area: adv2_output_height (相关系数: -0.0552)
+2025-03-21 12:07:17,816 - INFO - metal1_Peak: adv2_output_height (相关系数: -0.0870)
+2025-03-21 12:07:17,816 - INFO - metal2_Area: adv1_output_height (相关系数: -0.3559)
+2025-03-21 12:07:17,816 - INFO - metal2_Peak: adv1_output_height (相关系数: -0.3451)
+2025-03-21 12:07:17,816 - INFO - metal3_Area: unit_width (相关系数: 0.1128)
+2025-03-21 12:07:17,816 - INFO - metal3_Peak: unit_width (相关系数: 0.2026)
+2025-03-21 12:07:17,816 - INFO - metal4_Area: adv1_output_height (相关系数: -0.3158)
+2025-03-21 12:07:17,816 - INFO - metal4_Peak: adv1_output_height (相关系数: -0.3374)
+2025-03-21 12:07:17,816 - INFO - metal5_Area: unit_width (相关系数: 0.3346)
+2025-03-21 12:07:17,816 - INFO - metal5_Peak: main_width (相关系数: 0.2228)
+2025-03-21 12:07:17,816 - INFO - metal6_Area: main_output_height (相关系数: -0.2381)
+2025-03-21 12:07:17,816 - INFO - metal6_Peak: main_output_height (相关系数: -0.2505)
+2025-03-21 12:07:17,818 - INFO - 
+特征按重要性排序（基于与所有目标的平均相关性）:
+2025-03-21 12:07:17,818 - INFO - 1. main_output_height: 0.1765
+2025-03-21 12:07:17,818 - INFO - 2. adv1_output_height: 0.1721
+2025-03-21 12:07:17,818 - INFO - 3. output_pad_num: 0.1640
+2025-03-21 12:07:17,818 - INFO - 4. adv2_output_height: 0.1511
+2025-03-21 12:07:17,818 - INFO - 5. main_width: 0.1446
+2025-03-21 12:07:17,818 - INFO - 6. unit_width: 0.1148
+2025-03-21 12:07:17,818 - INFO - 7. output_pad_to_gap: 0.1020
+2025-03-21 12:07:17,818 - INFO - 8. vnet_pad_to_gap: 0.1020
+2025-03-21 12:07:17,818 - INFO - 9. next_main_height: 0.0930
+2025-03-21 12:07:17,818 - INFO - 10. adv1_width: 0.0742
+2025-03-21 12:07:17,818 - INFO - 11. last_adv_width: 0.0742
+2025-03-21 12:07:17,818 - INFO - 12. next_main_width: 0.0735
+2025-03-21 12:07:17,818 - INFO - 13. pad_to_split_up: 0.0664
+2025-03-21 12:07:17,818 - INFO - 14. adv2_width: 0.0566
+2025-03-21 12:07:17,818 - INFO - 15. next_adv_width: 0.0566
+2025-03-21 12:07:17,818 - INFO - 16. pad_to_split_down: 0.0549
+2025-03-21 12:07:17,818 - INFO - 
+=== 生成MOS2_3相关性可视化 ===
+2025-03-21 12:07:19,422 - INFO - 可视化结果已保存到 ./output_2025_3_20\mos2\fp_row_3 目录
+2025-03-21 12:07:19,423 - INFO - 
+分析MOS2_4 (fp_row=4) 数据, 共 1193 条记录
+2025-03-21 12:07:19,435 - INFO - 
+检查并移除常量特征:
+2025-03-21 12:07:19,435 - WARNING - 警告: 列 'unit_height' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:19,435 - WARNING - 警告: 列 'fp_row' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:19,435 - WARNING - 警告: 列 'fp_col' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:19,436 - WARNING - 警告: 列 'Iload' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:19,436 - INFO - 有效特征数量: 16
+2025-03-21 12:07:19,436 - WARNING - 警告: 目标列 'metal1_Area' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:19,437 - INFO - 有效目标列数量: 11
+2025-03-21 12:07:19,437 - INFO - 
+=== 计算MOS2_4特征之间的相关性 ===
+2025-03-21 12:07:19,439 - INFO - 特征之间相关性最高的一对是: adv1_width 和 last_adv_width, 相关系数: 1.0000
+2025-03-21 12:07:19,441 - INFO - 
+相关性最高的10对特征:
+2025-03-21 12:07:19,441 - INFO - adv1_width 和 last_adv_width: 1.0000
+2025-03-21 12:07:19,441 - INFO - adv2_width 和 next_adv_width: 1.0000
+2025-03-21 12:07:19,441 - INFO - vnet_pad_to_gap 和 output_pad_to_gap: 1.0000
+2025-03-21 12:07:19,441 - INFO - main_output_height 和 output_pad_num: 0.9853
+2025-03-21 12:07:19,441 - INFO - output_pad_num 和 last_adv_width: 0.8401
+2025-03-21 12:07:19,441 - INFO - adv1_width 和 output_pad_num: 0.8401
+2025-03-21 12:07:19,441 - INFO - main_output_height 和 adv1_width: 0.8305
+2025-03-21 12:07:19,441 - INFO - main_output_height 和 last_adv_width: 0.8305
+2025-03-21 12:07:19,441 - INFO - output_pad_num 和 pad_to_split_up: 0.7614
+2025-03-21 12:07:19,441 - INFO - main_output_height 和 pad_to_split_up: 0.7469
+2025-03-21 12:07:19,441 - INFO - 
+=== 计算MOS2_4特征与目标变量之间的相关性 ===
+2025-03-21 12:07:19,531 - INFO - 
+每个目标变量最相关的特征:
+2025-03-21 12:07:19,531 - INFO - metal1_Peak: next_main_width (相关系数: 0.2675)
+2025-03-21 12:07:19,531 - INFO - metal2_Area: adv1_output_height (相关系数: -0.4767)
+2025-03-21 12:07:19,532 - INFO - metal2_Peak: adv1_output_height (相关系数: -0.4534)
+2025-03-21 12:07:19,532 - INFO - metal3_Area: adv2_output_height (相关系数: -0.1356)
+2025-03-21 12:07:19,532 - INFO - metal3_Peak: main_output_height (相关系数: -0.2763)
+2025-03-21 12:07:19,532 - INFO - metal4_Area: adv2_output_height (相关系数: -0.3310)
+2025-03-21 12:07:19,532 - INFO - metal4_Peak: adv1_output_height (相关系数: -0.4255)
+2025-03-21 12:07:19,532 - INFO - metal5_Area: adv2_output_height (相关系数: -0.3204)
+2025-03-21 12:07:19,532 - INFO - metal5_Peak: adv2_output_height (相关系数: -0.3900)
+2025-03-21 12:07:19,532 - INFO - metal6_Area: main_width (相关系数: 0.1796)
+2025-03-21 12:07:19,532 - INFO - metal6_Peak: adv1_output_height (相关系数: 0.4104)
+2025-03-21 12:07:19,533 - INFO - 
+特征按重要性排序（基于与所有目标的平均相关性）:
+2025-03-21 12:07:19,533 - INFO - 1. adv1_output_height: 0.2193
+2025-03-21 12:07:19,533 - INFO - 2. adv2_output_height: 0.2120
+2025-03-21 12:07:19,533 - INFO - 3. main_output_height: 0.1881
+2025-03-21 12:07:19,533 - INFO - 4. output_pad_num: 0.1779
+2025-03-21 12:07:19,533 - INFO - 5. pad_to_split_up: 0.1333
+2025-03-21 12:07:19,533 - INFO - 6. adv1_width: 0.1271
+2025-03-21 12:07:19,533 - INFO - 7. last_adv_width: 0.1271
+2025-03-21 12:07:19,534 - INFO - 8. next_main_width: 0.1011
+2025-03-21 12:07:19,534 - INFO - 9. adv2_width: 0.1001
+2025-03-21 12:07:19,534 - INFO - 10. next_adv_width: 0.1001
+2025-03-21 12:07:19,534 - INFO - 11. pad_to_split_down: 0.0952
+2025-03-21 12:07:19,534 - INFO - 12. next_main_height: 0.0908
+2025-03-21 12:07:19,534 - INFO - 13. unit_width: 0.0853
+2025-03-21 12:07:19,534 - INFO - 14. main_width: 0.0838
+2025-03-21 12:07:19,534 - INFO - 15. vnet_pad_to_gap: 0.0649
+2025-03-21 12:07:19,534 - INFO - 16. output_pad_to_gap: 0.0649
+2025-03-21 12:07:19,534 - INFO - 
+=== 生成MOS2_4相关性可视化 ===
+2025-03-21 12:07:21,151 - INFO - 可视化结果已保存到 ./output_2025_3_20\mos2\fp_row_4 目录
+2025-03-21 12:07:21,152 - INFO - 
+分析MOS2_5 (fp_row=5) 数据, 共 2045 条记录
+2025-03-21 12:07:21,164 - INFO - 
+检查并移除常量特征:
+2025-03-21 12:07:21,164 - WARNING - 警告: 列 'fp_row' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:21,164 - WARNING - 警告: 列 'fp_col' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:21,165 - INFO - 有效特征数量: 18
+2025-03-21 12:07:21,166 - INFO - 有效目标列数量: 12
+2025-03-21 12:07:21,166 - INFO - 
+=== 计算MOS2_5特征之间的相关性 ===
+2025-03-21 12:07:21,168 - INFO - 特征之间相关性最高的一对是: vnet_pad_to_gap 和 output_pad_to_gap, 相关系数: -1.0000
+2025-03-21 12:07:21,171 - INFO - 
+相关性最高的10对特征:
+2025-03-21 12:07:21,171 - INFO - vnet_pad_to_gap 和 output_pad_to_gap: 1.0000
+2025-03-21 12:07:21,171 - INFO - adv1_width 和 last_adv_width: 1.0000
+2025-03-21 12:07:21,171 - INFO - adv2_width 和 next_adv_width: 1.0000
+2025-03-21 12:07:21,171 - INFO - unit_height 和 Iload: 0.9968
+2025-03-21 12:07:21,171 - INFO - adv2_width 和 next_main_width: 0.7991
+2025-03-21 12:07:21,171 - INFO - next_main_width 和 next_adv_width: 0.7991
+2025-03-21 12:07:21,171 - INFO - unit_height 和 next_main_height: 0.7781
+2025-03-21 12:07:21,171 - INFO - Iload 和 next_main_height: 0.7778
+2025-03-21 12:07:21,171 - INFO - unit_height 和 main_output_height: 0.7601
+2025-03-21 12:07:21,171 - INFO - unit_width 和 main_width: 0.7590
+2025-03-21 12:07:21,171 - INFO - 
+=== 计算MOS2_5特征与目标变量之间的相关性 ===
+2025-03-21 12:07:21,282 - INFO - 
+每个目标变量最相关的特征:
+2025-03-21 12:07:21,282 - INFO - metal1_Area: unit_width (相关系数: -0.4279)
+2025-03-21 12:07:21,282 - INFO - metal1_Peak: unit_width (相关系数: -0.4514)
+2025-03-21 12:07:21,282 - INFO - metal2_Area: unit_width (相关系数: -0.3697)
+2025-03-21 12:07:21,282 - INFO - metal2_Peak: unit_width (相关系数: -0.3603)
+2025-03-21 12:07:21,282 - INFO - metal3_Area: unit_width (相关系数: -0.3437)
+2025-03-21 12:07:21,282 - INFO - metal3_Peak: unit_width (相关系数: -0.3193)
+2025-03-21 12:07:21,282 - INFO - metal4_Area: unit_width (相关系数: -0.3738)
+2025-03-21 12:07:21,282 - INFO - metal4_Peak: unit_width (相关系数: -0.3434)
+2025-03-21 12:07:21,282 - INFO - metal5_Area: unit_width (相关系数: -0.4004)
+2025-03-21 12:07:21,282 - INFO - metal5_Peak: unit_width (相关系数: -0.3999)
+2025-03-21 12:07:21,282 - INFO - metal6_Area: unit_width (相关系数: -0.3385)
+2025-03-21 12:07:21,282 - INFO - metal6_Peak: unit_height (相关系数: -0.3602)
+2025-03-21 12:07:21,284 - INFO - 
+特征按重要性排序（基于与所有目标的平均相关性）:
+2025-03-21 12:07:21,284 - INFO - 1. unit_width: 0.3719
+2025-03-21 12:07:21,284 - INFO - 2. output_pad_to_gap: 0.3005
+2025-03-21 12:07:21,284 - INFO - 3. vnet_pad_to_gap: 0.3005
+2025-03-21 12:07:21,284 - INFO - 4. pad_to_split_down: 0.2842
+2025-03-21 12:07:21,284 - INFO - 5. main_width: 0.2805
+2025-03-21 12:07:21,284 - INFO - 6. pad_to_split_up: 0.2582
+2025-03-21 12:07:21,284 - INFO - 7. unit_height: 0.2401
+2025-03-21 12:07:21,284 - INFO - 8. main_output_height: 0.1950
+2025-03-21 12:07:21,284 - INFO - 9. Iload: 0.1735
+2025-03-21 12:07:21,284 - INFO - 10. next_main_height: 0.1493
+2025-03-21 12:07:21,284 - INFO - 11. output_pad_num: 0.1201
+2025-03-21 12:07:21,284 - INFO - 12. next_main_width: 0.0904
+2025-03-21 12:07:21,284 - INFO - 13. adv2_width: 0.0798
+2025-03-21 12:07:21,284 - INFO - 14. next_adv_width: 0.0798
+2025-03-21 12:07:21,284 - INFO - 15. adv1_width: 0.0687
+2025-03-21 12:07:21,284 - INFO - 16. last_adv_width: 0.0687
+2025-03-21 12:07:21,284 - INFO - 17. adv2_output_height: 0.0627
+2025-03-21 12:07:21,284 - INFO - 18. adv1_output_height: 0.0605
+2025-03-21 12:07:21,284 - INFO - 
+=== 生成MOS2_5相关性可视化 ===
+2025-03-21 12:07:22,934 - INFO - 可视化结果已保存到 ./output_2025_3_20\mos2\fp_row_5 目录
+2025-03-21 12:07:22,936 - INFO - 
+分析MOS1_9 (fp_row=9) 数据, 共 7299 条记录
+2025-03-21 12:07:22,947 - INFO - 
+检查并移除常量特征:
+2025-03-21 12:07:22,948 - WARNING - 警告: 列 'fp_row' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:22,948 - WARNING - 警告: 列 'fp_col' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:22,949 - WARNING - 警告: 列 'Iload' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:22,949 - INFO - 有效特征数量: 17
+2025-03-21 12:07:22,951 - INFO - 有效目标列数量: 12
+2025-03-21 12:07:22,951 - INFO - 
+=== 计算MOS1_9特征之间的相关性 ===
+2025-03-21 12:07:22,955 - INFO - 特征之间相关性最高的一对是: adv1_width 和 last_adv_width, 相关系数: 1.0000
+2025-03-21 12:07:22,959 - INFO - 
+相关性最高的10对特征:
+2025-03-21 12:07:22,959 - INFO - adv1_width 和 last_adv_width: 1.0000
+2025-03-21 12:07:22,959 - INFO - adv2_width 和 next_adv_width: 1.0000
+2025-03-21 12:07:22,959 - INFO - vnet_pad_to_gap 和 output_pad_to_gap: 1.0000
+2025-03-21 12:07:22,959 - INFO - main_output_height 和 output_pad_num: 0.9725
+2025-03-21 12:07:22,959 - INFO - unit_height 和 pad_to_split_up: 0.9133
+2025-03-21 12:07:22,959 - INFO - pad_to_split_down 和 next_main_width: 0.9028
+2025-03-21 12:07:22,959 - INFO - next_main_width 和 next_main_height: 0.8614
+2025-03-21 12:07:22,959 - INFO - pad_to_split_down 和 next_main_height: 0.8098
+2025-03-21 12:07:22,959 - INFO - adv1_width 和 pad_to_split_up: 0.7900
+2025-03-21 12:07:22,959 - INFO - pad_to_split_up 和 last_adv_width: 0.7900
+2025-03-21 12:07:22,959 - INFO - 
+=== 计算MOS1_9特征与目标变量之间的相关性 ===
+2025-03-21 12:07:23,125 - INFO - 
+每个目标变量最相关的特征:
+2025-03-21 12:07:23,125 - INFO - metal1_Area: unit_width (相关系数: 0.7283)
+2025-03-21 12:07:23,125 - INFO - metal1_Peak: adv1_output_height (相关系数: -0.1831)
+2025-03-21 12:07:23,126 - INFO - metal2_Area: unit_width (相关系数: 0.4534)
+2025-03-21 12:07:23,126 - INFO - metal2_Peak: adv2_output_height (相关系数: -0.2002)
+2025-03-21 12:07:23,126 - INFO - metal3_Area: unit_width (相关系数: 0.5201)
+2025-03-21 12:07:23,126 - INFO - metal3_Peak: next_main_height (相关系数: 0.4860)
+2025-03-21 12:07:23,126 - INFO - metal4_Area: main_output_height (相关系数: -0.4219)
+2025-03-21 12:07:23,126 - INFO - metal4_Peak: adv2_output_height (相关系数: -0.1711)
+2025-03-21 12:07:23,126 - INFO - metal5_Area: unit_width (相关系数: 0.5645)
+2025-03-21 12:07:23,126 - INFO - metal5_Peak: output_pad_num (相关系数: 0.2464)
+2025-03-21 12:07:23,126 - INFO - metal6_Area: adv2_output_height (相关系数: 0.3752)
+2025-03-21 12:07:23,126 - INFO - metal6_Peak: adv2_output_height (相关系数: 0.2260)
+2025-03-21 12:07:23,127 - INFO - 
+特征按重要性排序（基于与所有目标的平均相关性）:
+2025-03-21 12:07:23,127 - INFO - 1. unit_width: 0.3134
+2025-03-21 12:07:23,128 - INFO - 2. adv2_output_height: 0.1961
+2025-03-21 12:07:23,128 - INFO - 3. adv2_width: 0.1936
+2025-03-21 12:07:23,128 - INFO - 4. next_adv_width: 0.1936
+2025-03-21 12:07:23,128 - INFO - 5. next_main_width: 0.1769
+2025-03-21 12:07:23,128 - INFO - 6. adv1_output_height: 0.1712
+2025-03-21 12:07:23,128 - INFO - 7. main_width: 0.1680
+2025-03-21 12:07:23,128 - INFO - 8. next_main_height: 0.1664
+2025-03-21 12:07:23,128 - INFO - 9. unit_height: 0.1645
+2025-03-21 12:07:23,128 - INFO - 10. output_pad_num: 0.1633
+2025-03-21 12:07:23,128 - INFO - 11. main_output_height: 0.1584
+2025-03-21 12:07:23,128 - INFO - 12. pad_to_split_down: 0.1500
+2025-03-21 12:07:23,128 - INFO - 13. pad_to_split_up: 0.1395
+2025-03-21 12:07:23,128 - INFO - 14. adv1_width: 0.1289
+2025-03-21 12:07:23,128 - INFO - 15. last_adv_width: 0.1289
+2025-03-21 12:07:23,128 - INFO - 16. vnet_pad_to_gap: 0.0637
+2025-03-21 12:07:23,128 - INFO - 17. output_pad_to_gap: 0.0637
+2025-03-21 12:07:23,128 - INFO - 
+=== 生成MOS1_9相关性可视化 ===
+2025-03-21 12:07:24,726 - INFO - 可视化结果已保存到 ./output_2025_3_20\mos1\fp_row_9 目录
+2025-03-21 12:07:24,727 - INFO - 
+分析MOS1_12 (fp_row=12) 数据, 共 1194 条记录
+2025-03-21 12:07:24,739 - INFO - 
+检查并移除常量特征:
+2025-03-21 12:07:24,739 - WARNING - 警告: 列 'fp_row' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:24,739 - WARNING - 警告: 列 'fp_col' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:24,739 - WARNING - 警告: 列 'Iload' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:24,739 - INFO - 有效特征数量: 17
+2025-03-21 12:07:24,740 - INFO - 有效目标列数量: 12
+2025-03-21 12:07:24,740 - INFO - 
+=== 计算MOS1_12特征之间的相关性 ===
+2025-03-21 12:07:24,743 - INFO - 特征之间相关性最高的一对是: unit_height 和 output_pad_num, 相关系数: -1.0000
+2025-03-21 12:07:24,745 - INFO - 
+相关性最高的10对特征:
+2025-03-21 12:07:24,745 - INFO - unit_height 和 output_pad_num: 1.0000
+2025-03-21 12:07:24,745 - INFO - adv1_width 和 last_adv_width: 1.0000
+2025-03-21 12:07:24,745 - INFO - adv2_width 和 next_adv_width: 1.0000
+2025-03-21 12:07:24,746 - INFO - vnet_pad_to_gap 和 output_pad_to_gap: 1.0000
+2025-03-21 12:07:24,746 - INFO - unit_height 和 main_output_height: 0.9753
+2025-03-21 12:07:24,746 - INFO - main_output_height 和 output_pad_num: 0.9753
+2025-03-21 12:07:24,746 - INFO - next_main_width 和 next_main_height: 0.9551
+2025-03-21 12:07:24,746 - INFO - unit_height 和 adv1_width: 0.8324
+2025-03-21 12:07:24,746 - INFO - unit_height 和 last_adv_width: 0.8324
+2025-03-21 12:07:24,746 - INFO - adv1_width 和 output_pad_num: 0.8324
+2025-03-21 12:07:24,746 - INFO - 
+=== 计算MOS1_12特征与目标变量之间的相关性 ===
+2025-03-21 12:07:24,849 - INFO - 
+每个目标变量最相关的特征:
+2025-03-21 12:07:24,849 - INFO - metal1_Area: unit_width (相关系数: 0.6137)
+2025-03-21 12:07:24,849 - INFO - metal1_Peak: next_main_width (相关系数: 0.3790)
+2025-03-21 12:07:24,849 - INFO - metal2_Area: pad_to_split_up (相关系数: 0.4874)
+2025-03-21 12:07:24,849 - INFO - metal2_Peak: adv2_output_height (相关系数: -0.2646)
+2025-03-21 12:07:24,849 - INFO - metal3_Area: next_main_width (相关系数: 0.6377)
+2025-03-21 12:07:24,849 - INFO - metal3_Peak: next_main_width (相关系数: 0.8079)
+2025-03-21 12:07:24,849 - INFO - metal4_Area: pad_to_split_up (相关系数: 0.4292)
+2025-03-21 12:07:24,849 - INFO - metal4_Peak: adv2_output_height (相关系数: -0.2148)
+2025-03-21 12:07:24,849 - INFO - metal5_Area: next_main_width (相关系数: 0.5876)
+2025-03-21 12:07:24,849 - INFO - metal5_Peak: next_main_width (相关系数: 0.3703)
+2025-03-21 12:07:24,849 - INFO - metal6_Area: adv1_output_height (相关系数: 0.4148)
+2025-03-21 12:07:24,849 - INFO - metal6_Peak: adv1_output_height (相关系数: 0.2735)
+2025-03-21 12:07:24,851 - INFO - 
+特征按重要性排序（基于与所有目标的平均相关性）:
+2025-03-21 12:07:24,851 - INFO - 1. next_main_height: 0.3204
+2025-03-21 12:07:24,851 - INFO - 2. next_main_width: 0.3184
+2025-03-21 12:07:24,851 - INFO - 3. adv2_width: 0.2730
+2025-03-21 12:07:24,851 - INFO - 4. next_adv_width: 0.2730
+2025-03-21 12:07:24,851 - INFO - 5. pad_to_split_down: 0.2622
+2025-03-21 12:07:24,851 - INFO - 6. unit_width: 0.2504
+2025-03-21 12:07:24,851 - INFO - 7. adv2_output_height: 0.2274
+2025-03-21 12:07:24,851 - INFO - 8. adv1_output_height: 0.2183
+2025-03-21 12:07:24,851 - INFO - 9. unit_height: 0.2112
+2025-03-21 12:07:24,851 - INFO - 10. output_pad_num: 0.2112
+2025-03-21 12:07:24,851 - INFO - 11. main_output_height: 0.2074
+2025-03-21 12:07:24,851 - INFO - 12. pad_to_split_up: 0.1955
+2025-03-21 12:07:24,851 - INFO - 13. adv1_width: 0.1607
+2025-03-21 12:07:24,851 - INFO - 14. last_adv_width: 0.1607
+2025-03-21 12:07:24,851 - INFO - 15. main_width: 0.1079
+2025-03-21 12:07:24,851 - INFO - 16. vnet_pad_to_gap: 0.0281
+2025-03-21 12:07:24,851 - INFO - 17. output_pad_to_gap: 0.0281
+2025-03-21 12:07:24,851 - INFO - 
+=== 生成MOS1_12相关性可视化 ===
+2025-03-21 12:07:26,558 - INFO - 可视化结果已保存到 ./output_2025_3_20\mos1\fp_row_12 目录
+2025-03-21 12:07:26,559 - INFO - 
+分析MOS1_15 (fp_row=15) 数据, 共 2052 条记录
+2025-03-21 12:07:26,571 - INFO - 
+检查并移除常量特征:
+2025-03-21 12:07:26,571 - WARNING - 警告: 列 'fp_row' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:26,572 - WARNING - 警告: 列 'fp_col' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:26,572 - INFO - 有效特征数量: 18
+2025-03-21 12:07:26,573 - INFO - 有效目标列数量: 12
+2025-03-21 12:07:26,573 - INFO - 
+=== 计算MOS1_15特征之间的相关性 ===
+2025-03-21 12:07:26,576 - INFO - 特征之间相关性最高的一对是: adv1_width 和 last_adv_width, 相关系数: 1.0000
+2025-03-21 12:07:26,579 - INFO - 
+相关性最高的10对特征:
+2025-03-21 12:07:26,579 - INFO - adv1_width 和 last_adv_width: 1.0000
+2025-03-21 12:07:26,579 - INFO - adv2_width 和 next_adv_width: 1.0000
+2025-03-21 12:07:26,579 - INFO - next_main_width 和 next_main_height: 0.8376
+2025-03-21 12:07:26,579 - INFO - main_output_height 和 output_pad_num: 0.7992
+2025-03-21 12:07:26,579 - INFO - adv2_width 和 next_main_width: 0.7936
+2025-03-21 12:07:26,579 - INFO - next_main_width 和 next_adv_width: 0.7936
+2025-03-21 12:07:26,579 - INFO - unit_height 和 Iload: 0.7934
+2025-03-21 12:07:26,579 - INFO - next_main_height 和 next_adv_width: 0.7703
+2025-03-21 12:07:26,579 - INFO - adv2_width 和 next_main_height: 0.7703
+2025-03-21 12:07:26,579 - INFO - unit_width 和 main_width: 0.7524
+2025-03-21 12:07:26,579 - INFO - 
+=== 计算MOS1_15特征与目标变量之间的相关性 ===
+2025-03-21 12:07:26,690 - INFO - 
+每个目标变量最相关的特征:
+2025-03-21 12:07:26,690 - INFO - metal1_Area: Iload (相关系数: -0.8244)
+2025-03-21 12:07:26,690 - INFO - metal1_Peak: Iload (相关系数: -0.9961)
+2025-03-21 12:07:26,690 - INFO - metal2_Area: unit_width (相关系数: 0.7549)
+2025-03-21 12:07:26,690 - INFO - metal2_Peak: Iload (相关系数: -0.6671)
+2025-03-21 12:07:26,690 - INFO - metal3_Area: Iload (相关系数: -0.5454)
+2025-03-21 12:07:26,690 - INFO - metal3_Peak: Iload (相关系数: -0.8379)
+2025-03-21 12:07:26,690 - INFO - metal4_Area: unit_width (相关系数: 0.7874)
+2025-03-21 12:07:26,691 - INFO - metal4_Peak: unit_width (相关系数: 0.4757)
+2025-03-21 12:07:26,691 - INFO - metal5_Area: Iload (相关系数: -0.6423)
+2025-03-21 12:07:26,691 - INFO - metal5_Peak: Iload (相关系数: -0.4630)
+2025-03-21 12:07:26,691 - INFO - metal6_Area: unit_width (相关系数: -0.3371)
+2025-03-21 12:07:26,691 - INFO - metal6_Peak: Iload (相关系数: -0.4823)
+2025-03-21 12:07:26,692 - INFO - 
+特征按重要性排序（基于与所有目标的平均相关性）:
+2025-03-21 12:07:26,692 - INFO - 1. Iload: 0.5144
+2025-03-21 12:07:26,692 - INFO - 2. unit_height: 0.4244
+2025-03-21 12:07:26,692 - INFO - 3. unit_width: 0.3076
+2025-03-21 12:07:26,692 - INFO - 4. main_width: 0.2866
+2025-03-21 12:07:26,693 - INFO - 5. vnet_pad_to_gap: 0.2588
+2025-03-21 12:07:26,693 - INFO - 6. pad_to_split_up: 0.2510
+2025-03-21 12:07:26,693 - INFO - 7. output_pad_to_gap: 0.2506
+2025-03-21 12:07:26,693 - INFO - 8. main_output_height: 0.2424
+2025-03-21 12:07:26,693 - INFO - 9. next_main_height: 0.2211
+2025-03-21 12:07:26,693 - INFO - 10. pad_to_split_down: 0.2131
+2025-03-21 12:07:26,693 - INFO - 11. adv2_output_height: 0.2017
+2025-03-21 12:07:26,693 - INFO - 12. adv1_output_height: 0.1866
+2025-03-21 12:07:26,693 - INFO - 13. next_main_width: 0.1363
+2025-03-21 12:07:26,693 - INFO - 14. adv2_width: 0.1263
+2025-03-21 12:07:26,693 - INFO - 15. next_adv_width: 0.1263
+2025-03-21 12:07:26,693 - INFO - 16. output_pad_num: 0.1110
+2025-03-21 12:07:26,693 - INFO - 17. adv1_width: 0.1059
+2025-03-21 12:07:26,693 - INFO - 18. last_adv_width: 0.1059
+2025-03-21 12:07:26,693 - INFO - 
+=== 生成MOS1_15相关性可视化 ===
+2025-03-21 12:07:28,349 - INFO - 可视化结果已保存到 ./output_2025_3_20\mos1\fp_row_15 目录
+2025-03-21 12:07:28,350 - INFO - 
+===== 按MOS大类进行汇总相关性分析 =====
+2025-03-21 12:07:28,352 - INFO - 
+分析MOS1 (fp_row in [9, 12, 15]) 汇总数据, 共 10545 条记录
+2025-03-21 12:07:28,364 - INFO - 
+检查并移除常量特征:
+2025-03-21 12:07:28,364 - WARNING - 警告: 列 'fp_col' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:28,366 - INFO - 有效特征数量: 19
+2025-03-21 12:07:28,369 - INFO - 有效目标列数量: 12
+2025-03-21 12:07:28,369 - INFO - 
+=== 计算MOS1_All特征之间的相关性 ===
+2025-03-21 12:07:28,376 - INFO - 特征之间相关性最高的一对是: adv1_width 和 last_adv_width, 相关系数: 1.0000
+2025-03-21 12:07:28,379 - INFO - 
+相关性最高的10对特征:
+2025-03-21 12:07:28,379 - INFO - adv1_width 和 last_adv_width: 1.0000
+2025-03-21 12:07:28,379 - INFO - adv2_width 和 next_adv_width: 1.0000
+2025-03-21 12:07:28,379 - INFO - main_output_height 和 output_pad_num: 0.9225
+2025-03-21 12:07:28,379 - INFO - next_main_width 和 next_main_height: 0.8157
+2025-03-21 12:07:28,379 - INFO - unit_width 和 fp_row: 0.8045
+2025-03-21 12:07:28,379 - INFO - vnet_pad_to_gap 和 output_pad_to_gap: 0.8040
+2025-03-21 12:07:28,379 - INFO - unit_width 和 main_width: 0.7901
+2025-03-21 12:07:28,379 - INFO - adv2_width 和 next_main_width: 0.7241
+2025-03-21 12:07:28,379 - INFO - next_main_width 和 next_adv_width: 0.7241
+2025-03-21 12:07:28,379 - INFO - unit_width 和 pad_to_split_down: 0.7231
+2025-03-21 12:07:28,379 - INFO - 
+=== 计算MOS1_All特征与目标变量之间的相关性 ===
+2025-03-21 12:07:28,510 - INFO - 
+每个目标变量最相关的特征:
+2025-03-21 12:07:28,510 - INFO - metal1_Area: fp_row (相关系数: -0.7058)
+2025-03-21 12:07:28,510 - INFO - metal1_Peak: fp_row (相关系数: -0.6774)
+2025-03-21 12:07:28,510 - INFO - metal2_Area: unit_height (相关系数: 0.4880)
+2025-03-21 12:07:28,510 - INFO - metal2_Peak: fp_row (相关系数: -0.6734)
+2025-03-21 12:07:28,510 - INFO - metal3_Area: next_main_height (相关系数: 0.3525)
+2025-03-21 12:07:28,510 - INFO - metal3_Peak: next_main_height (相关系数: 0.4574)
+2025-03-21 12:07:28,510 - INFO - metal4_Area: unit_height (相关系数: 0.4773)
+2025-03-21 12:07:28,510 - INFO - metal4_Peak: fp_row (相关系数: -0.6780)
+2025-03-21 12:07:28,510 - INFO - metal5_Area: next_main_height (相关系数: 0.3702)
+2025-03-21 12:07:28,510 - INFO - metal5_Peak: fp_row (相关系数: -0.4073)
+2025-03-21 12:07:28,510 - INFO - metal6_Area: adv1_output_height (相关系数: 0.3006)
+2025-03-21 12:07:28,510 - INFO - metal6_Peak: fp_row (相关系数: -0.4129)
+2025-03-21 12:07:28,512 - INFO - 
+特征按重要性排序（基于与所有目标的平均相关性）:
+2025-03-21 12:07:28,512 - INFO - 1. fp_row: 0.4231
+2025-03-21 12:07:28,512 - INFO - 2. unit_width: 0.2586
+2025-03-21 12:07:28,512 - INFO - 3. main_width: 0.2359
+2025-03-21 12:07:28,512 - INFO - 4. pad_to_split_up: 0.2242
+2025-03-21 12:07:28,512 - INFO - 5. adv2_width: 0.2076
+2025-03-21 12:07:28,512 - INFO - 6. next_adv_width: 0.2076
+2025-03-21 12:07:28,512 - INFO - 7. pad_to_split_down: 0.1916
+2025-03-21 12:07:28,513 - INFO - 8. Iload: 0.1889
+2025-03-21 12:07:28,513 - INFO - 9. adv2_output_height: 0.1675
+2025-03-21 12:07:28,513 - INFO - 10. unit_height: 0.1624
+2025-03-21 12:07:28,513 - INFO - 11. adv1_width: 0.1586
+2025-03-21 12:07:28,513 - INFO - 12. last_adv_width: 0.1586
+2025-03-21 12:07:28,513 - INFO - 13. next_main_width: 0.1456
+2025-03-21 12:07:28,513 - INFO - 14. next_main_height: 0.1447
+2025-03-21 12:07:28,513 - INFO - 15. vnet_pad_to_gap: 0.1264
+2025-03-21 12:07:28,513 - INFO - 16. adv1_output_height: 0.1226
+2025-03-21 12:07:28,513 - INFO - 17. output_pad_to_gap: 0.1163
+2025-03-21 12:07:28,513 - INFO - 18. output_pad_num: 0.1039
+2025-03-21 12:07:28,513 - INFO - 19. main_output_height: 0.1038
+2025-03-21 12:07:28,513 - INFO - 
+=== 生成MOS1_All相关性可视化 ===
+2025-03-21 12:07:30,229 - INFO - 可视化结果已保存到 ./output_2025_3_20\mos1\all 目录
+2025-03-21 12:07:30,231 - INFO - 
+分析MOS2 (fp_row in [3, 4, 5]) 汇总数据, 共 10492 条记录
+2025-03-21 12:07:30,243 - INFO - 
+检查并移除常量特征:
+2025-03-21 12:07:30,244 - WARNING - 警告: 列 'fp_col' 在当前数据子集中是常量，将从相关性分析中排除
+2025-03-21 12:07:30,246 - INFO - 有效特征数量: 19
+2025-03-21 12:07:30,248 - INFO - 有效目标列数量: 12
+2025-03-21 12:07:30,248 - INFO - 
+=== 计算MOS2_All特征之间的相关性 ===
+2025-03-21 12:07:30,255 - INFO - 特征之间相关性最高的一对是: vnet_pad_to_gap 和 output_pad_to_gap, 相关系数: -1.0000
+2025-03-21 12:07:30,258 - INFO - 
+相关性最高的10对特征:
+2025-03-21 12:07:30,258 - INFO - vnet_pad_to_gap 和 output_pad_to_gap: 1.0000
+2025-03-21 12:07:30,258 - INFO - adv1_width 和 last_adv_width: 1.0000
+2025-03-21 12:07:30,258 - INFO - adv2_width 和 next_adv_width: 1.0000
+2025-03-21 12:07:30,258 - INFO - unit_height 和 Iload: 0.9970
+2025-03-21 12:07:30,258 - INFO - main_output_height 和 output_pad_num: 0.8816
+2025-03-21 12:07:30,258 - INFO - unit_width 和 fp_row: 0.8034
+2025-03-21 12:07:30,258 - INFO - unit_width 和 main_width: 0.7912
+2025-03-21 12:07:30,258 - INFO - unit_width 和 pad_to_split_down: 0.7279
+2025-03-21 12:07:30,258 - INFO - adv2_width 和 next_main_width: 0.7269
+2025-03-21 12:07:30,258 - INFO - next_main_width 和 next_adv_width: 0.7269
+2025-03-21 12:07:30,258 - INFO - 
+=== 计算MOS2_All特征与目标变量之间的相关性 ===
+2025-03-21 12:07:30,391 - INFO - 
+每个目标变量最相关的特征:
+2025-03-21 12:07:30,391 - INFO - metal1_Area: fp_row (相关系数: 0.3294)
+2025-03-21 12:07:30,391 - INFO - metal1_Peak: main_width (相关系数: -0.2247)
+2025-03-21 12:07:30,391 - INFO - metal2_Area: fp_row (相关系数: 0.1750)
+2025-03-21 12:07:30,391 - INFO - metal2_Peak: adv1_output_height (相关系数: -0.1794)
+2025-03-21 12:07:30,391 - INFO - metal3_Area: fp_row (相关系数: 0.2371)
+2025-03-21 12:07:30,391 - INFO - metal3_Peak: main_output_height (相关系数: -0.1871)
+2025-03-21 12:07:30,391 - INFO - metal4_Area: fp_row (相关系数: 0.1579)
+2025-03-21 12:07:30,391 - INFO - metal4_Peak: adv1_output_height (相关系数: -0.1992)
+2025-03-21 12:07:30,391 - INFO - metal5_Area: fp_row (相关系数: 0.2110)
+2025-03-21 12:07:30,391 - INFO - metal5_Peak: main_output_height (相关系数: -0.2047)
+2025-03-21 12:07:30,391 - INFO - metal6_Area: fp_row (相关系数: 0.2511)
+2025-03-21 12:07:30,391 - INFO - metal6_Peak: main_output_height (相关系数: -0.2763)
+2025-03-21 12:07:30,393 - INFO - 
+特征按重要性排序（基于与所有目标的平均相关性）:
+2025-03-21 12:07:30,393 - INFO - 1. fp_row: 0.1367
+2025-03-21 12:07:30,393 - INFO - 2. unit_height: 0.1100
+2025-03-21 12:07:30,393 - INFO - 3. output_pad_to_gap: 0.1071
+2025-03-21 12:07:30,393 - INFO - 4. vnet_pad_to_gap: 0.1071
+2025-03-21 12:07:30,393 - INFO - 5. adv1_output_height: 0.1025
+2025-03-21 12:07:30,393 - INFO - 6. output_pad_num: 0.0914
+2025-03-21 12:07:30,394 - INFO - 7. unit_width: 0.0912
+2025-03-21 12:07:30,394 - INFO - 8. main_output_height: 0.0886
+2025-03-21 12:07:30,394 - INFO - 9. adv2_output_height: 0.0855
+2025-03-21 12:07:30,394 - INFO - 10. pad_to_split_up: 0.0748
+2025-03-21 12:07:30,394 - INFO - 11. main_width: 0.0743
+2025-03-21 12:07:30,394 - INFO - 12. Iload: 0.0682
+2025-03-21 12:07:30,394 - INFO - 13. adv1_width: 0.0657
+2025-03-21 12:07:30,394 - INFO - 14. last_adv_width: 0.0657
+2025-03-21 12:07:30,394 - INFO - 15. next_main_height: 0.0648
+2025-03-21 12:07:30,394 - INFO - 16. adv2_width: 0.0626
+2025-03-21 12:07:30,394 - INFO - 17. next_adv_width: 0.0626
+2025-03-21 12:07:30,394 - INFO - 18. pad_to_split_down: 0.0565
+2025-03-21 12:07:30,394 - INFO - 19. next_main_width: 0.0255
+2025-03-21 12:07:30,394 - INFO - 
+=== 生成MOS2_All相关性可视化 ===
+2025-03-21 12:07:32,068 - INFO - 可视化结果已保存到 ./output_2025_3_20\mos2\all 目录
+2025-03-21 12:07:32,069 - INFO - ==================================================
+2025-03-21 12:07:32,069 - INFO - 相关性分析完成! 时间: 2025-03-21 12:07:32
+2025-03-21 12:07:32,069 - INFO - ==================================================

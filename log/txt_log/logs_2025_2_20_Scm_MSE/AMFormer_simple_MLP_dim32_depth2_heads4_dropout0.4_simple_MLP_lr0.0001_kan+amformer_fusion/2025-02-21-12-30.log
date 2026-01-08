@@ -1,0 +1,9 @@
+2025-02-21 12:30:52,620 INFO: log_path:/logs_2025_2_20_Scm_MSE/AMFormer_simple_MLP_dim32_depth2_heads4_dropout0.4_simple_MLP_lr0.0001_kan+amformer_fusion 
+2025-02-21 12:30:52,620 INFO: Model:namespace(attn_dropout=0.4, categories=[], cluster=3, depth=2, dim=32, ff_dropout=0.4, groups=[54, 54, 54], heads=4, name='AMFormer_simple_MLP_dim32_depth2_heads4_dropout0.4_simple_MLP', num_cate=0, num_cont=61, num_special_tokens=1, out=1, out_dim=1, predictor='simple_MLP', prod_num_per_group=[6, 6, 6], qk_relu=False, sum_num_per_group=[32, 16, 8], target_mode='regression', token_descent=False, use_cls_token=True, use_prod=True, use_row_col_attention=False, use_sigmoid=True) 
+2025-02-21 12:30:52,620 INFO: lr:0.0001, loss:MSE 
+2025-02-21 12:30:52,621 INFO: Dataset:Scm, Target:['LBL'] 
+2025-02-21 12:30:52,621 INFO: ------Begin Training Model------ 
+2025-02-21 12:30:58,952 INFO: Epoch 1, Train Loss: 0.73021135492283, Test Loss: 0.5186876277128856, Inverse Test Loss: 25504.278776041665 
+2025-02-21 12:31:01,808 INFO: Epoch 2, Train Loss: 0.4740653074624246, Test Loss: 0.38948243856430054, Inverse Test Loss: 19151.157649739584 
+2025-02-21 12:31:04,690 INFO: Epoch 3, Train Loss: 0.410795950053031, Test Loss: 0.347018505136172, Inverse Test Loss: 17063.172819010415 
+2025-02-21 12:31:07,521 INFO: Epoch 4, Train Loss: 0.37564620297206075, Test Loss: 0.3309875855843226, Inverse Test Loss: 16274.919108072916 

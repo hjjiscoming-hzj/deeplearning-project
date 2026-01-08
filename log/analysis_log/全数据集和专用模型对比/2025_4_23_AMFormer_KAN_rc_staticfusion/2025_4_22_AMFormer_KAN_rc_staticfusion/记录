@@ -1,0 +1,29 @@
+# 在每个测试集上评估
+        model.eval()
+        all_test_losses = {}
+
+        for i, (test_loader, scaler_y) in enumerate(zip(test_loaders, scalers_y)):
+            name = test_names[i] if test_names and i < len(test_names) else f"test_set_{i}"
+
+            test_loss = 0.0
+            inverse_loss = 0.0
+
+            with torch.no_grad():
+                for inputs, targets in test_loader:
+                    inputs, targets = inputs.to(device), targets.to(device)
+                    outputs = model(inputs, x_cat=None)
+                    loss = criterion(outputs, targets)
+                    test_loss += loss.item()
+
+                    # 计算逆缩放后的损失
+                    outputs_np = outputs.cpu().numpy()
+                    targets_np = targets.cpu().numpy()
+
+                    # 对模型输出和目标值都用各自数据集的缩放器
+                    inverse_outputs = scaler_y.inverse_transform(outputs_np)
+                    inverse_targets = scaler_y.inverse_transform(targets_np)
+
+                    inverse_outputs_tensor = torch.FloatTensor(inverse_outputs).to(device)
+                    inverse_targets_tensor = torch.FloatTensor(inverse_targets).to(device)
+
+                    inverse_loss += criterion(inverse_outputs_tensor, inverse_targets_tensor).item()

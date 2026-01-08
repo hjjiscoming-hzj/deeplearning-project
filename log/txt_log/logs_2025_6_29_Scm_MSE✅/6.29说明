@@ -1,0 +1,4 @@
+SCM数据集：
+1.AMFormer + KAN + rc + fusion的消融实验
+2.AMFormer + KAN 并行和串行的对比实验
+3.AMFormer、KAN、MLP、FT-Transformer的对比实验

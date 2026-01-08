@@ -1,0 +1,3 @@
+2025-01-09 15:06:54,904 INFO: namespace(depth=2, grid_size=3, name='KAN', spline_order=5) 
+2025-01-09 15:06:54,904 INFO: Dataset:winequality 
+2025-01-09 15:06:54,904 INFO: ------Begin Training Model------ 

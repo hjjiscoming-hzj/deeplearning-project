@@ -1,0 +1,5 @@
+2025-01-10 14:02:45,824 INFO: namespace(attn_dropout=0.4, categories=[], cluster=3, depth=1, dim=16, ff_dropout=0.4, groups=[54, 54, 54], heads=4, name='AMFormer_simple_MLP_dim16_depth1_heads4_dropout0.4', num_cate=0, num_cont=15, num_special_tokens=1, out=1, out_dim=1, predictor='simple_MLP', prod_num_per_group=[6, 6, 6], qk_relu=False, sum_num_per_group=[32, 16, 8], target_mode='regression', token_descent=False, use_cls_token=True, use_prod=True, use_sigmoid=True) 
+2025-01-10 14:02:45,824 INFO: Dataset:Bike 
+2025-01-10 14:02:45,824 INFO: ------Begin Training Model------ 
+2025-01-10 14:02:50,185 INFO: Epoch 1, Train Loss: 0.9466187204789678, Test Loss: 0.8249426569257464, Inverse Test Loss: 4.590172903878348 
+2025-01-10 14:02:51,070 INFO: Epoch 2, Train Loss: 0.8351595057260006, Test Loss: 0.7871351369789669, Inverse Test Loss: 4.78917476109096 

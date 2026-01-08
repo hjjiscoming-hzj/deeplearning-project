@@ -1,0 +1,4 @@
+2025-02-20 16:42:18,323 INFO: Model:namespace(attn_dropout=0.4, categories=[], cluster=3, depth=2, dim=32, ff_dropout=0.4, groups=[54, 54, 54], heads=4, name='AMFormer_simple_MLP_dim32_depth2_heads4_dropout0.4_simple_MLP', num_cate=0, num_cont=61, num_special_tokens=1, out=1, out_dim=1, predictor='simple_MLP', prod_num_per_group=[6, 6, 6], qk_relu=False, sum_num_per_group=[32, 16, 8], target_mode='regression', token_descent=False, use_cls_token=True, use_prod=True, use_row_col_attention=True, use_sigmoid=True) 
+2025-02-20 16:42:18,323 INFO: lr:0.0001, loss:MSE 
+2025-02-20 16:42:18,323 INFO: Dataset:Scm, Target:['LBL'] 
+2025-02-20 16:42:18,324 INFO: ------Begin Training Model------ 
