@@ -44,11 +44,19 @@ class Model():
         if loss == 'MSE':
             self.criterion = nn.MSELoss()
 
-
+    @staticmethod
+    def calculate_r2(y_pred, y_true):
+        # 避免分母为0，加入极小值 epsilon
+        target_mean = torch.mean(y_true)
+        ss_tot = torch.sum((y_true - target_mean) ** 2)
+        ss_res = torch.sum((y_true - y_pred) ** 2)
+        r2 = 1 - ss_res / (ss_tot + 1e-8)
+        return r2.item()
 
     def train(self):
         self.model.train()
         total_loss = 0
+        total_r2 = 0
         for batch_idx, (data, targets) in enumerate(self.train_loader):
             # 移动数据到设备
             data, targets = data.to(self.device), targets.to(self.device)
@@ -68,13 +76,21 @@ class Model():
             # 更新参数
             self.optimizer.step()
             total_loss += loss.item()
+            total_r2 += self.calculate_r2(outputs, targets)
         # self.scheduler.step()
         self.average_loss = total_loss / len(self.train_loader)
+        self.average_r2 = total_r2 / len(self.train_loader)
 
     def eval(self):
         self.model.eval()
         test_loss = 0
         test_loss_inverse = 0
+        # [新增] 用于存储所有 Batch 的结果以计算全局 R2
+        all_preds = []
+        all_targets = []
+        all_preds_inv = []
+        all_targets_inv = []
+
         with torch.no_grad():
             for data, targets in self.test_loader:
                 data, targets = data.to(self.device), targets.to(self.device)
@@ -87,5 +103,20 @@ class Model():
                 inverse_outputs = self.data_loader.inverse_transform_y(outputs)
                 inverse_targets = self.data_loader.inverse_transform_y(targets)
                 test_loss_inverse += self.criterion(inverse_outputs,inverse_targets).item()
+                # [新增] 收集结果
+                all_preds.append(outputs)
+                all_targets.append(targets)
+                all_preds_inv.append(inverse_outputs)
+                all_targets_inv.append(inverse_targets)
+
         self.test_loss = test_loss/len(self.test_loader)
         self.test_loss_inverse = test_loss_inverse/len(self.test_loader)
+
+        # [新增] 计算整个测试集的 R2
+        # 将列表拼接成大 Tensor
+        if len(all_preds) > 0:
+            self.test_r2 = self.calculate_r2(torch.cat(all_preds), torch.cat(all_targets))
+            self.test_r2_inverse = self.calculate_r2(torch.cat(all_preds_inv), torch.cat(all_targets_inv))
+        else:
+            self.test_r2 = 0
+            self.test_r2_inverse = 0

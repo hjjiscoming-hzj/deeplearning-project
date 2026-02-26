@@ -3,9 +3,8 @@ from models.am_transformer.Attention.RowColAttentionBlock import *
 from einops import rearrange, repeat
 from models.base_model import simple_MLP, simple_KAN
 from models.src_kan.efficient_kan import KAN
-
-
-#   AMFormer 和 KAN 串行
+from models.am_transformer.Fusion.fusion import StaticFeatureFusion,DynamicFeatureFusion,HybridFeatureFusion
+# 特征编码后，kan和trans并行，静态特征融合层+mlp输出
 
 # transformer
 class Transformer(nn.Module):
@@ -70,6 +69,7 @@ class Transformer(nn.Module):
                     use_cls_token=use_cls_token,
                     sum_or_prod='sum',
                     qk_relu=qk_relu) if token_descent else Attention(heads=heads, dim=dim, dropout=attn_dropout),
+
                 # row-col memory block
                 RowColAttentionBlock(
                     dim=dim,
@@ -94,12 +94,12 @@ class Transformer(nn.Module):
             # prod attention
             if self.use_prod:
                 prod = toprod(x)
-                attn_out = down(torch.cat([attn_out, prod], dim=1).transpose(2, 1)).transpose(2, 1)
+                attn_out = down(torch.cat([attn_out, prod], dim=1).transpose(2,1)).transpose(2,1)
 
             # row-col attention
             if self.use_row_col_attention:
                 rowcol_out = torowcol(x)
-                attn_out = down(torch.cat([attn_out, rowcol_out], dim=1).transpose(2, 1)).transpose(2, 1)
+                attn_out = down(torch.cat([attn_out, rowcol_out], dim=1).transpose(2,1)).transpose(2,1)
 
             x = attn_out + downx(x.transpose(-1, -2)).transpose(-1, -2)
             x = ff(x) + x
@@ -142,7 +142,6 @@ class Transformer(nn.Module):
 
 
 # numerical embedder
-
 class NumericalEmbedder(nn.Module):
     def __init__(self, dim, num_numerical_types):
         super().__init__()
@@ -177,6 +176,7 @@ class AMTransformer(nn.Module):
         token_descent: use in MUCH-TOKEN dataset
         use_prod: use prod block
         use_row_col_attention: 是否使用行列注意力机制
+        use_KAN_path: 是否使用KAN路径
         num_special_tokens: =2
         categories: how many different cate in each cate ol
         out: =1 if regressioin else =cls number
@@ -199,17 +199,20 @@ class AMTransformer(nn.Module):
         token_descent = args.token_descent
         use_prod = args.use_prod
         use_row_col_attention = args.use_row_col_attention
+        self.use_KAN_path = args.use_KAN_path
         num_special_tokens = args.num_special_tokens
         categories = args.categories
-        out = args.out
-        self.out = out
         self.num_cont = args.num_cont
         num_cont = args.num_cont
         num_cate = args.num_cate
         self.use_sigmoid = args.use_sigmoid
         qk_relu = args.qk_relu
+        # 设置输出层为 kan/mlp
         predictor = args.predictor
+        # 设置输出维度
         out_dim = args.out_dim
+        # 设置静态融合层的 kan：trans比例
+        fusion_weight = args.static_fusion
 
         self.args = args
         assert all(map(lambda n: n > 0, categories)), 'number of each category must be positive'
@@ -231,7 +234,6 @@ class AMTransformer(nn.Module):
             self.register_buffer('categories_offset', categories_offset)
 
             # categorical embedding
-
             self.categorical_embeds = nn.Embedding(total_tokens, dim)
 
         # continuous
@@ -245,7 +247,7 @@ class AMTransformer(nn.Module):
 
         # transformer
 
-        self.transformer = Transformer(
+        self.transformer_path = Transformer(
             dim=dim,
             depth=depth,
             heads=heads,
@@ -264,13 +266,15 @@ class AMTransformer(nn.Module):
             qk_relu=qk_relu,
         )
 
-        # to logits
-        # self.to_logits = nn.Sequential(
-        #     nn.LayerNorm(dim),
-        #     nn.ReLU(),
-        #     nn.Linear(dim, out_dim)
-        # )
-        # self.pool = nn.Linear(num_cont + num_cate, 1)
+        # KAN 路径
+        # self.kan_path = KAN([dim, dim, dim])
+        self.kan_path = simple_KAN(dims=[dim, 128, dim])
+
+        # 特征融合层
+        # self.fusion = StaticFeatureFusion(dim, fusion_weight)
+        # self.fusion = DynamicFeatureFusion(dim)
+        self.fusion = HybridFeatureFusion(dim)
+        # self.fusion = StaticFeatureFusion_norm(dim)
 
         if predictor == 'simple_MLP':
             self.predictor = simple_MLP(dims=[dim, 128, out_dim])
@@ -285,13 +289,7 @@ class AMTransformer(nn.Module):
         return 'am_trans'
 
     def forward(self, conts, x_cat=None):
-        # assert x_categ.shape[-1] == self.num_categories, f'you must pass in {self.num_categories} values for your categories input'
-
         xs = []
-        # if self.num_unique_categories > 0:
-        #     # x_categ = x_categ + self.categories_offset
-        #     x_cat = self.categorical_embeds(x_cat)
-        #     xs.append(x_cat)
 
         # add numerically embedded tokens
         if self.num_cont > 0:
@@ -303,51 +301,34 @@ class AMTransformer(nn.Module):
 
         # append cls tokens
         b = x.shape[0]
-
         if self.use_cls_token:
             cls_tokens = repeat(self.cls_token, '1 1 d -> b 1 d', b=b)
             x = torch.cat((cls_tokens, x), dim=1)
 
-        # attend
-
-        x = self.transformer(x)
-
+        # transformer 路径处理
+        transformer_out = self.transformer_path(x)
+        # 提取特征
         if self.use_cls_token:
-            x = x[:, 0]
+            transformer_out = transformer_out[:, 0]
         else:
-            x = self.pool(x.transpose(-1, -2)).squeeze(-1)
-        x = self.predictor(x)
+            transformer_out = transformer_out.mean(dim=1)
+
+        # KAN 路径处理
+        if self.use_KAN_path:
+            batch_size, seq_len, feature_size = x.shape
+            x = x.reshape(-1, feature_size)
+            kan_out = self.kan_path(x)
+            kan_out = kan_out.reshape(batch_size, seq_len, feature_size)
+            # 提取特征
+            kan_out = kan_out.mean(dim=1)
+            # 特征融合
+            transformer_out = self.fusion(transformer_out, kan_out)
+        # 最终预测
+        x = self.predictor(transformer_out)
         return x
 
     @classmethod
     def make_default(cls, n_num_features, cat_cardinalities, token_dim, out_dim):
-        args_origin = {
-            'name': 'AMFormer',
-            'dim': token_dim,  # 模型的隐藏维度
-            'depth': 3,  # Transformer 编码器层数
-            'heads': 8,  # 多头注意力机制中的头数
-            'attn_dropout': 0.2,  # 注意力层的 dropout 比率
-            'ff_dropout': 0.2,  # 前馈网络层的 dropout 比率
-            'use_cls_token': True,  # 是否使用 [CLS] token 作为分类任务的输入
-            'groups': [54, 54, 54],  # 分组数量（如果模型中涉及分组的话）
-            'sum_num_per_group': [32, 16, 8],  # 每个分组内求和的数量
-            'prod_num_per_group': [6, 6, 6],  # 每个分组内求积的数量
-            'cluster': 3,  # 聚类数量（如果模型中涉及聚类的话）
-            'target_mode': 'regression',  # 目标模式：'classification' 或 'regression'
-            'num_cont': n_num_features,  # 连续特征的数量
-            'num_cate': len(cat_cardinalities),  # 类别特征的数量
-            'token_descent': False,  # 是否启用 token 下降策略
-            'use_prod': True,  # 是否使用乘法操作
-            'use_row_col_attention': True,  # 是否使用行列注意力机制
-            'num_special_tokens': 1,  # 特殊 token 的数量（例如 [CLS], [SEP] 等）
-            'categories': cat_cardinalities,  # 类别特征的总类别数
-            'out': 1,  # 输出维度，对于二分类问题通常是 2
-            'use_sigmoid': True,  # 是否在输出层使用 Sigmoid 函数
-            'qk_relu': False,  # 在计算 Q 和 K 向量时是否应用 ReLU 激活函数
-            'out_dim': out_dim,  # 输出维度
-            'predictor': 'kan'  # 输出层选择 simple_MLP / simple_KAN / KAN
-        }
-
         args_usrdefine = {
             'name': 'AMFormer',
             'dim': token_dim,  # 模型的隐藏维度
@@ -364,20 +345,21 @@ class AMTransformer(nn.Module):
             'num_cont': n_num_features,  # 连续特征的数量
             'num_cate': len(cat_cardinalities),  # 类别特征的数量
             'token_descent': False,  # 是否启用 token 下降策略
-            'use_prod': False,  # 是否使用乘法操作
-            'use_row_col_attention': False,  # 是否使用行列注意力机制
+            'use_prod': True,  # 是否使用乘法操作
+            'use_row_col_attention': True,  # 是否使用行列注意力机制
+            'use_KAN_path': True, # 是否使用KAN路径
             'num_special_tokens': 1,  # 特殊 token 的数量（例如 [CLS], [SEP] 等）
             'categories': cat_cardinalities,  # 类别特征的总类别数
-            'out': 1,  # 输出维度，对于二分类问题通常是 2
             'use_sigmoid': True,  # 是否在输出层使用 Sigmoid 函数
             'qk_relu': False,  # 在计算 Q 和 K 向量时是否应用 ReLU 激活函数
             'out_dim': out_dim,  # 输出维度
-            'predictor': 'simple_MLP'  # 输出层选择 simple_MLP / simple_KAN / KAN
+            'predictor': 'simple_MLP' , # 输出层选择 simple_MLP / simple_KAN / KAN
+            'static_fusion': {'kan_weight': 0.45, 'trans_weight': 0.55}
         }
-        args_usrdefine['name'] = ('{0}_{1}_dim{2}_depth{3}_heads{4}_dropout{5}'.
+        args_usrdefine['name'] = ('{0}_{1}_dim{2}_depth{3}_heads{4}_dropout{5}_fusion{6}_{7}'.
                                   format(args_usrdefine['name'], args_usrdefine['predictor'], args_usrdefine['dim'],
-                                         args_usrdefine['depth'], args_usrdefine['heads'],
-                                         args_usrdefine['attn_dropout']))
+                                         args_usrdefine['depth'], args_usrdefine['heads'],args_usrdefine['attn_dropout'],
+                                         args_usrdefine['static_fusion']['kan_weight'],args_usrdefine['static_fusion']['trans_weight']))
         import types
         args = types.SimpleNamespace(**args_usrdefine)
         return AMTransformer(args)
