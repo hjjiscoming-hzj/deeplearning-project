@@ -211,6 +211,8 @@ class AMTransformer(nn.Module):
         predictor = args.predictor
         # 设置输出维度
         out_dim = args.out_dim
+        # 设置特征融合层
+        fusion = args.fusion
         # 设置静态融合层的 kan：trans比例
         fusion_weight = args.static_fusion
 
@@ -271,10 +273,12 @@ class AMTransformer(nn.Module):
         self.kan_path = simple_KAN(dims=[dim, 128, dim])
 
         # 特征融合层
-        # self.fusion = StaticFeatureFusion(dim, fusion_weight)
-        # self.fusion = DynamicFeatureFusion(dim)
-        self.fusion = HybridFeatureFusion(dim)
-        # self.fusion = StaticFeatureFusion_norm(dim)
+        if fusion == 'static':
+            self.fusion = StaticFeatureFusion(dim, fusion_weight)
+        elif fusion == 'dynamic':
+            self.fusion = DynamicFeatureFusion(dim)
+        else:
+            self.fusion = HybridFeatureFusion(dim)
 
         if predictor == 'simple_MLP':
             self.predictor = simple_MLP(dims=[dim, 128, out_dim])
@@ -354,7 +358,8 @@ class AMTransformer(nn.Module):
             'qk_relu': False,  # 在计算 Q 和 K 向量时是否应用 ReLU 激活函数
             'out_dim': out_dim,  # 输出维度
             'predictor': 'simple_MLP' , # 输出层选择 simple_MLP / simple_KAN / KAN
-            'static_fusion': {'kan_weight': 0.45, 'trans_weight': 0.55}
+            'fusion': 'static', # 特征融合层选择 static / dynamic / hybrid
+            'static_fusion': {'kan_weight': 0.6, 'trans_weight': 0.4}
         }
         args_usrdefine['name'] = ('{0}_{1}_dim{2}_depth{3}_heads{4}_dropout{5}_fusion{6}_{7}'.
                                   format(args_usrdefine['name'], args_usrdefine['predictor'], args_usrdefine['dim'],

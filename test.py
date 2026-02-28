@@ -21,8 +21,7 @@ parser.add_argument('--model_name', default='AMFormer', type=str)
 
 # 🌟 新增核心参数：直接接收权重文件的绝对或相对路径
 parser.add_argument('--weight_path',
-                    default=
-                    'log/txt_log/logs_2026_2_26_HS_RMSE_fusion/AMFormer_simple_MLP_dim32_depth2_heads4_dropout0.4_hyFusion_lr0.001_6P/best_AMFormer_HS_weights.pth',
+                    default='log/txt_log/logs_2026_2_26_HS_RMSE_fusion/AMFormer_simple_MLP_dim32_depth2_heads4_dropout0.4_dyFusion_lr0.001_6P/best_AMFormer_HS_weights.pth',
                     type=str)
 
 opt = parser.parse_args()
